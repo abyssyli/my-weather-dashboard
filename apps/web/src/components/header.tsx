@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import Link from "next/link";
@@ -108,7 +110,7 @@ export function Header() {
               >
                 Sign out
               </button>
-            </>  [edited]
+            </>
           ) : (
             <>
               <Link

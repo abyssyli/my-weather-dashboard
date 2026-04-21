@@ -1,7 +1,7 @@
 export type LocationRow = {
   id: string;
   name: string;
-  country: string | null;  [edited]
+  country: string | null;
   latitude: number;
   longitude: number;
   timezone: string;
@@ -26,3 +26,6 @@ export type CurrentWeatherRow = {
   observed_at: string | null;
   updated_at: string;
 };
+
+
+/* daily modify record */

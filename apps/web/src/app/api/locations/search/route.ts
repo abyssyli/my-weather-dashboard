@@ -18,7 +18,7 @@ export async function GET(request: Request) {
     return NextResponse.json({ results: [] });
   }
 
-  const apiUrl = new URL("https://geocoding-api.open-meteo.com/v1/search");
+  const apiUrl = new URL("https://geocoding-api.open-meteo.com/v1/search");  [edited]
   apiUrl.searchParams.set("name", q);
   apiUrl.searchParams.set("count", "10");
   apiUrl.searchParams.set("language", "en");
@@ -43,7 +43,7 @@ export async function GET(request: Request) {
     admin1: r.admin1 ?? null,
     latitude: r.latitude,
     longitude: r.longitude,
-    timezone: r.timezone ?? "auto",  [edited]
+    timezone: r.timezone ?? "auto",
   }));
 
   return NextResponse.json({ results });

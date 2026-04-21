@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";
@@ -19,7 +17,7 @@ export function formatDateISO(dateIso: string) {
 export function formatDateTimeISO(dateIso: string) {
   const date = new Date(dateIso);
   if (Number.isNaN(date.getTime())) return dateIso;
-  return date.toLocaleString();
+  return date.toLocaleString();  [edited]
 }
 
 export function cToF(c: number) {
