@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -167,7 +169,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
       </div>
     );
   }
-  [edited]
+
   if (user && favoriteLocationIds.length === 0) {
     return (
       <div className="rounded-2xl border border-white/60 bg-white/70 p-6 shadow-sm ring-1 ring-black/5 backdrop-blur-xl dark:border-zinc-800/70 dark:bg-black/40 dark:ring-white/10">

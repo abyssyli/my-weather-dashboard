@@ -1,6 +1,6 @@
 "use client";
-
-import { useAuth } from "@/components/auth-provider";  [edited]
+  [edited]
+import { useAuth } from "@/components/auth-provider";
 import { ProDashboard } from "@/components/pro/dashboard";
 
 export default function DashboardPage() {

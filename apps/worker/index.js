@@ -1,3 +1,5 @@
+
+/* minor adjust */
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -92,7 +94,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     throw new Error("Open-Meteo response missing daily field");
   }
 
-  const hourly = json.hourly;  [edited]
+  const hourly = json.hourly;
   if (!hourly || !Array.isArray(hourly.time)) {
     throw new Error("Open-Meteo response missing hourly field");
   }

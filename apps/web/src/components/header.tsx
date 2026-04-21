@@ -69,7 +69,7 @@ export function Header() {
               href="/dashboard"
               label="Dashboard"
               icon={<IconDashboard className="h-4 w-4" />}
-            />  [edited]
+            />
             <NavLink
               href="/my-cities"
               label="My Cities"
@@ -130,3 +130,5 @@ export function Header() {
     </header>
   );
 }
+
+// optimize code detail

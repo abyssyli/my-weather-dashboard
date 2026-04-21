@@ -50,4 +50,4 @@ export async function GET(request: Request) {
 }
 
 
-// optimize code detail
+/* minor adjust */

@@ -98,9 +98,7 @@ export type SyncRun = {
   locations_failed: number;
   poll_interval_ms: number | null;
   open_meteo_base_url: string | null;
-  source_http_status: number | null;
+  source_http_status: number | null;  [edited]
   error_message: string | null;
   created_at: string;
 };
-
-/* minor adjust */

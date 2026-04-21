@@ -121,7 +121,7 @@ export default function AlertsPage() {
       else map.set(f.location_id, [f]);
     }
     for (const [k, arr] of map) {
-      arr.sort((a, b) => a.forecast_date.localeCompare(b.forecast_date));  [edited]
+      arr.sort((a, b) => a.forecast_date.localeCompare(b.forecast_date));
       map.set(k, arr);
     }
     return map;
@@ -132,7 +132,7 @@ export default function AlertsPage() {
       if (c === "gt") return a > b;
       if (c === "gte") return a >= b;
       if (c === "lt") return a < b;
-      return a <= b;
+      return a <= b;  [edited]
     };
 
     const metricValue = (r: AlertRuleRow, d: DailyForecastRow) => {
