@@ -50,4 +50,4 @@ export async function GET(request: Request) {
 }
 
 
-/* daily modify record */
+# minor content update

@@ -128,7 +128,7 @@ export default function SignUpPage() {
           </p>
         ) : null}
         {message ? (
-          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">  [edited]
+          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
             {message}
           </p>
         ) : null}
@@ -136,3 +136,6 @@ export default function SignUpPage() {
     </main>
   );
 }
+
+
+// update log: auto edit 01

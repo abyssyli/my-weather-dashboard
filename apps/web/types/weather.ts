@@ -63,7 +63,7 @@ export type HourlyForecast = {
   location_id: string;
   forecast_time: string;
   temperature_c: number | null;
-  precipitation_probability: number | null;  [edited]
+  precipitation_probability: number | null;
   wind_speed_kmh: number | null;
   weather_code: number | null;
   is_day: boolean | null;
@@ -102,3 +102,5 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
+
+// update log: auto edit 01

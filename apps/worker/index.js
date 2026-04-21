@@ -1,3 +1,5 @@
+
+// optimize code detail
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -79,7 +81,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     const err = new Error(
       `Open-Meteo error: ${response.status} ${response.statusText}`
     );
-    err.status = response.status;  [edited]
+    err.status = response.status;
     throw err;
   }
 

@@ -1,11 +1,9 @@
-
-/* minor adjust */
 {
   "name": "worker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js",  [edited]
     "dev": "node --watch index.js"
   },
   "dependencies": {
@@ -13,4 +11,3 @@
     "dotenv": "^16.6.1"
   }
 }
-

@@ -39,7 +39,7 @@ Frontend:
 
 Backend / Data:
 - Supabase Postgres
-- Supabase Auth
+- Supabase Auth  [edited]
 - Supabase Realtime
 
 Worker:
@@ -215,7 +215,7 @@ When working on this repo:
 1. preserve the monorepo structure
 2. keep frontend and worker independent
 3. prefer small, reviewable changes
-4. if adding a new weather field:  [edited]
+4. if adding a new weather field:
    - update schema
    - update worker normalization
    - update frontend types and UI

@@ -1,3 +1,3 @@
-@AGENTS.md
 
-// optimize code detail
+// update log: auto edit 01
+@AGENTS.md

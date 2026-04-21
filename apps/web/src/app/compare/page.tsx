@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -530,3 +528,5 @@ export default function ComparePage() {
     </main>
   );
 }
+
+// task4 project adjust

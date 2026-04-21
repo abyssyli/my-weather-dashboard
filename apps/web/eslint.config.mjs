@@ -17,4 +17,4 @@ const eslintConfig = defineConfig([
 
 export default eslintConfig;
 
-// optimize code detail
+// task4 project adjust

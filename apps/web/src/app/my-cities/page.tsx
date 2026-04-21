@@ -13,12 +13,12 @@ export default function MyCitiesPage() {
           My Cities
         </h1>
         <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-          {user
+          {user  [edited]
             ? "Manage favorites and add new cities via search."
             : "Sign in to save favorites and unlock Pro features."}
         </p>
 
-        <div className="mt-6 max-w-xl">  [edited]
+        <div className="mt-6 max-w-xl">
           <CityManager />
         </div>
       </div>

@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -282,7 +280,7 @@ export default function AlertsPage() {
     };
   }, [authLoading, user?.id, locations]);
 
-  async function addRule(e: React.FormEvent) {
+  async function addRule(e: React.FormEvent) {  [edited]
     e.preventDefault();
     if (!user) return;
     setSaving(true);

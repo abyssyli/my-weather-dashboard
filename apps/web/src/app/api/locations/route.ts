@@ -1,5 +1,3 @@
-
-// task4 project adjust
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -48,7 +46,7 @@ export async function POST(request: Request) {
   try {
     supabase = getSupabaseAdminClient();
   } catch (e) {
-    const message = e instanceof Error ? e.message : "Server misconfiguration";
+    const message = e instanceof Error ? e.message : "Server misconfiguration";  [edited]
     return NextResponse.json({ error: message }, { status: 500 });
   }
 

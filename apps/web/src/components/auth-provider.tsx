@@ -27,7 +27,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     let active = true;
 
     supabase.auth
-      .getSession()  [edited]
+      .getSession()
       .then(({ data }) => {
         if (!active) return;
         setSession(data.session ?? null);
@@ -51,7 +51,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
-  const value = useMemo<AuthContextValue>(
+  const value = useMemo<AuthContextValue>(  [edited]
     () => ({
       session,
       user: session?.user ?? null,

@@ -11,9 +11,9 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  subsets: ["latin"],  [edited]
 });
-  [edited]
+
 export const metadata: Metadata = {
   title: "Weather Pulse",
   description: "Realtime weather dashboard powered by Supabase",
