@@ -529,4 +529,4 @@ export default function ComparePage() {
   );
 }
 
-/* minor adjust */
+// optimize code detail

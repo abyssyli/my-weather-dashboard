@@ -1,4 +1,4 @@
-export type LocationRow = {  [edited]
+export type LocationRow = {
   id: string;
   name: string;
   country: string | null;
@@ -26,3 +26,4 @@ export type CurrentWeatherRow = {
   observed_at: string | null;
   updated_at: string;
 };
+  [edited]

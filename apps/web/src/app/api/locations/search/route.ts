@@ -48,6 +48,4 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
-
-
-// task4 project adjust
+  [edited]

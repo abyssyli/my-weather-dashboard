@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -1530,7 +1532,7 @@ export function ProDashboard({ user }: { user: User | null }) {
                             {min == null
                               ? "—"
                               : `${formatNumber(min, 1)}°${temperatureUnit.toUpperCase()}`}
-                          </td>  [edited]
+                          </td>
                           <td className="px-3 py-2 text-zinc-900 dark:text-zinc-50">
                             {d.precipitation_probability_max == null
                               ? "—"

@@ -21,7 +21,7 @@ Build a weather dashboard where:
 - logged-out users see a default public city list
 - current weather updates automatically when the worker writes new data
 - the frontend receives updates through Supabase Realtime
-- the worker polls weather data on a schedule and upserts it into Supabase  [edited]
+- the worker polls weather data on a schedule and upserts it into Supabase
 
 ## Monorepo Structure
 /
@@ -220,7 +220,7 @@ When working on this repo:
    - update worker normalization
    - update frontend types and UI
 5. when debugging missing live updates, check:
-   - worker logs
+   - worker logs  [edited]
    - current_weather writes
    - Realtime enabled on the table
    - frontend subscription code

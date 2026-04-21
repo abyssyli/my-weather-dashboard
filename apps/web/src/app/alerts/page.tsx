@@ -105,7 +105,7 @@ export default function AlertsPage() {
     comparator: Comparator;
     threshold: string;
     horizon_days: string;
-  } | null>(null);
+  } | null>(null);  [edited]
 
   const locationById = useMemo(() => {
     const map = new Map<string, LocationRow>();
@@ -777,5 +777,3 @@ export default function AlertsPage() {
     </main>
   );
 }
-
-// task4 project adjust

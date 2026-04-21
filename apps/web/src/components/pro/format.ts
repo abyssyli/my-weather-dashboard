@@ -12,7 +12,7 @@ export function formatDateISO(dateIso: string) {
     month: "short",
     day: "numeric",
   });
-}  [edited]
+}
 
 export function formatDateTimeISO(dateIso: string) {
   const date = new Date(dateIso);
@@ -27,3 +27,5 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
+
+// task4 project adjust

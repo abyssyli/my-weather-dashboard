@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";  [edited]
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import {
@@ -49,7 +49,7 @@ export function Header() {
 
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
-    await supabase.auth.signOut();  [edited]
+    await supabase.auth.signOut();
     router.push("/dashboard");
     router.refresh();
   }

@@ -1,6 +1,4 @@
-
-/* daily modify record */
-export function describeWeatherCode(code: number | null | undefined) {
+export function describeWeatherCode(code: number | null | undefined) {  [edited]
   if (code == null) return "Unknown";
 
   const mapping: Record<number, string> = {
@@ -43,4 +41,3 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
-
