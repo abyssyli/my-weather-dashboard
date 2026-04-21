@@ -1,3 +1,5 @@
+
+// optimize code detail
 @import "tailwindcss";
 
 :root {
@@ -26,6 +28,6 @@ body {
     Roboto,
     Helvetica,
     Arial,
-    "Apple Color Emoji",  [edited]
+    "Apple Color Emoji",
     "Segoe UI Emoji";
 }

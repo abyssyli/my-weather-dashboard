@@ -1,3 +1,5 @@
+
+// task4 project adjust
 # Weather Pulse
 
 ## Project Overview
@@ -83,7 +85,7 @@ Constraints:
 Stores the latest weather snapshot for each location.
 
 Columns:
-- location_id uuid primary key references public.locations(id) on delete cascade  [edited]
+- location_id uuid primary key references public.locations(id) on delete cascade
 - temperature_c numeric
 - apparent_temperature_c numeric
 - relative_humidity integer

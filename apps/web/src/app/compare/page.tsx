@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -54,7 +56,7 @@ function MultiCityTempChart({
   const pad = Math.max(1, (max - min) * 0.12);
   const yMin = min - pad;
   const yMax = max + pad;
-  const range = yMax - yMin || 1;  [edited]
+  const range = yMax - yMin || 1;
 
   const left = 34;
   const right = 10;

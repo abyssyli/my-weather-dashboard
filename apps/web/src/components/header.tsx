@@ -26,7 +26,7 @@ function NavLink({
   const active = pathname === href;
 
   return (
-    <Link  [edited]
+    <Link
       href={href}
       className={[
         "group flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
@@ -69,7 +69,7 @@ export function Header() {
               href="/dashboard"
               label="Dashboard"
               icon={<IconDashboard className="h-4 w-4" />}
-            />
+            />  [edited]
             <NavLink
               href="/my-cities"
               label="My Cities"

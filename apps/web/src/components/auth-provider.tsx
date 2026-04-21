@@ -10,7 +10,7 @@ import {
 import type { Session, User } from "@supabase/supabase-js";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 
-type AuthContextValue = {
+type AuthContextValue = {  [edited]
   session: Session | null;
   user: User | null;
   loading: boolean;
@@ -68,6 +68,3 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
-
-
-// update log: auto edit 01

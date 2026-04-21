@@ -92,7 +92,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     throw new Error("Open-Meteo response missing daily field");
   }
 
-  const hourly = json.hourly;
+  const hourly = json.hourly;  [edited]
   if (!hourly || !Array.isArray(hourly.time)) {
     throw new Error("Open-Meteo response missing hourly field");
   }
@@ -292,5 +292,3 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-/* daily modify record */

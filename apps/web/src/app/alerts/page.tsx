@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -123,7 +121,7 @@ export default function AlertsPage() {
       else map.set(f.location_id, [f]);
     }
     for (const [k, arr] of map) {
-      arr.sort((a, b) => a.forecast_date.localeCompare(b.forecast_date));
+      arr.sort((a, b) => a.forecast_date.localeCompare(b.forecast_date));  [edited]
       map.set(k, arr);
     }
     return map;

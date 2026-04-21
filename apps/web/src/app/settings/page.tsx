@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -353,5 +355,3 @@ export default function SettingsPage() {
     </main>
   );
 }
-
-// task4 project adjust

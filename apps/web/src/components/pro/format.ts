@@ -19,7 +19,7 @@ export function formatDateTimeISO(dateIso: string) {
   if (Number.isNaN(date.getTime())) return dateIso;
   return date.toLocaleString();
 }
-
+  [edited]
 export function cToF(c: number) {
   return (c * 9) / 5 + 32;
 }
@@ -27,5 +27,3 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
-
-// optimize code detail

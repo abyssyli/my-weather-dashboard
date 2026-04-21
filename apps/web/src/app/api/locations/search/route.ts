@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 type GeocodingResult = {
   id: number;
-  name: string;  [edited]
+  name: string;
   latitude: number;
   longitude: number;
   country?: string;
@@ -48,3 +48,6 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
+
+
+// optimize code detail

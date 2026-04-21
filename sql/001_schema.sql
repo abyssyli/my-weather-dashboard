@@ -43,19 +43,23 @@ create table if not exists public.user_preferences (
   updated_at timestamptz not null default now()
 );
 
-
-
-create table if not exists public.hourly_forecasts (
+create table if not exists public.daily_forecasts (
   location_id uuid not null references public.locations(id) on delete cascade,
-  forecast_time timestamptz not null,
-  temperature_c numeric,
-  precipitation_probability integer,
-  wind_speed_kmh numeric,
+  forecast_date date not null,
+  temp_max_c numeric,
+  temp_min_c numeric,
+  precipitation_sum_mm numeric,
+  precipitation_probability_max integer,
+  wind_speed_max_kmh numeric,
   weather_code integer,
-  is_day boolean,
+  sunrise timestamp,
+  sunset timestamp,
+  uv_index_max numeric,
   updated_at timestamptz not null default now(),
-  primary key (location_id, forecast_time)
+  primary key (location_id, forecast_date)
 );
+
+
 
 create table if not exists public.alert_rules (
   id uuid primary key default gen_random_uuid(),

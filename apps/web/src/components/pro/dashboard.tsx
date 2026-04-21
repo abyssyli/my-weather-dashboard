@@ -1123,7 +1123,7 @@ export function ProDashboard({ user }: { user: User | null }) {
             ) : alertsLoading ? (
               <p className="text-sm text-zinc-600 dark:text-zinc-400">Loading…</p>
             ) : alertsError ? (
-              <div className="rounded-xl border border-red-200/70 bg-red-50/80 p-3 text-xs text-red-700 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-300 dark:ring-white/10">
+              <div className="rounded-xl border border-red-200/70 bg-red-50/80 p-3 text-xs text-red-700 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-300 dark:ring-white/10">  [edited]
                 {alertsError}
               </div>
             ) : !selectedLocationId ? (
@@ -1559,5 +1559,3 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
-
-# minor content update

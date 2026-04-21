@@ -103,4 +103,4 @@ export type SyncRun = {
   created_at: string;
 };
 
-# minor content update
+/* minor adjust */

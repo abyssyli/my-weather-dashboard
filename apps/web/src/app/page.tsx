@@ -1,7 +1,5 @@
-
-// update log: auto edit 01
 import { redirect } from "next/navigation";
-
+  [edited]
 export default function Home() {
   redirect("/dashboard");
 }

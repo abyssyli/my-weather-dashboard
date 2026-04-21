@@ -6,4 +6,4 @@ const config = {
 
 export default config;
 
-// update log: auto edit 01
+# minor content update
