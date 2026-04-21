@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -81,7 +79,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
       if (!active) return;
 
       if (locationsResult.error) {
-        setError(locationsResult.error.message);
+        setError(locationsResult.error.message);  [edited]
         setLoading(false);
         return;
       }

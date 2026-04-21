@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: Readonly<{  [edited]
   children: React.ReactNode;
 }>) {
   return (

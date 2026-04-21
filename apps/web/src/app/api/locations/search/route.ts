@@ -50,4 +50,4 @@ export async function GET(request: Request) {
 }
 
 
-/* minor adjust */
+/* daily modify record */

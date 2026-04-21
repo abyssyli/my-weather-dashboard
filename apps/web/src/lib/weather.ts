@@ -43,4 +43,4 @@ export function formatUpdatedAt(iso: string | null | undefined) {
 }
 
 
-# minor content update
+/* daily modify record */

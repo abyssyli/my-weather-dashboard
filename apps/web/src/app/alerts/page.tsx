@@ -326,7 +326,7 @@ export default function AlertsPage() {
     setSaving(false);
   }
 
-  function startEdit(r: AlertRuleRow) {
+  function startEdit(r: AlertRuleRow) {  [edited]
     setEditingId(r.id);
     setEditDraft({
       location_id: r.location_id ?? "",
@@ -678,7 +678,7 @@ export default function AlertsPage() {
                                 disabled={saving}
                                 className="rounded-full bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white shadow-sm ring-1 ring-black/10 hover:bg-zinc-800 disabled:opacity-50 dark:bg-white dark:text-black dark:ring-white/20 dark:hover:bg-zinc-100"
                               >
-                                {saving ? "Saving…" : "Save"}  [edited]
+                                {saving ? "Saving…" : "Save"}
                               </button>
                             </div>
                           </div>

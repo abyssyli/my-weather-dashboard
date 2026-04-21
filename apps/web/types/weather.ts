@@ -1,3 +1,5 @@
+
+/* minor adjust */
 export type Location = {
   id: string;
   name: string;
@@ -102,5 +104,3 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
-
-# minor content update

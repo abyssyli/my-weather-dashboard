@@ -1,5 +1,5 @@
 
-/* daily modify record */
+# minor content update
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 

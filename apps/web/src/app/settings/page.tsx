@@ -123,7 +123,7 @@ export default function SettingsPage() {
           time_format: "24h",
           alerts_enabled: true,
           created_at: new Date().toISOString(),
-          updated_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),  [edited]
         });
       }
 
@@ -272,7 +272,7 @@ export default function SettingsPage() {
                 </select>
               </label>
 
-              <label className="block text-xs font-medium text-zinc-500">  [edited]
+              <label className="block text-xs font-medium text-zinc-500">
                 Timezone display
                 <select
                   value={preferences.timezone_display}

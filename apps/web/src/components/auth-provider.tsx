@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import {
@@ -67,7 +65,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
 export function useAuth() {
   const value = useContext(AuthContext);
-  if (!value) throw new Error("useAuth must be used within <AuthProvider />");
+  if (!value) throw new Error("useAuth must be used within <AuthProvider />");  [edited]
   return value;
 }
-

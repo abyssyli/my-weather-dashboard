@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -267,7 +269,7 @@ export default function ComparePage() {
 
       setSelectedIds((prev) => {
         const valid = prev.filter((id) => rows.some((l) => l.id === id));
-        if (valid.length > 0) return valid;  [edited]
+        if (valid.length > 0) return valid;
         return rows.slice(0, 2).map((l) => l.id);
       });
     }

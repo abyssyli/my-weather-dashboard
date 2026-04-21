@@ -1,5 +1,5 @@
 
-// update log: auto edit 01
+// optimize code detail
 import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
