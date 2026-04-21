@@ -127,7 +127,7 @@ export default function SignUpPage() {
             {error}
           </p>
         ) : null}
-        {message ? (
+        {message ? (  [edited]
           <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
             {message}
           </p>
@@ -136,6 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-
-
-# minor content update

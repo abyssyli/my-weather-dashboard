@@ -27,7 +27,7 @@ async function loadLocations() {
     .select("id,name,latitude,longitude,timezone");
 
   if (result.error) throw result.error;
-  return result.data ?? [];  [edited]
+  return result.data ?? [];
 }
 
 async function fetchWeatherBundle({ latitude, longitude, timezone }) {
@@ -292,3 +292,5 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
+
+// task4 project adjust

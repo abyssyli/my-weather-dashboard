@@ -1,3 +1,5 @@
+
+/* daily modify record */
 import { NextResponse } from "next/server";
 
 type GeocodingResult = {
@@ -23,7 +25,7 @@ export async function GET(request: Request) {
   apiUrl.searchParams.set("count", "10");
   apiUrl.searchParams.set("language", "en");
   apiUrl.searchParams.set("format", "json");
-  [edited]
+
   const response = await fetch(apiUrl.toString(), {
     headers: { accept: "application/json" },
     cache: "no-store",
@@ -48,3 +50,4 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
+

@@ -6,7 +6,7 @@ export function formatNumber(value: number | null | undefined, digits = 0) {
 
 export function formatDateISO(dateIso: string) {
   const date = new Date(dateIso);
-  if (Number.isNaN(date.getTime())) return dateIso;  [edited]
+  if (Number.isNaN(date.getTime())) return dateIso;
   return date.toLocaleDateString("en-US", {
     weekday: "short",
     month: "short",
@@ -27,3 +27,5 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
+
+/* minor adjust */

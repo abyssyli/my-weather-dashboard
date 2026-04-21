@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -764,7 +762,7 @@ export default function AlertsPage() {
                               className="rounded-full px-3 py-1.5 text-xs font-medium text-zinc-600 hover:bg-black/[0.04] disabled:opacity-50 dark:text-zinc-400 dark:hover:bg-white/[0.06]"
                             >
                               Delete
-                            </button>
+                            </button>  [edited]
                           </>
                         )}
                       </div>

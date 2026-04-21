@@ -1,3 +1,5 @@
+
+/* minor adjust */
 # Weather Pulse
 
 ## Project Overview
@@ -7,7 +9,7 @@ Architecture:
 Open-Meteo API -> Railway Worker -> Supabase (Postgres + Auth + Realtime) -> Next.js Frontend on Vercel
 
 This project is a system, not just a single app:
-- the worker runs independently on Railway  [edited]
+- the worker runs independently on Railway
 - the frontend runs independently on Vercel
 - Supabase is the shared state layer
 - the frontend never calls the weather API directly

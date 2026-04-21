@@ -9,7 +9,7 @@ export type LocationRow = {
 };
 
 export type FavoriteLocationRow = {
-  user_id: string;  [edited]
+  user_id: string;
   location_id: string;
   created_at: string;
 };
@@ -26,3 +26,6 @@ export type CurrentWeatherRow = {
   observed_at: string | null;
   updated_at: string;
 };
+
+
+// optimize code detail
