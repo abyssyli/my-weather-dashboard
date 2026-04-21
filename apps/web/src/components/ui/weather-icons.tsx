@@ -71,7 +71,7 @@ function IconRain({ className }: { className?: string }) {
     </Svg>
   );
 }
-  [edited]
+
 function IconSnow({ className }: { className?: string }) {
   return (
     <Svg className={className}>
@@ -142,3 +142,6 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
+
+
+/* daily modify record */

@@ -1,6 +1,6 @@
 "use client";
-
-import { CityManager } from "@/components/city-manager";  [edited]
+  [edited]
+import { CityManager } from "@/components/city-manager";
 import { useAuth } from "@/components/auth-provider";
 
 export default function MyCitiesPage() {

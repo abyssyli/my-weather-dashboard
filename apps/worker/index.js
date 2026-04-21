@@ -1,5 +1,3 @@
-
-// optimize code detail
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -72,7 +70,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
       "uv_index_max",
     ].join(",")
   );
-  url.searchParams.set("forecast_days", "15");
+  url.searchParams.set("forecast_days", "15");  [edited]
   url.searchParams.set("forecast_hours", "24");
   url.searchParams.set("timezone", "UTC");
 

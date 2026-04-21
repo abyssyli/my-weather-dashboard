@@ -1,6 +1,6 @@
 {
   "name": "worker",
-  "version": "0.1.0",
+  "version": "0.1.0",  [edited]
   "private": true,
   "scripts": {
     "start": "node index.js",
@@ -11,6 +11,3 @@
     "dotenv": "^16.6.1"
   }
 }
-
-
-// optimize code detail

@@ -1,3 +1,5 @@
+
+# minor content update
 export function describeWeatherCode(code: number | null | undefined) {
   if (code == null) return "Unknown";
 
@@ -41,4 +43,4 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
-  [edited]
+

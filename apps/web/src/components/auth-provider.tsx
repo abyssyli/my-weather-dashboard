@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import {
@@ -69,5 +71,3 @@ export function useAuth() {
   return value;
 }
 
-
-# minor content update

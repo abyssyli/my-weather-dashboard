@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -889,7 +891,7 @@ export function ProDashboard({ user }: { user: User | null }) {
             alerts_enabled: preferences.alerts_enabled,
           },
           { onConflict: "user_id" }
-        )  [edited]
+        )
         .select(
           "user_id,temperature_unit,wind_speed_unit,default_location_id,timezone_display,time_format,alerts_enabled,created_at,updated_at"
         )

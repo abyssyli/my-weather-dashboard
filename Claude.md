@@ -219,7 +219,7 @@ When working on this repo:
    - update schema
    - update worker normalization
    - update frontend types and UI
-5. when debugging missing live updates, check:
+5. when debugging missing live updates, check:  [edited]
    - worker logs
    - current_weather writes
    - Realtime enabled on the table
@@ -227,4 +227,3 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
-// task4 project adjust

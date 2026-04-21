@@ -1,3 +1,5 @@
+
+// optimize code detail
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";
@@ -24,6 +26,6 @@ export function cToF(c: number) {
   return (c * 9) / 5 + 32;
 }
 
-export function kmhToMph(kmh: number) {  [edited]
+export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }

@@ -259,4 +259,4 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
   );
 }
 
-// optimize code detail
+/* minor adjust */
