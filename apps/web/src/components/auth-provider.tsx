@@ -12,7 +12,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 
 type AuthContextValue = {
   session: Session | null;
-  user: User | null;  [edited]
+  user: User | null;
   loading: boolean;
 };
 
@@ -38,7 +38,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setSession(null);
         setLoading(false);
       });
-
+  [edited]
     const { data: subscription } = supabase.auth.onAuthStateChange(
       (_event, newSession) => {
         setSession(newSession);

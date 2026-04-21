@@ -214,7 +214,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
         json?.error ??
         (rawText && rawText.length <= 200 ? rawText : null) ??
         `Add city failed (${response.status})`;
-      setError(serverMessage);  [edited]
+      setError(serverMessage);
       setSaving(false);
       return;
     }
@@ -386,3 +386,5 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
+
+/* daily modify record */

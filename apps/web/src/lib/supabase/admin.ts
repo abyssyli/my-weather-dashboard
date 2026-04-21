@@ -1,6 +1,4 @@
-
-# minor content update
-import { createClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";  [edited]
 
 export function getSupabaseAdminClient() {
   const supabaseUrl =
@@ -17,4 +15,3 @@ export function getSupabaseAdminClient() {
     auth: { persistSession: false, autoRefreshToken: false },
   });
 }
-

@@ -111,7 +111,7 @@ export default function SignUpPage() {
             type="button"
             onClick={() => {
               setError(null);
-              setMessage(null);
+              setMessage(null);  [edited]
               setMode(mode === "sign-in" ? "sign-up" : "sign-in");
             }}
             className="rounded-full px-2 py-1 font-medium text-zinc-600 hover:bg-black/[0.04] hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/[0.06] dark:hover:text-zinc-50"
@@ -135,4 +135,4 @@ export default function SignUpPage() {
       </form>
     </main>
   );
-}  [edited]
+}

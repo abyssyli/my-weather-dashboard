@@ -1,7 +1,5 @@
-
-// update log: auto edit 01
 {
-  "name": "weather-pulse",
+  "name": "weather-pulse",  [edited]
   "private": true,
   "workspaces": [
     "apps/web",
@@ -14,4 +12,3 @@
     "start:worker": "npm run start --workspace worker"
   }
 }
-

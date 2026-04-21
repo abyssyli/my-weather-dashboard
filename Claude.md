@@ -1,5 +1,3 @@
-
-# minor content update
 # Weather Pulse
 
 ## Project Overview
@@ -218,7 +216,7 @@ When working on this repo:
 2. keep frontend and worker independent
 3. prefer small, reviewable changes
 4. if adding a new weather field:
-   - update schema
+   - update schema  [edited]
    - update worker normalization
    - update frontend types and UI
 5. when debugging missing live updates, check:

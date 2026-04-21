@@ -1,3 +1,5 @@
+
+/* minor adjust */
 {
   "compilerOptions": {
     "target": "ES2017",
@@ -17,7 +19,7 @@
       {
         "name": "next"
       }
-    ],  [edited]
+    ],
     "paths": {
       "@/*": ["./src/*"]
     }

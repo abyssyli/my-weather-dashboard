@@ -25,7 +25,5 @@ export function cToF(c: number) {
 }
 
 export function kmhToMph(kmh: number) {
-  return kmh / 1.60934;
+  return kmh / 1.60934;  [edited]
 }
-
-/* minor adjust */

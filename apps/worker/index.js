@@ -81,7 +81,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     );
     err.status = response.status;
     throw err;
-  }  [edited]
+  }
 
   const json = await response.json();
   const current = json.current;
@@ -120,7 +120,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     wind_speed_max_kmh: daily.wind_speed_10m_max?.[i] ?? null,
     weather_code: daily.weather_code?.[i] ?? null,
     sunrise: daily.sunrise?.[i] ?? null,
-    sunset: daily.sunset?.[i] ?? null,
+    sunset: daily.sunset?.[i] ?? null,  [edited]
     uv_index_max: daily.uv_index_max?.[i] ?? null,
     updated_at: nowIso,
   }));

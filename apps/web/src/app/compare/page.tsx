@@ -9,14 +9,6 @@ import { IconCompare } from "@/components/ui/icons";
 
 type TemperatureUnit = "c" | "f";
 
-type DailyForecastRow = {
-  location_id: string;
-  forecast_date: string;
-  temp_max_c: number | null;
-  temp_min_c: number | null;
-  precipitation_probability_max: number | null;
-  wind_speed_max_kmh: number | null;
-};
 
 function MultiCityTempChart({
   dates,
@@ -529,4 +521,4 @@ export default function ComparePage() {
   );
 }
 
-// optimize code detail
+// update log: auto edit 01

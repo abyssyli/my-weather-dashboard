@@ -1,3 +1,5 @@
+
+// optimize code detail
 import type { ReactNode } from "react";
 
 export type IconProps = {
@@ -46,7 +48,7 @@ export function IconMapPin(props: IconProps) {
 export function IconCompare(props: IconProps) {
   return (
     <BaseIcon {...props}>
-      <path d="M10 4H6.8A2.8 2.8 0 0 0 4 6.8V20h6V4Z" />  [edited]
+      <path d="M10 4H6.8A2.8 2.8 0 0 0 4 6.8V20h6V4Z" />
       <path d="M20 20V6.8A2.8 2.8 0 0 0 17.2 4H14v16h6Z" />
       <path d="M7 9h0" />
       <path d="M17 12h0" />
