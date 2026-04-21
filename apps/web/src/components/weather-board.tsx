@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -64,7 +62,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
 
         const rows = (result.data ?? []) as LocationRow[];
         rows.sort((a, b) => a.name.localeCompare(b.name));
-        setLocations(rows);
+        setLocations(rows);  [edited]
         setLoading(false);
         return;
       }

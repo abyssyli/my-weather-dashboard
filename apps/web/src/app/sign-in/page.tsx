@@ -1,5 +1,3 @@
-
-// optimize code detail
 "use client";
 
 import { useEffect, useState } from "react";
@@ -84,7 +82,7 @@ export default function SignInPage() {
           />
         </label>
 
-        <label className="mt-4 block text-sm font-medium text-zinc-900 dark:text-zinc-50">
+        <label className="mt-4 block text-sm font-medium text-zinc-900 dark:text-zinc-50">  [edited]
           Password
           <input
             type="password"
@@ -138,4 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-

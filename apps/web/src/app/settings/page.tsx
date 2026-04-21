@@ -188,7 +188,7 @@ export default function SettingsPage() {
 
   if (!user) {
     return (
-      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">  [edited]
+      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">
         <GlassCard
           icon={<IconSettings className="h-5 w-5" />}
           title="Settings"
@@ -353,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+/* minor adjust */

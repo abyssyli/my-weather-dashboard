@@ -1,5 +1,3 @@
-
-/* minor adjust */
 import { NextResponse } from "next/server";
 
 type GeocodingResult = {
@@ -16,7 +14,7 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   const q = (url.searchParams.get("q") ?? "").trim();
 
-  if (q.length < 2) {
+  if (q.length < 2) {  [edited]
     return NextResponse.json({ results: [] });
   }
 
@@ -50,4 +48,3 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
-

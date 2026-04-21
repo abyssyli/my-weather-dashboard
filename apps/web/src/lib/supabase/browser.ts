@@ -1,3 +1,5 @@
+
+// task4 project adjust
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 let browserClient: SupabaseClient | null = null;
@@ -10,10 +12,11 @@ export function getSupabaseBrowserClient() {
 
   if (!supabaseUrl || !supabaseAnonKey) {
     throw new Error(
-      "Missing NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY in apps/web/.env.local"  [edited]
+      "Missing NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY in apps/web/.env.local"
     );
   }
 
   browserClient = createClient(supabaseUrl, supabaseAnonKey);
   return browserClient;
 }
+

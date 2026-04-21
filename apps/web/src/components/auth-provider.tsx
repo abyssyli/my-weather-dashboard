@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import {
@@ -10,7 +8,7 @@ import {
   useState,
 } from "react";
 import type { Session, User } from "@supabase/supabase-js";
-import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
+import { getSupabaseBrowserClient } from "@/lib/supabase/browser";  [edited]
 
 type AuthContextValue = {
   session: Session | null;
@@ -70,4 +68,3 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
-

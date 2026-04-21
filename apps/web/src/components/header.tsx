@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import Link from "next/link";
@@ -49,7 +51,7 @@ export function Header() {
 
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
-    await supabase.auth.signOut();  [edited]
+    await supabase.auth.signOut();
     router.push("/dashboard");
     router.refresh();
   }

@@ -54,7 +54,7 @@ export default function SignUpPage() {
     }
 
     router.replace("/dashboard");
-    router.refresh();  [edited]
+    router.refresh();
     setSubmitting(false);
   }
 
@@ -136,3 +136,6 @@ export default function SignUpPage() {
     </main>
   );
 }
+
+
+/* minor adjust */

@@ -1,5 +1,3 @@
-
-// optimize code detail
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -7,3 +5,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+// task4 project adjust
