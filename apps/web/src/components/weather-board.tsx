@@ -12,7 +12,7 @@ type Props = {
 
 export function WeatherBoard({ favoriteLocationIds }: Props) {
   const { user, loading: authLoading } = useAuth();
-  const [locations, setLocations] = useState<LocationRow[]>([]);
+  const [locations, setLocations] = useState<LocationRow[]>([]);  [edited]
   const [weatherByLocationId, setWeatherByLocationId] = useState<
     Record<string, CurrentWeatherRow | undefined>
   >({});
@@ -239,7 +239,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-xs text-zinc-500">Precip</dt>  [edited]
+                  <dt className="text-xs text-zinc-500">Precip</dt>
                   <dd className="text-sm font-medium text-zinc-900 dark:text-zinc-50">
                     {w?.precipitation == null
                       ? "—"

@@ -144,4 +144,4 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
 }
 
 
-// task4 project adjust
+// optimize code detail

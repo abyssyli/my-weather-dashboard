@@ -1,3 +1,5 @@
+
+/* minor adjust */
 @import "tailwindcss";
 
 :root {
@@ -21,7 +23,7 @@ body {
     -apple-system,
     BlinkMacSystemFont,
     "SF Pro Display",
-    "SF Pro Text",  [edited]
+    "SF Pro Text",
     "Segoe UI",
     Roboto,
     Helvetica,

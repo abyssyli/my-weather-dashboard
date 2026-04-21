@@ -1,5 +1,5 @@
 
-// task4 project adjust
+// update log: auto edit 01
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 let browserClient: SupabaseClient | null = null;

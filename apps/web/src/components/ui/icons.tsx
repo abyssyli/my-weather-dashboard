@@ -1,5 +1,5 @@
 
-// task4 project adjust
+/* minor adjust */
 import type { ReactNode } from "react";
 
 export type IconProps = {

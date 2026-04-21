@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
-import {  [edited]
+import {
   IconBell,
   IconCompare,
   IconDashboard,
@@ -130,3 +130,5 @@ export function Header() {
     </header>
   );
 }
+
+// update log: auto edit 01

@@ -26,4 +26,4 @@ export default function MyCitiesPage() {
   );
 }
 
-/* daily modify record */
+// update log: auto edit 01

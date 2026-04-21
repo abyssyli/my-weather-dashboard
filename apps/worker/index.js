@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -294,3 +292,5 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
+
+/* minor adjust */

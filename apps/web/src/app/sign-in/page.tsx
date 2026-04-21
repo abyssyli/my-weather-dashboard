@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -29,7 +31,7 @@ export default function SignInPage() {
 
     if (mode === "sign-up") {
       const result = await supabase.auth.signUp({
-        email,  [edited]
+        email,
         password,
       });
       if (result.error) {
@@ -136,3 +138,4 @@ export default function SignInPage() {
     </main>
   );
 }
+
