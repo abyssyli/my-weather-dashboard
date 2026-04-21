@@ -1,5 +1,5 @@
 
-// update log: auto edit 01
+# minor content update
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 

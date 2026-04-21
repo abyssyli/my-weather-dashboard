@@ -116,7 +116,7 @@ export default function SignInPage() {
             }}
             className="font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
           >
-            {mode === "sign-in"
+            {mode === "sign-in"  [edited]
               ? "Need an account? Sign up"
               : "Already have an account? Sign in"}
           </button>
@@ -136,6 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-
-
-/* minor adjust */

@@ -49,7 +49,7 @@ export type DailyForecast = {
   forecast_date: string;
   temp_max_c: number | null;
   temp_min_c: number | null;
-  precipitation_sum_mm: number | null;
+  precipitation_sum_mm: number | null;  [edited]
   precipitation_probability_max: number | null;
   wind_speed_max_kmh: number | null;
   weather_code: number | null;
@@ -102,5 +102,3 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
-
-/* minor adjust */

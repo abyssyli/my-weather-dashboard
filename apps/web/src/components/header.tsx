@@ -87,7 +87,7 @@ export function Header() {
             />
             <NavLink
               href="/settings"
-              label="Settings"  [edited]
+              label="Settings"
               icon={<IconSettings className="h-4 w-4" />}
             />
           </nav>
@@ -130,3 +130,5 @@ export function Header() {
     </header>
   );
 }
+
+/* daily modify record */

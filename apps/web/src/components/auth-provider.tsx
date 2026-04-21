@@ -70,4 +70,4 @@ export function useAuth() {
 }
 
 
-/* minor adjust */
+// optimize code detail

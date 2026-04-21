@@ -1,5 +1,3 @@
-
-/* daily modify record */
 # Weather Pulse
 
 ## Project Overview
@@ -196,7 +194,7 @@ In apps/worker/package.json use:
 ## Deployment Rules
 ### Vercel
 - deploy apps/web only
-- set root directory to apps/web
+- set root directory to apps/web  [edited]
 - add NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 ### Railway

@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -7,5 +5,5 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
 };
-
+  [edited]
 export default nextConfig;

@@ -1,5 +1,3 @@
-
-// task4 project adjust
 import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
@@ -18,3 +16,5 @@ export function getSupabaseAdminClient() {
   });
 }
 
+
+/* minor adjust */

@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -33,7 +31,7 @@ async function loadLocations() {
 }
 
 async function fetchWeatherBundle({ latitude, longitude, timezone }) {
-  const url = new URL(OPEN_METEO_BASE_URL);
+  const url = new URL(OPEN_METEO_BASE_URL);  [edited]
   url.searchParams.set("latitude", String(latitude));
   url.searchParams.set("longitude", String(longitude));
   url.searchParams.set(

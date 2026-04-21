@@ -1,5 +1,5 @@
 
-// update log: auto edit 01
+// task4 project adjust
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";

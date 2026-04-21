@@ -88,7 +88,7 @@ export default function SettingsPage() {
             "user_id,temperature_unit,wind_speed_unit,default_location_id,timezone_display,time_format,alerts_enabled,created_at,updated_at"
           )
           .eq("user_id", user.id)
-          .maybeSingle(),  [edited]
+          .maybeSingle(),
         supabase
           .from("favorite_locations")
           .select(
@@ -163,7 +163,7 @@ export default function SettingsPage() {
       .maybeSingle();
 
     if (result.error) {
-      setError(result.error.message);
+      setError(result.error.message);  [edited]
       setSaving(false);
       return;
     }
