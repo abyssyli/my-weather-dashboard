@@ -46,7 +46,7 @@ function NavLink({
 export function Header() {
   const router = useRouter();
   const { user, loading } = useAuth();
-  [edited]
+
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
     await supabase.auth.signOut();
@@ -59,7 +59,7 @@ export function Header() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-6">
           <Link
-            href="/dashboard"
+            href="/dashboard"  [edited]
             className="text-[15px] font-semibold tracking-[-0.01em] text-zinc-900 dark:text-zinc-50"
           >
             Weather Pulse

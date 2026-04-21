@@ -1,6 +1,6 @@
 "use client";
 
-import { CityManager } from "@/components/city-manager";
+import { CityManager } from "@/components/city-manager";  [edited]
 import { useAuth } from "@/components/auth-provider";
 
 export default function MyCitiesPage() {
@@ -25,5 +25,3 @@ export default function MyCitiesPage() {
     </main>
   );
 }
-
-// task4 project adjust

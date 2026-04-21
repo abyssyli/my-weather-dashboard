@@ -175,7 +175,7 @@ OPEN_METEO_BASE_URL=https://api.open-meteo.com/v1/forecast
 POLL_INTERVAL_MS=600000
 
 ## Local Development Commands
-
+  [edited]
 ### web
 cd apps/web
 npm install
@@ -227,4 +227,3 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
-/* daily modify record */

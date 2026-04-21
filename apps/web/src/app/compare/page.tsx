@@ -152,7 +152,7 @@ function MultiCityTempChart({
                     {t.label}
                   </text>
                 ) : null}
-              </g>  [edited]
+              </g>
             );
           })}
         </g>
@@ -528,3 +528,5 @@ export default function ComparePage() {
     </main>
   );
 }
+
+// task4 project adjust

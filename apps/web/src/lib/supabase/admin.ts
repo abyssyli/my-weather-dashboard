@@ -12,6 +12,9 @@ export function getSupabaseAdminClient() {
   }
 
   return createClient(supabaseUrl, serviceRoleKey, {
-    auth: { persistSession: false, autoRefreshToken: false },  [edited]
+    auth: { persistSession: false, autoRefreshToken: false },
   });
 }
+
+
+# minor content update

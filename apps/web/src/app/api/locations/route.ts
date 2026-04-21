@@ -1,5 +1,3 @@
-
-// task4 project adjust
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -39,7 +37,7 @@ export async function POST(request: Request) {
   }
   if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) {
     return NextResponse.json(
-      { error: "latitude/longitude must be numbers" },
+      { error: "latitude/longitude must be numbers" },  [edited]
       { status: 400 }
     );
   }

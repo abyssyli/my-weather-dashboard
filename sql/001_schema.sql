@@ -1,15 +1,5 @@
 create extension if not exists pgcrypto;
 
-create table if not exists public.locations (
-  id uuid primary key default gen_random_uuid(),
-  name text not null,
-  country text,
-  latitude numeric not null,
-  longitude numeric not null,
-  timezone text not null,
-  created_at timestamptz not null default now(),
-  unique (name, country, latitude, longitude)
-);
 
 create table if not exists public.favorite_locations (
   user_id uuid not null references auth.users(id) on delete cascade,

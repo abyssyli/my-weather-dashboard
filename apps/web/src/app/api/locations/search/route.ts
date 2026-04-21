@@ -1,5 +1,3 @@
-
-/* minor adjust */
 import { NextResponse } from "next/server";
 
 type GeocodingResult = {
@@ -18,7 +16,7 @@ export async function GET(request: Request) {
 
   if (q.length < 2) {
     return NextResponse.json({ results: [] });
-  }
+  }  [edited]
 
   const apiUrl = new URL("https://geocoding-api.open-meteo.com/v1/search");
   apiUrl.searchParams.set("name", q);
@@ -50,4 +48,3 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
-

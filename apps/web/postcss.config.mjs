@@ -1,7 +1,9 @@
 const config = {
-  plugins: {  [edited]
+  plugins: {
     "@tailwindcss/postcss": {},
   },
 };
 
 export default config;
+
+// update log: auto edit 01

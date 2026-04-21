@@ -68,7 +68,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
           .from("locations")
           .select(
             "id,name,country,latitude,longitude,timezone,created_at"
-          )
+          )  [edited]
           .order("name", { ascending: true }),
         supabase
           .from("favorite_locations")
@@ -249,7 +249,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
 
     const next = favoriteLocationIds.filter((id) => id !== locationId);
     setFavoriteLocationIds(next);
-    setSaving(false);  [edited]
+    setSaving(false);
     onFavoriteLocationIdsChangeRef.current?.(next);
   }
 

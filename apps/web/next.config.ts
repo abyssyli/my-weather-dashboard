@@ -1,5 +1,5 @@
 
-/* daily modify record */
+# minor content update
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {

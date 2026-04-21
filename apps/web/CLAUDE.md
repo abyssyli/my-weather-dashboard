@@ -1,3 +1,1 @@
-
-/* daily modify record */
-@AGENTS.md
+@AGENTS.md  [edited]

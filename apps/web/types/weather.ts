@@ -1,6 +1,6 @@
 export type Location = {
   id: string;
-  name: string;
+  name: string;  [edited]
   country: string | null;
   latitude: number;
   longitude: number;
@@ -14,7 +14,7 @@ export type FavoriteLocation = {
   created_at: string;
 };
 
-export type CurrentWeather = {  [edited]
+export type CurrentWeather = {
   location_id: string;
   temperature_c: number | null;
   apparent_temperature_c: number | null;
