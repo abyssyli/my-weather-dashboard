@@ -59,7 +59,7 @@ export default function SignUpPage() {
   }
 
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 py-10">  [edited]
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 py-10">
       <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
         {mode === "sign-in" ? "Sign in" : "Create account"}
       </h1>
@@ -136,3 +136,6 @@ export default function SignUpPage() {
     </main>
   );
 }
+
+
+/* daily modify record */

@@ -1,3 +1,5 @@
+
+// task4 project adjust
 "use client";
 
 import Link from "next/link";
@@ -72,7 +74,7 @@ export function Header() {
             />
             <NavLink
               href="/my-cities"
-              label="My Cities"  [edited]
+              label="My Cities"
               icon={<IconMapPin className="h-4 w-4" />}
             />
             <NavLink

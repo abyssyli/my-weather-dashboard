@@ -1,5 +1,3 @@
-
-/* minor adjust */
 import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
@@ -13,8 +11,7 @@ export function getSupabaseAdminClient() {
     );
   }
 
-  return createClient(supabaseUrl, serviceRoleKey, {
+  return createClient(supabaseUrl, serviceRoleKey, {  [edited]
     auth: { persistSession: false, autoRefreshToken: false },
   });
 }
-

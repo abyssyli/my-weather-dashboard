@@ -259,4 +259,4 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
   );
 }
 
-/* minor adjust */
+/* daily modify record */

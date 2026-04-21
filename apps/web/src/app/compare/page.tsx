@@ -102,7 +102,7 @@ function MultiCityTempChart({
           ))}
         </div>
       </div>
-
+  [edited]
       <svg viewBox={`0 0 ${width} ${height}`} className="mt-3 h-44 w-full">
         <g className="text-zinc-900/10 dark:text-white/10" stroke="currentColor">
           <line x1={left} y1={top} x2={width - right} y2={top} strokeWidth="1" />
@@ -360,7 +360,7 @@ export default function ComparePage() {
     return (
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
         <GlassCard
-          icon={<IconCompare className="h-5 w-5" />}  [edited]
+          icon={<IconCompare className="h-5 w-5" />}
           title="Compare"
           subtitle="Compare 2–4 cities over 15 days"
         >

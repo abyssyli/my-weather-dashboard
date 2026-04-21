@@ -387,4 +387,4 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
   );
 }
 
-/* daily modify record */
+/* minor adjust */

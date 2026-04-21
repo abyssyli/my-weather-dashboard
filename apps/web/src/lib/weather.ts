@@ -22,14 +22,14 @@ export function describeWeatherCode(code: number | null | undefined) {
     73: "Snow",
     75: "Heavy Snow",
     77: "Snow Grains",
-    80: "Light Rain Showers",
+    80: "Light Rain Showers",  [edited]
     81: "Rain Showers",
     82: "Violent Rain Showers",
     85: "Light Snow Showers",
     86: "Snow Showers",
     95: "Thunderstorm",
     96: "Thunderstorm w/ Hail",
-    99: "Thunderstorm w/ Heavy Hail",  [edited]
+    99: "Thunderstorm w/ Heavy Hail",
   };
 
   return mapping[code] ?? `Code ${code}`;

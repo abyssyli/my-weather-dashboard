@@ -89,7 +89,7 @@ export function IconCalendar(props: IconProps) {
       <path d="M4.5 9h15" />
       <path d="M6.5 5.5h11A2.5 2.5 0 0 1 20 8v11A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 19V8a2.5 2.5 0 0 1 2.5-2.5Z" />
     </BaseIcon>
-  );  [edited]
+  );
 }
 
 export function IconTrend(props: IconProps) {
@@ -120,3 +120,5 @@ export function IconSparkles(props: IconProps) {
     </BaseIcon>
   );
 }
+
+/* minor adjust */
