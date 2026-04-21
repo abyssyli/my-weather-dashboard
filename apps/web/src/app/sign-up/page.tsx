@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useState } from "react";
@@ -56,7 +54,7 @@ export default function SignUpPage() {
     }
 
     router.replace("/dashboard");
-    router.refresh();
+    router.refresh();  [edited]
     setSubmitting(false);
   }
 
@@ -138,4 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-

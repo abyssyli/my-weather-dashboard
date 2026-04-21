@@ -1,6 +1,8 @@
+
+/* minor adjust */
 "use client";
 
-import { useEffect, useMemo, useState } from "react";  [edited]
+import { useEffect, useMemo, useState } from "react";
 import type { User } from "@supabase/supabase-js";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";

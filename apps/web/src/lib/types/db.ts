@@ -3,7 +3,7 @@ export type LocationRow = {
   name: string;
   country: string | null;
   latitude: number;
-  longitude: number;
+  longitude: number;  [edited]
   timezone: string;
   created_at: string;
 };
@@ -26,6 +26,3 @@ export type CurrentWeatherRow = {
   observed_at: string | null;
   updated_at: string;
 };
-
-
-# minor content update

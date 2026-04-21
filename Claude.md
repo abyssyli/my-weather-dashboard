@@ -149,7 +149,7 @@ Responsibilities:
 2. request weather data from Open-Meteo for each city
 3. normalize the response
 4. upsert into public.current_weather using location_id
-5. log success/failure  [edited]
+5. log success/failure
 6. repeat on a schedule
 
 Worker must:
@@ -201,7 +201,7 @@ In apps/worker/package.json use:
 - deploy apps/worker only
 - set root directory to apps/worker
 - add SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY
-- worker runs as a long-running process
+- worker runs as a long-running process  [edited]
 
 ## Important Safety Rules
 - never put service role keys in NEXT_PUBLIC variables

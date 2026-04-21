@@ -1,5 +1,3 @@
-
-// optimize code detail
 const config = {
   plugins: {
     "@tailwindcss/postcss": {},
@@ -7,3 +5,5 @@ const config = {
 };
 
 export default config;
+
+// task4 project adjust

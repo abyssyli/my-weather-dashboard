@@ -485,7 +485,7 @@ export default function AlertsPage() {
                   </option>
                 ))}
               </select>
-            </label>
+            </label>  [edited]
 
             <div className="grid grid-cols-2 gap-3">
               <label className="block text-xs font-medium text-zinc-500">
@@ -777,5 +777,3 @@ export default function AlertsPage() {
     </main>
   );
 }
-
-// update log: auto edit 01

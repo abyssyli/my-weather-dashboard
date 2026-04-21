@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -191,7 +193,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
           const w = weatherByLocationId[loc.id];
           return (
             <article
-              key={loc.id}  [edited]
+              key={loc.id}
               className="rounded-2xl border border-white/60 bg-white/70 p-4 shadow-sm ring-1 ring-black/5 backdrop-blur-xl dark:border-zinc-800/70 dark:bg-black/40 dark:ring-white/10"
             >
               <header className="flex items-start justify-between gap-4">

@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import Link from "next/link";
@@ -51,7 +49,7 @@ export function Header() {
 
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
-    await supabase.auth.signOut();
+    await supabase.auth.signOut();  [edited]
     router.push("/dashboard");
     router.refresh();
   }

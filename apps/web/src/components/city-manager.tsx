@@ -355,7 +355,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
               </p>
             ) : (
               <ul className="space-y-2">
-                {favoriteLocations.map((l) => (
+                {favoriteLocations.map((l) => (  [edited]
                   <li
                     key={l.id}
                     className="flex items-center justify-between rounded-xl border border-zinc-200/80 bg-white/60 px-3 py-2 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-zinc-800/80 dark:bg-black/30 dark:ring-white/10"
@@ -386,5 +386,3 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
-
-/* daily modify record */

@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -190,7 +188,7 @@ export default function SettingsPage() {
 
   if (!user) {
     return (
-      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">
+      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">  [edited]
         <GlassCard
           icon={<IconSettings className="h-5 w-5" />}
           title="Settings"

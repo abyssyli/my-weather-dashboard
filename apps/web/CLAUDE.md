@@ -1,1 +1,3 @@
-@AGENTS.md  [edited]
+@AGENTS.md
+
+// optimize code detail
