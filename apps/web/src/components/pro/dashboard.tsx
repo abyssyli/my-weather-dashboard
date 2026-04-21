@@ -1452,7 +1452,7 @@ export function ProDashboard({ user }: { user: User | null }) {
                 No hourly forecasts yet. Run updated SQL and restart worker.
               </p>
             ) : (
-              <HourlyTrend  [edited]
+              <HourlyTrend
                 items={hourlyForecasts}
                 temperatureUnit={temperatureUnit}
               />
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+// update log: auto edit 01

@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import { CityManager } from "@/components/city-manager";
@@ -13,7 +15,7 @@ export default function MyCitiesPage() {
           My Cities
         </h1>
         <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-          {user  [edited]
+          {user
             ? "Manage favorites and add new cities via search."
             : "Sign in to save favorites and unlock Pro features."}
         </p>

@@ -1,5 +1,5 @@
 
-// task4 project adjust
+/* daily modify record */
 const config = {
   plugins: {
     "@tailwindcss/postcss": {},

@@ -46,7 +46,7 @@ export async function POST(request: Request) {
   try {
     supabase = getSupabaseAdminClient();
   } catch (e) {
-    const message = e instanceof Error ? e.message : "Server misconfiguration";  [edited]
+    const message = e instanceof Error ? e.message : "Server misconfiguration";
     return NextResponse.json({ error: message }, { status: 500 });
   }
 
@@ -76,3 +76,5 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ location: upsertResult.data });
 }
+
+// update log: auto edit 01

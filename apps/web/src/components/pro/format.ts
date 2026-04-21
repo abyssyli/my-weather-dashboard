@@ -1,7 +1,7 @@
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";
-  return value.toFixed(digits);
+  return value.toFixed(digits);  [edited]
 }
 
 export function formatDateISO(dateIso: string) {
@@ -12,7 +12,7 @@ export function formatDateISO(dateIso: string) {
     month: "short",
     day: "numeric",
   });
-}  [edited]
+}
 
 export function formatDateTimeISO(dateIso: string) {
   const date = new Date(dateIso);

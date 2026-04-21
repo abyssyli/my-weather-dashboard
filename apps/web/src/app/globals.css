@@ -2,7 +2,7 @@
 
 :root {
   --background: #f5f5f7;
-  --foreground: #111827;  [edited]
+  --foreground: #111827;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,7 @@ body {
     "SF Pro Text",
     "Segoe UI",
     Roboto,
-    Helvetica,
+    Helvetica,  [edited]
     Arial,
     "Apple Color Emoji",
     "Segoe UI Emoji";

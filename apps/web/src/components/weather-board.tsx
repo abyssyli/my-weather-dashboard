@@ -225,7 +225,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
                 <div>
                   <dt className="text-xs text-zinc-500">Humidity</dt>
                   <dd className="text-sm font-medium text-zinc-900 dark:text-zinc-50">
-                    {w?.relative_humidity == null  [edited]
+                    {w?.relative_humidity == null
                       ? "—"
                       : `${w.relative_humidity}%`}
                   </dd>
@@ -258,3 +258,5 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     </section>
   );
 }
+
+// update log: auto edit 01

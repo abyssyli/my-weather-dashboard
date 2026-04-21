@@ -22,7 +22,7 @@ type AlertRuleRow = {
   updated_at: string;
 };
 
-type DailyForecastRow = {
+type DailyForecastRow = {  [edited]
   location_id: string;
   forecast_date: string;
   temp_max_c: number | null;
@@ -280,7 +280,7 @@ export default function AlertsPage() {
     };
   }, [authLoading, user?.id, locations]);
 
-  async function addRule(e: React.FormEvent) {  [edited]
+  async function addRule(e: React.FormEvent) {
     e.preventDefault();
     if (!user) return;
     setSaving(true);

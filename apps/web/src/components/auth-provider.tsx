@@ -6,7 +6,7 @@ import {
   useEffect,
   useMemo,
   useState,
-} from "react";
+} from "react";  [edited]
 import type { Session, User } from "@supabase/supabase-js";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 
@@ -51,7 +51,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
-  const value = useMemo<AuthContextValue>(  [edited]
+  const value = useMemo<AuthContextValue>(
     () => ({
       session,
       user: session?.user ?? null,

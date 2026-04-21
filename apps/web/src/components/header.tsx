@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import Link from "next/link";
@@ -24,7 +22,7 @@ function NavLink({
   label: string;
   icon: ReactNode;
 }) {
-  const pathname = usePathname();
+  const pathname = usePathname();  [edited]
   const active = pathname === href;
 
   return (
