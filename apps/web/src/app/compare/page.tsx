@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -484,7 +482,7 @@ export default function ComparePage() {
                       {selectedLocations.map((l) => {
                         const r = byCityAndDate.get(`${l.id}:${date}`);
                         const max =
-                          r?.temp_max_c == null
+                          r?.temp_max_c == null  [edited]
                             ? null
                             : temperatureUnit === "c"
                               ? r.temp_max_c

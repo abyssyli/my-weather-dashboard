@@ -1,5 +1,5 @@
 export type Location = {
-  id: string;  [edited]
+  id: string;
   name: string;
   country: string | null;
   latitude: number;
@@ -73,7 +73,7 @@ export type HourlyForecast = {
 export type AlertRuleType = "precipitation" | "temperature_max" | "wind_speed";
 export type AlertComparator = "gt" | "gte" | "lt" | "lte";
 
-export type AlertRule = {
+export type AlertRule = {  [edited]
   id: string;
   user_id: string;
   location_id: string | null;

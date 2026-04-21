@@ -68,7 +68,7 @@ export async function POST(request: Request) {
   }
 
   if (!upsertResult.data) {
-    return NextResponse.json(
+    return NextResponse.json(  [edited]
       { error: "Failed to create location" },
       { status: 500 }
     );
@@ -76,5 +76,3 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ location: upsertResult.data });
 }
-
-// optimize code detail

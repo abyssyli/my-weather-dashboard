@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -81,7 +79,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
 
       if (result.error) {
         setError(result.error.message);
-        setLoading(false);
+        setLoading(false);  [edited]
         return;
       }
 

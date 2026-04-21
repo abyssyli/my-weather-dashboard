@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -355,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+// optimize code detail

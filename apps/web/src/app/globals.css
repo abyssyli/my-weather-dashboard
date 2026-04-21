@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+  [edited]
 :root {
   --background: #f5f5f7;
   --foreground: #111827;
@@ -26,6 +26,6 @@ body {
     Roboto,
     Helvetica,
     Arial,
-    "Apple Color Emoji",  [edited]
+    "Apple Color Emoji",
     "Segoe UI Emoji";
 }

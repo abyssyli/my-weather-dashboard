@@ -187,7 +187,7 @@ npm install
 npm run dev
 
 ## Suggested Worker Package Scripts
-In apps/worker/package.json use:  [edited]
+In apps/worker/package.json use:
 - "start": "node index.js"
 - "dev": "node --watch index.js"
 
@@ -205,7 +205,7 @@ In apps/worker/package.json use:  [edited]
 
 ## Important Safety Rules
 - never put service role keys in NEXT_PUBLIC variables
-- never import worker secrets into the frontend
+- never import worker secrets into the frontend  [edited]
 - keep worker and frontend loosely coupled through Supabase only
 - no hardcoded secrets in the repo
 - all schema changes should update this CLAUDE.md

@@ -45,7 +45,7 @@ function IconSun({ className }: { className?: string }) {
   );
 }
 
-function IconMoon({ className }: { className?: string }) {  [edited]
+function IconMoon({ className }: { className?: string }) {
   return (
     <Svg className={className}>
       <path d="M21 14.2A7.5 7.5 0 0 1 9.8 3a6 6 0 1 0 11.2 11.2Z" />
@@ -142,3 +142,6 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
+
+
+# minor content update

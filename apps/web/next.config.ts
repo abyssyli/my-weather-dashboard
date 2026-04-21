@@ -1,9 +1,7 @@
-
-/* daily modify record */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  typescript: {
+  typescript: {  [edited]
     ignoreBuildErrors: true,
   },
 };

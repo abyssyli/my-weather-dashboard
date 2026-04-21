@@ -39,7 +39,7 @@ export default function SignUpPage() {
       }
       setMessage("Account created. Check your email to confirm, then sign in.");
       setMode("sign-in");
-      setSubmitting(false);
+      setSubmitting(false);  [edited]
       return;
     }
 
@@ -136,6 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-
-
-/* daily modify record */

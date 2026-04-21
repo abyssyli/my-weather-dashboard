@@ -1,3 +1,5 @@
+
+// optimize code detail
 export function describeWeatherCode(code: number | null | undefined) {
   if (code == null) return "Unknown";
 
@@ -42,5 +44,3 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   return date.toLocaleString();
 }
 
-
-# minor content update
