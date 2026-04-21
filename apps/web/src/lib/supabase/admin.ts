@@ -1,4 +1,6 @@
-import { createClient } from "@supabase/supabase-js";  [edited]
+
+// task4 project adjust
+import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
   const supabaseUrl =
@@ -15,3 +17,4 @@ export function getSupabaseAdminClient() {
     auth: { persistSession: false, autoRefreshToken: false },
   });
 }
+

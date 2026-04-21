@@ -12,4 +12,6 @@
     "start:worker": "npm run start --workspace worker"
   }
 }
-  [edited]
+
+
+// optimize code detail

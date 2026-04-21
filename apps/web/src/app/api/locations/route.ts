@@ -1,5 +1,3 @@
-
-/* minor adjust */
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -54,7 +52,7 @@ export async function POST(request: Request) {
 
   const upsertResult = await supabase
     .from("locations")
-    .upsert(
+    .upsert(  [edited]
       { name, country, latitude, longitude, timezone },
       { onConflict: "name,country,latitude,longitude" }
     )

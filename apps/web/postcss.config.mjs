@@ -6,4 +6,4 @@ const config = {
 
 export default config;
 
-/* minor adjust */
+// task4 project adjust

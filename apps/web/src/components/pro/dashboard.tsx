@@ -175,7 +175,7 @@ function ruleTypeLabel(t: RuleType) {
   return "Wind Speed";
 }
 
-function comparatorLabel(c: Comparator) {
+function comparatorLabel(c: Comparator) {  [edited]
   if (c === "gt") return ">";
   if (c === "gte") return "≥";
   if (c === "lt") return "<";
@@ -1559,5 +1559,3 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
-
-/* minor adjust */

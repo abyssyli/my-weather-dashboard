@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";  [edited]
+import { useEffect, useMemo, useState } from "react";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import type { LocationRow } from "@/lib/types/db";
@@ -193,7 +193,7 @@ function GlassCard({
   children,
 }: {
   icon?: React.ReactNode;
-  title: string;
+  title: string;  [edited]
   subtitle?: string;
   children: React.ReactNode;
 }) {

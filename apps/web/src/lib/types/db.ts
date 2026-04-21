@@ -1,10 +1,12 @@
+
+// update log: auto edit 01
 export type LocationRow = {
   id: string;
   name: string;
   country: string | null;
   latitude: number;
   longitude: number;
-  timezone: string;  [edited]
+  timezone: string;
   created_at: string;
 };
 
@@ -26,3 +28,4 @@ export type CurrentWeatherRow = {
   observed_at: string | null;
   updated_at: string;
 };
+

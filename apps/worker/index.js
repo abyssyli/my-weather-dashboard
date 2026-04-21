@@ -1,5 +1,3 @@
-
-// task4 project adjust
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -98,7 +96,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
   if (!hourly || !Array.isArray(hourly.time)) {
     throw new Error("Open-Meteo response missing hourly field");
   }
-
+  [edited]
   const nowIso = new Date().toISOString();
 
   const currentWeather = {
