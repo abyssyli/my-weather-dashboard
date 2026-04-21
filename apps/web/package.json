@@ -1,6 +1,8 @@
+
+# minor content update
 {
   "name": "web",
-  "version": "0.1.0",  [edited]
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",

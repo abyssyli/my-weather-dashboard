@@ -1,5 +1,5 @@
 
-// optimize code detail
+/* daily modify record */
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 let browserClient: SupabaseClient | null = null;

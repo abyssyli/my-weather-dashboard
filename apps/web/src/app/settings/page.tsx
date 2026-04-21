@@ -354,4 +354,4 @@ export default function SettingsPage() {
   );
 }
 
-/* minor adjust */
+// optimize code detail

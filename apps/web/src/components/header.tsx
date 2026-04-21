@@ -15,7 +15,7 @@ import {
 
 function NavLink({
   href,
-  label,  [edited]
+  label,
   icon,
 }: {
   href: string;
@@ -95,7 +95,7 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           {loading ? (
-            <span className="text-sm text-zinc-500">Loading…</span>
+            <span className="text-sm text-zinc-500">Loading…</span>  [edited]
           ) : user ? (
             <>
               <span className="hidden text-sm text-zinc-600 dark:text-zinc-400 sm:block">

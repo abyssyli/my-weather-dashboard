@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import {
@@ -71,3 +69,5 @@ export function useAuth() {
   return value;
 }
 
+
+// update log: auto edit 01

@@ -219,7 +219,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
                   <dd className="text-sm font-medium text-zinc-900 dark:text-zinc-50">
                     {w?.apparent_temperature_c == null
                       ? "—"
-                      : `${w.apparent_temperature_c}°C`}  [edited]
+                      : `${w.apparent_temperature_c}°C`}
                   </dd>
                 </div>
                 <div>
@@ -258,3 +258,5 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     </section>
   );
 }
+
+# minor content update

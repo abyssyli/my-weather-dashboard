@@ -1,10 +1,10 @@
 {
   "name": "weather-pulse",
-  "private": true,  [edited]
+  "private": true,
   "workspaces": [
     "apps/web",
     "apps/worker"
-  ],
+  ],  [edited]
   "scripts": {
     "dev:web": "npm run dev --workspace web",
     "dev:worker": "npm run dev --workspace worker",

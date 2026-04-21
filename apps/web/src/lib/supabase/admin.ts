@@ -15,4 +15,6 @@ export function getSupabaseAdminClient() {
     auth: { persistSession: false, autoRefreshToken: false },
   });
 }
-  [edited]
+
+
+// update log: auto edit 01

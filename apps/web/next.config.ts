@@ -6,6 +6,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
-
-// task4 project adjust
+export default nextConfig;  [edited]

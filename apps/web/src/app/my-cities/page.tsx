@@ -14,7 +14,7 @@ export default function MyCitiesPage() {
         </h1>
         <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
           {user
-            ? "Manage favorites and add new cities via search."
+            ? "Manage favorites and add new cities via search."  [edited]
             : "Sign in to save favorites and unlock Pro features."}
         </p>
 
@@ -25,5 +25,3 @@ export default function MyCitiesPage() {
     </main>
   );
 }
-
-// task4 project adjust
