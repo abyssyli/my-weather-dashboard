@@ -1,3 +1,5 @@
+
+# minor content update
 {
   "name": "web",
   "version": "0.1.0",
@@ -27,5 +29,3 @@
     "typescript": "^5"
   }
 }
-
-// optimize code detail

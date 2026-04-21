@@ -1,6 +1,4 @@
-
-/* minor adjust */
-import type { ReactNode } from "react";
+import type { ReactNode } from "react";  [edited]
 
 export type IconProps = {
   className?: string;

@@ -1,5 +1,5 @@
 
-# minor content update
+/* minor adjust */
 const config = {
   plugins: {
     "@tailwindcss/postcss": {},

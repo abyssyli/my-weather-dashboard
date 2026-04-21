@@ -1,3 +1,1 @@
-
-# minor content update
-@AGENTS.md
+@AGENTS.md  [edited]

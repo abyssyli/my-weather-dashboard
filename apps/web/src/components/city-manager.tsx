@@ -158,7 +158,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     () => locations.filter((l) => favoriteSet.has(l.id)),
     [locations, favoriteSet]
   );
-
+  [edited]
   async function addFavorite() {
     if (!user || !selectedLocationId) return;
     const supabase = getSupabaseBrowserClient();
@@ -230,7 +230,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
   }
 
   async function removeFavorite(locationId: string) {
-    if (!user) return;  [edited]
+    if (!user) return;
     const supabase = getSupabaseBrowserClient();
     setSaving(true);
     setError(null);

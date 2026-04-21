@@ -1,5 +1,3 @@
-
-/* minor adjust */
 import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
@@ -18,3 +16,5 @@ export function getSupabaseAdminClient() {
   });
 }
 
+
+/* daily modify record */

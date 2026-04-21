@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -528,5 +530,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-// update log: auto edit 01

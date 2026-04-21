@@ -1,5 +1,3 @@
-
-// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -1041,7 +1039,7 @@ export function ProDashboard({ user }: { user: User | null }) {
           if (payload.eventType === "DELETE") {
             setCurrentWeather(null);
             return;
-          }
+          }  [edited]
           setCurrentWeather(payload.new as CurrentWeatherRow);
         }
       )

@@ -7,7 +7,7 @@ Architecture:
 Open-Meteo API -> Railway Worker -> Supabase (Postgres + Auth + Realtime) -> Next.js Frontend on Vercel
 
 This project is a system, not just a single app:
-- the worker runs independently on Railway
+- the worker runs independently on Railway  [edited]
 - the frontend runs independently on Vercel
 - Supabase is the shared state layer
 - the frontend never calls the weather API directly
@@ -227,4 +227,3 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
-// task4 project adjust

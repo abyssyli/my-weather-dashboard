@@ -3,13 +3,13 @@ export type LocationRow = {
   name: string;
   country: string | null;
   latitude: number;
-  longitude: number;  [edited]
+  longitude: number;
   timezone: string;
   created_at: string;
 };
 
 export type FavoriteLocationRow = {
-  user_id: string;
+  user_id: string;  [edited]
   location_id: string;
   created_at: string;
 };

@@ -1,5 +1,3 @@
-
-// task4 project adjust
 export type Location = {
   id: string;
   name: string;
@@ -104,3 +102,5 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
+
+// update log: auto edit 01
