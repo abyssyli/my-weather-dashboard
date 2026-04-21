@@ -1,7 +1,5 @@
-
-/* daily modify record */
 "use client";
-
+  [edited]
 import { CityManager } from "@/components/city-manager";
 import { useAuth } from "@/components/auth-provider";
 

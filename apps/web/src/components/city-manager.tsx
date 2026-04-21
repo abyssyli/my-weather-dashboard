@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -60,7 +62,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     const userId = user.id;
 
     async function load() {
-      setLoading(true);  [edited]
+      setLoading(true);
       setError(null);
 
       const [locationsResult, favoritesResult] = await Promise.all([

@@ -4,7 +4,7 @@ export type IconProps = {
   className?: string;
 };
 
-function BaseIcon({  [edited]
+function BaseIcon({
   className,
   children,
 }: IconProps & { children: ReactNode }) {
@@ -120,3 +120,5 @@ export function IconSparkles(props: IconProps) {
     </BaseIcon>
   );
 }
+
+# minor content update

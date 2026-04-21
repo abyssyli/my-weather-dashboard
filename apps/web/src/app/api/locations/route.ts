@@ -1,5 +1,3 @@
-
-/* minor adjust */
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -45,7 +43,7 @@ export async function POST(request: Request) {
   }
 
   let supabase: ReturnType<typeof getSupabaseAdminClient>;
-  try {
+  try {  [edited]
     supabase = getSupabaseAdminClient();
   } catch (e) {
     const message = e instanceof Error ? e.message : "Server misconfiguration";

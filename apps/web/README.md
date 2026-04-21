@@ -1,3 +1,5 @@
+
+/* minor adjust */
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -33,7 +35,7 @@ In the Supabase Dashboard:
 1. Go to SQL Editor
 2. Create a new query
 3. Paste the contents of each file and run it (in the order above)
-  [edited]
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

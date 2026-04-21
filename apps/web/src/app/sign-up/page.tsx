@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
-import { useAuth } from "@/components/auth-provider";  [edited]
+import { useAuth } from "@/components/auth-provider";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -136,3 +136,6 @@ export default function SignUpPage() {
     </main>
   );
 }
+
+
+# minor content update

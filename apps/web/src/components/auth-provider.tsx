@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import {
@@ -66,8 +64,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 }
 
 export function useAuth() {
-  const value = useContext(AuthContext);
+  const value = useContext(AuthContext);  [edited]
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
-

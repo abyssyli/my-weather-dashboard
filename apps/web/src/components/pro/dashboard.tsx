@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -1559,5 +1561,3 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
-
-// optimize code detail

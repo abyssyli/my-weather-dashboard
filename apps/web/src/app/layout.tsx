@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-geist-mono",  [edited]
   subsets: ["latin"],
 });
 
@@ -38,5 +38,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// task4 project adjust

@@ -74,7 +74,7 @@ export type AlertRuleType = "precipitation" | "temperature_max" | "wind_speed";
 export type AlertComparator = "gt" | "gte" | "lt" | "lte";
 
 export type AlertRule = {
-  id: string;  [edited]
+  id: string;
   user_id: string;
   location_id: string | null;
   rule_type: AlertRuleType;
@@ -102,3 +102,5 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
+
+/* daily modify record */

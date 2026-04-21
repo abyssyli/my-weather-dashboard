@@ -108,7 +108,7 @@ export function Header() {
               >
                 Sign out
               </button>
-            </>
+            </>  [edited]
           ) : (
             <>
               <Link
@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-/* daily modify record */

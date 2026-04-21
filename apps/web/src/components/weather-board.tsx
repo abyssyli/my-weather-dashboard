@@ -18,7 +18,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
   >({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
+  [edited]
   const locationIds = useMemo(
     () =>
       user
@@ -84,7 +84,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
       }
 
       setLocations((result.data ?? []) as LocationRow[]);
-      setLoading(false);  [edited]
+      setLoading(false);
     }
 
     void loadLocations();
