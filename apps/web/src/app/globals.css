@@ -14,7 +14,7 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);  [edited]
+  color: var(--foreground);
   font-family:
     ui-sans-serif,
     system-ui,
@@ -29,3 +29,5 @@ body {
     "Apple Color Emoji",
     "Segoe UI Emoji";
 }
+
+/* minor adjust */

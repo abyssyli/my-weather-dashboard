@@ -142,7 +142,7 @@ Use the classroom-style pattern:
 - clearly show when data was last updated
 
 ## Worker Requirements
-The worker runs independently from users.  [edited]
+The worker runs independently from users.
 
 Responsibilities:
 1. load all cities from public.locations
@@ -227,3 +227,4 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
+// update log: auto edit 01

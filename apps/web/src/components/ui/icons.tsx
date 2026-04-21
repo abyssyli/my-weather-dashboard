@@ -1,5 +1,5 @@
 
-/* daily modify record */
+# minor content update
 import type { ReactNode } from "react";
 
 export type IconProps = {

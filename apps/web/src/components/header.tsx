@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import Link from "next/link";
@@ -14,7 +16,7 @@ import {
 } from "@/components/ui/icons";
 
 function NavLink({
-  href,  [edited]
+  href,
   label,
   icon,
 }: {

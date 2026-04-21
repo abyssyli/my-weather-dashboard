@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 export type Location = {
   id: string;
   name: string;
@@ -91,7 +93,7 @@ export type SyncRunStatus = "running" | "success" | "partial" | "failed";
 export type SyncRun = {
   id: string;
   started_at: string;
-  finished_at: string | null;  [edited]
+  finished_at: string | null;
   status: SyncRunStatus;
   locations_total: number;
   locations_ok: number;

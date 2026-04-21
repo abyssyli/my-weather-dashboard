@@ -1,7 +1,9 @@
+
+// optimize code detail
 {
   "name": "weather-pulse",
   "private": true,
-  "workspaces": [  [edited]
+  "workspaces": [
     "apps/web",
     "apps/worker"
   ],
@@ -12,3 +14,4 @@
     "start:worker": "npm run start --workspace worker"
   }
 }
+

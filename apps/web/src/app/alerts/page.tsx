@@ -1,5 +1,3 @@
-
-// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -300,7 +298,7 @@ export default function AlertsPage() {
       setSaving(false);
       return;
     }
-
+  [edited]
     const supabase = getSupabaseBrowserClient();
     const result = await supabase
       .from("alert_rules")
