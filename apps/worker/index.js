@@ -79,7 +79,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     const err = new Error(
       `Open-Meteo error: ${response.status} ${response.statusText}`
     );
-    err.status = response.status;
+    err.status = response.status;  [edited]
     throw err;
   }
 
@@ -292,5 +292,3 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-/* daily modify record */

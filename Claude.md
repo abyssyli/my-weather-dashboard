@@ -205,7 +205,7 @@ In apps/worker/package.json use:
 
 ## Important Safety Rules
 - never put service role keys in NEXT_PUBLIC variables
-- never import worker secrets into the frontend  [edited]
+- never import worker secrets into the frontend
 - keep worker and frontend loosely coupled through Supabase only
 - no hardcoded secrets in the repo
 - all schema changes should update this CLAUDE.md
@@ -215,7 +215,7 @@ When working on this repo:
 1. preserve the monorepo structure
 2. keep frontend and worker independent
 3. prefer small, reviewable changes
-4. if adding a new weather field:
+4. if adding a new weather field:  [edited]
    - update schema
    - update worker normalization
    - update frontend types and UI

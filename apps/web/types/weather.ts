@@ -63,7 +63,7 @@ export type HourlyForecast = {
   location_id: string;
   forecast_time: string;
   temperature_c: number | null;
-  precipitation_probability: number | null;
+  precipitation_probability: number | null;  [edited]
   wind_speed_kmh: number | null;
   weather_code: number | null;
   is_day: boolean | null;
@@ -73,7 +73,7 @@ export type HourlyForecast = {
 export type AlertRuleType = "precipitation" | "temperature_max" | "wind_speed";
 export type AlertComparator = "gt" | "gte" | "lt" | "lte";
 
-export type AlertRule = {  [edited]
+export type AlertRule = {
   id: string;
   user_id: string;
   location_id: string | null;

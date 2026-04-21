@@ -68,7 +68,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
       }
 
       const result = await supabase
-        .from("locations")
+        .from("locations")  [edited]
         .select(
           "id,name,country,latitude,longitude,timezone,created_at"
         )
@@ -79,7 +79,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
 
       if (result.error) {
         setError(result.error.message);
-        setLoading(false);  [edited]
+        setLoading(false);
         return;
       }
 

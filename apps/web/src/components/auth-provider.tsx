@@ -27,7 +27,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     let active = true;
 
     supabase.auth
-      .getSession()
+      .getSession()  [edited]
       .then(({ data }) => {
         if (!active) return;
         setSession(data.session ?? null);
@@ -45,7 +45,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
     );
 
-    return () => {  [edited]
+    return () => {
       active = false;
       subscription.subscription.unsubscribe();
     };

@@ -144,4 +144,4 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
 }
 
 
-# minor content update
+// optimize code detail

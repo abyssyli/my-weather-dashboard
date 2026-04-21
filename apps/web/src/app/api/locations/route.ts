@@ -1,3 +1,5 @@
+
+// task4 project adjust
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -68,7 +70,7 @@ export async function POST(request: Request) {
   }
 
   if (!upsertResult.data) {
-    return NextResponse.json(  [edited]
+    return NextResponse.json(
       { error: "Failed to create location" },
       { status: 500 }
     );

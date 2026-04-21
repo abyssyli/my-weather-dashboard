@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -111,7 +109,7 @@ export default function SignInPage() {
         <div className="mt-4 flex items-center justify-between text-sm">
           <button
             type="button"
-            onClick={() => {
+            onClick={() => {  [edited]
               setError(null);
               setMessage(null);
               setMode(mode === "sign-in" ? "sign-up" : "sign-in");
@@ -138,4 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-

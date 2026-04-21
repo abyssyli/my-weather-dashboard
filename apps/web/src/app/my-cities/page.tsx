@@ -18,12 +18,10 @@ export default function MyCitiesPage() {
             : "Sign in to save favorites and unlock Pro features."}
         </p>
 
-        <div className="mt-6 max-w-xl">
+        <div className="mt-6 max-w-xl">  [edited]
           <CityManager />
         </div>
       </div>
     </main>
   );
 }
-
-// optimize code detail

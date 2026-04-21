@@ -39,7 +39,7 @@ export default function SignUpPage() {
       }
       setMessage("Account created. Check your email to confirm, then sign in.");
       setMode("sign-in");
-      setSubmitting(false);  [edited]
+      setSubmitting(false);
       return;
     }
 
@@ -128,7 +128,7 @@ export default function SignUpPage() {
           </p>
         ) : null}
         {message ? (
-          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">  [edited]
             {message}
           </p>
         ) : null}
