@@ -17,4 +17,4 @@ export function getSupabaseAdminClient() {
 }
 
 
-// update log: auto edit 01
+/* minor adjust */

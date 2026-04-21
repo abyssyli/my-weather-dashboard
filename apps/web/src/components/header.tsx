@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import Link from "next/link";
@@ -95,7 +97,7 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           {loading ? (
-            <span className="text-sm text-zinc-500">Loading…</span>  [edited]
+            <span className="text-sm text-zinc-500">Loading…</span>
           ) : user ? (
             <>
               <span className="hidden text-sm text-zinc-600 dark:text-zinc-400 sm:block">

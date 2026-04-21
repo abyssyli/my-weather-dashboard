@@ -1,7 +1,5 @@
-
-/* minor adjust */
 import { NextResponse } from "next/server";
-import { getSupabaseAdminClient } from "@/lib/supabase/admin";
+import { getSupabaseAdminClient } from "@/lib/supabase/admin";  [edited]
 
 type CreateLocationInput = {
   name: string;

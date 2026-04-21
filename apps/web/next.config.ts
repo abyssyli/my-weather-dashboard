@@ -6,4 +6,6 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;  [edited]
+export default nextConfig;
+
+// update log: auto edit 01

@@ -7,7 +7,7 @@ export type LocationRow = {
   timezone: string;
   created_at: string;
 };
-
+  [edited]
 export type FavoriteLocationRow = {
   user_id: string;
   location_id: string;
@@ -20,7 +20,7 @@ export type CurrentWeatherRow = {
   apparent_temperature_c: number | null;
   relative_humidity: number | null;
   wind_speed_kmh: number | null;
-  precipitation: number | null;  [edited]
+  precipitation: number | null;
   weather_code: number | null;
   is_day: boolean | null;
   observed_at: string | null;

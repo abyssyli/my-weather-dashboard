@@ -111,7 +111,7 @@ export function IconDatabase(props: IconProps) {
   );
 }
 
-export function IconSparkles(props: IconProps) {  [edited]
+export function IconSparkles(props: IconProps) {
   return (
     <BaseIcon {...props}>
       <path d="M12 2l1.2 3.8L17 7l-3.8 1.2L12 12l-1.2-3.8L7 7l3.8-1.2L12 2Z" />
@@ -120,3 +120,5 @@ export function IconSparkles(props: IconProps) {  [edited]
     </BaseIcon>
   );
 }
+
+// task4 project adjust

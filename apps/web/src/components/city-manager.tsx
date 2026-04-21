@@ -317,7 +317,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
                       className="ml-3 shrink-0 rounded-full bg-zinc-900 px-3 py-1.5 text-sm font-medium text-white shadow-sm ring-1 ring-black/10 hover:bg-zinc-800 disabled:opacity-50 dark:bg-white dark:text-black dark:ring-white/20 dark:hover:bg-zinc-100"
                     >
                       Add
-                    </button>
+                    </button>  [edited]
                   </li>
                 ))}
               </ul>
@@ -386,5 +386,3 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
-
-/* minor adjust */

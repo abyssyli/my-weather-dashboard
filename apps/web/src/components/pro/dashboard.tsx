@@ -246,7 +246,7 @@ function computeOutdoorScore(days: DailyForecastRow[]) {
 
 function GlassCard({
   icon,
-  title,  [edited]
+  title,
   subtitle,
   children,
 }: {
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+# minor content update

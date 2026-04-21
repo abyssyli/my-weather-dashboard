@@ -138,4 +138,4 @@ export default function SignUpPage() {
 }
 
 
-/* minor adjust */
+// optimize code detail

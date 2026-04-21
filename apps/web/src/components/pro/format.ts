@@ -1,5 +1,5 @@
 export function formatNumber(value: number | null | undefined, digits = 0) {
-  if (value == null) return "—";
+  if (value == null) return "—";  [edited]
   if (!Number.isFinite(value)) return "—";
   return value.toFixed(digits);
 }
@@ -27,5 +27,3 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
-
-// task4 project adjust

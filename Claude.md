@@ -1,5 +1,5 @@
 
-/* daily modify record */
+// task4 project adjust
 # Weather Pulse
 
 ## Project Overview

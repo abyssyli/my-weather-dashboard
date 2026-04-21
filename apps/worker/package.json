@@ -1,5 +1,5 @@
 {
-  "name": "worker",  [edited]
+  "name": "worker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,3 +11,6 @@
     "dotenv": "^16.6.1"
   }
 }
+
+
+/* daily modify record */
