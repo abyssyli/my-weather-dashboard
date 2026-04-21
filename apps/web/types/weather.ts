@@ -1,5 +1,5 @@
 export type Location = {
-  id: string;
+  id: string;  [edited]
   name: string;
   country: string | null;
   latitude: number;
@@ -82,7 +82,7 @@ export type AlertRule = {
   threshold: number;
   horizon_days: number;
   enabled: boolean;
-  created_at: string;  [edited]
+  created_at: string;
   updated_at: string;
 };
 

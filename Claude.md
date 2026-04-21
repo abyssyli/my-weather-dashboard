@@ -163,7 +163,7 @@ Recommended default polling interval:
 - 10 minutes (POLL_INTERVAL_MS=600000)
 
 ## Environment Variables
-  [edited]
+
 ### apps/web/.env.local
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
@@ -187,7 +187,7 @@ npm install
 npm run dev
 
 ## Suggested Worker Package Scripts
-In apps/worker/package.json use:
+In apps/worker/package.json use:  [edited]
 - "start": "node index.js"
 - "dev": "node --watch index.js"
 

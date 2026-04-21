@@ -1,8 +1,10 @@
+
+# minor content update
 {
   "name": "worker",
   "version": "0.1.0",
   "private": true,
-  "scripts": {  [edited]
+  "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js"
   },
@@ -11,3 +13,4 @@
     "dotenv": "^16.6.1"
   }
 }
+

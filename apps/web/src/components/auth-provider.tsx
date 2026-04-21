@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import {
@@ -39,7 +37,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         if (!active) return;
         setSession(null);
         setLoading(false);
-      });
+      });  [edited]
 
     const { data: subscription } = supabase.auth.onAuthStateChange(
       (_event, newSession) => {
@@ -70,4 +68,3 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
-

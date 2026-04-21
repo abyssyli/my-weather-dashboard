@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -92,7 +94,7 @@ export default function SettingsPage() {
         supabase
           .from("favorite_locations")
           .select(
-            "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"  [edited]
+            "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"
           )
           .eq("user_id", user.id),
       ]);

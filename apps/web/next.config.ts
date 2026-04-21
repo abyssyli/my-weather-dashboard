@@ -1,4 +1,6 @@
-import type { NextConfig } from "next";  [edited]
+
+/* daily modify record */
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   typescript: {

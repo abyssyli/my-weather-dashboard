@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
-type CreateLocationInput = {  [edited]
+type CreateLocationInput = {
   name: string;
   country?: string | null;
   latitude: number;
@@ -76,3 +76,5 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ location: upsertResult.data });
 }
+
+// optimize code detail

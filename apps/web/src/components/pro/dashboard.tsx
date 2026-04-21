@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -1420,7 +1418,7 @@ export function ProDashboard({ user }: { user: User | null }) {
                     {outdoor.label}
                   </p>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">  [edited]
                   {outdoor.reasons.length === 0 ? (
                     <span className="rounded-full bg-emerald-500/10 px-3 py-1.5 text-xs font-medium text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-300">
                       Comfortable

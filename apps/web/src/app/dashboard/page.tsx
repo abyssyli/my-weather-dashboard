@@ -8,4 +8,4 @@ export default function DashboardPage() {
   return <ProDashboard user={user} />;
 }
 
-# minor content update
+/* minor adjust */
