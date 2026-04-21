@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 type GeocodingResult = {
   id: number;
-  name: string;
+  name: string;  [edited]
   latitude: number;
   longitude: number;
   country?: string;
@@ -16,7 +16,7 @@ export async function GET(request: Request) {
 
   if (q.length < 2) {
     return NextResponse.json({ results: [] });
-  }  [edited]
+  }
 
   const apiUrl = new URL("https://geocoding-api.open-meteo.com/v1/search");
   apiUrl.searchParams.set("name", q);

@@ -7,7 +7,7 @@ import {
   useMemo,
   useState,
 } from "react";
-import type { Session, User } from "@supabase/supabase-js";  [edited]
+import type { Session, User } from "@supabase/supabase-js";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 
 type AuthContextValue = {
@@ -68,3 +68,6 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
+
+
+// update log: auto edit 01

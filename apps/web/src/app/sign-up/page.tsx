@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import { useEffect, useState } from "react";
@@ -57,7 +59,7 @@ export default function SignUpPage() {
     router.refresh();
     setSubmitting(false);
   }
-  [edited]
+
   return (
     <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 py-10">
       <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
@@ -136,3 +138,4 @@ export default function SignUpPage() {
     </main>
   );
 }
+

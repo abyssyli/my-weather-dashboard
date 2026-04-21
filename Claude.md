@@ -83,7 +83,7 @@ Constraints:
 Stores the latest weather snapshot for each location.
 
 Columns:
-- location_id uuid primary key references public.locations(id) on delete cascade
+- location_id uuid primary key references public.locations(id) on delete cascade  [edited]
 - temperature_c numeric
 - apparent_temperature_c numeric
 - relative_humidity integer
@@ -175,7 +175,7 @@ OPEN_METEO_BASE_URL=https://api.open-meteo.com/v1/forecast
 POLL_INTERVAL_MS=600000
 
 ## Local Development Commands
-  [edited]
+
 ### web
 cd apps/web
 npm install

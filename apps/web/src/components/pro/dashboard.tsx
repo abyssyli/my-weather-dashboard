@@ -708,7 +708,7 @@ export function ProDashboard({ user }: { user: User | null }) {
   const defaultLocationId = preferences?.default_location_id ?? null;
 
   useEffect(() => {
-    if (!user) {  [edited]
+    if (!user) {
       setAlertRules([]);
       setAlertsLoading(false);
       setAlertsError(null);
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+# minor content update

@@ -36,8 +36,11 @@ export function describeWeatherCode(code: number | null | undefined) {
 }
 
 export function formatUpdatedAt(iso: string | null | undefined) {
-  if (!iso) return "—";  [edited]
+  if (!iso) return "—";
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
+
+
+// optimize code detail

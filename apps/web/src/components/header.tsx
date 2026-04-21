@@ -26,7 +26,7 @@ function NavLink({
   const active = pathname === href;
 
   return (
-    <Link
+    <Link  [edited]
       href={href}
       className={[
         "group flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
@@ -59,7 +59,7 @@ export function Header() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-6">
           <Link
-            href="/dashboard"  [edited]
+            href="/dashboard"
             className="text-[15px] font-semibold tracking-[-0.01em] text-zinc-900 dark:text-zinc-50"
           >
             Weather Pulse

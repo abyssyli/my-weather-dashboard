@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -37,7 +39,7 @@ export async function POST(request: Request) {
   }
   if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) {
     return NextResponse.json(
-      { error: "latitude/longitude must be numbers" },  [edited]
+      { error: "latitude/longitude must be numbers" },
       { status: 400 }
     );
   }

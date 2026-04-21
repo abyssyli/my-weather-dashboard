@@ -13,7 +13,7 @@ export function formatDateISO(dateIso: string) {
     day: "numeric",
   });
 }
-  [edited]
+
 export function formatDateTimeISO(dateIso: string) {
   const date = new Date(dateIso);
   if (Number.isNaN(date.getTime())) return dateIso;
@@ -27,3 +27,5 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
+
+// optimize code detail

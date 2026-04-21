@@ -1,6 +1,6 @@
 export type Location = {
   id: string;
-  name: string;  [edited]
+  name: string;
   country: string | null;
   latitude: number;
   longitude: number;
@@ -102,3 +102,5 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
+
+# minor content update

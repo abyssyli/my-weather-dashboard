@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -68,7 +70,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
           .from("locations")
           .select(
             "id,name,country,latitude,longitude,timezone,created_at"
-          )  [edited]
+          )
           .order("name", { ascending: true }),
         supabase
           .from("favorite_locations")

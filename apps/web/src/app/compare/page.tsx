@@ -54,7 +54,7 @@ function MultiCityTempChart({
   const pad = Math.max(1, (max - min) * 0.12);
   const yMin = min - pad;
   const yMax = max + pad;
-  const range = yMax - yMin || 1;
+  const range = yMax - yMin || 1;  [edited]
 
   const left = 34;
   const right = 10;
@@ -528,5 +528,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-// task4 project adjust
