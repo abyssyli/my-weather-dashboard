@@ -3,7 +3,7 @@
 import {
   createContext,
   useContext,
-  useEffect,  [edited]
+  useEffect,
   useMemo,
   useState,
 } from "react";
@@ -68,3 +68,4 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
+

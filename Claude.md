@@ -51,6 +51,55 @@ Deployment:
 - Vercel for apps/web
 - Railway for apps/worker
 
+## Implementation Checklist (Rubric)
+- Next.js + Tailwind CSS frontend: apps/web (Next 16 + Tailwind v4)
+- Background worker on Railway: apps/worker (Node.js long-running poller)
+- Supabase as shared data layer: worker writes, frontend reads
+- Supabase Realtime: frontend subscribes to Postgres changes (no manual refresh)
+- Auth: Supabase Auth (email/password)
+- Personalization: favorites + user_preferences + alert_rules
+- Env vars: local .env.local + platform dashboards (Vercel/Railway)
+- Supabase MCP: optional tooling; schema is defined in sql/*.sql (can be applied via SQL Editor or MCP)
+- CLAUDE.md exists at repo root and documents architecture + data flow
+- Git history shows iterative development (multiple commits)
+- Deployment split: Vercel = apps/web, Railway = apps/worker
+- Public demo link: requires Vercel + Railway + Supabase project to be configured and running
+
+## Recommended Workflow
+1. Select data source: confirm polling target, update frequency, free tier limits; test the API first
+2. Plan architecture: keep worker + Supabase + frontend loosely coupled through the DB
+3. Set up Supabase:
+   - apply sql/001_schema.sql, sql/002_rls.sql, sql/003_seed_locations.sql
+   - enable Realtime for the needed tables (e.g. current_weather, sync_runs)
+   - configure Auth + RLS policies
+4. Build the worker:
+   - poll external API on an interval
+   - normalize response
+   - upsert into Supabase tables
+   - write sync logs (success/failed) for observability
+5. Build the frontend:
+   - read data from Supabase
+   - subscribe to realtime updates
+   - render personalized views for the signed-in user (favorites/preferences/alerts)
+6. Deploy:
+   - worker -> Railway (GitHub integration + environment variables)
+   - frontend -> Vercel (root directory + environment variables)
+   - end-to-end verification
+7. Classmate test:
+   - verify sign up + login works
+   - verify personalization works
+   - verify realtime updates appear without refresh
+
+## Advanced Goals (Optional, Weather Pulse)
+- Multiple data sources: combine Open-Meteo weather with optional APIs (air quality, pollen, UV details, severe alerts) via the worker, stored in normalized tables
+- Historical views: keep rolling history for hourly/daily forecasts and render “last 7/30 days” trend pages (temperature/rain/wind) instead of only “latest”
+- Notifications / alerting: persist triggered alerts (notifications table), show an inbox in the UI, and optionally send email notifications through a provider
+- Visualization upgrades:
+  - Charts: multi-metric charts (temp/rain/wind) with axes, tooltips, and comparisons across cities
+  - Graphics: weather icons, condition badges, and summary “score” cards (comfort/outdoor/commute)
+  - Maps: plot saved cities on a lightweight map (SVG projection), add precipitation/wind overlays, and optionally a heatmap view by region
+- Worker observability: show last poll time, status, and error counts in the frontend (sync_runs dashboard), with drill-down per location
+
 ## Data Model
 
 ### locations
@@ -167,8 +216,9 @@ Recommended default polling interval:
 ### apps/web/.env.local
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
 
-### apps/worker/.env
+### apps/worker/.env.local
 SUPABASE_URL=
 SUPABASE_SERVICE_ROLE_KEY=
 OPEN_METEO_BASE_URL=https://api.open-meteo.com/v1/forecast
@@ -196,6 +246,7 @@ In apps/worker/package.json use:
 - deploy apps/web only
 - set root directory to apps/web
 - add NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY
+- add SUPABASE_SERVICE_ROLE_KEY only if using server routes that write to Supabase (e.g. /api/locations)
 
 ### Railway
 - deploy apps/worker only
@@ -227,4 +278,3 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
-# minor content update

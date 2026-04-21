@@ -33,7 +33,7 @@ export default function SignInPage() {
         password,
       });
       if (result.error) {
-        setError(result.error.message);  [edited]
+        setError(result.error.message);
         setSubmitting(false);
         return;
       }
@@ -136,3 +136,4 @@ export default function SignInPage() {
     </main>
   );
 }
+

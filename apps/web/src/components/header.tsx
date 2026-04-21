@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-# minor content update

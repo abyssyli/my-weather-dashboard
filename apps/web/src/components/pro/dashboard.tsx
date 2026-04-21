@@ -532,14 +532,26 @@ function CityPicker({
 function HourlyTrend({
   items,
   temperatureUnit,
+  windSpeedUnit,
 }: {
   items: HourlyForecastRow[];
   temperatureUnit: TemperatureUnit;
+  windSpeedUnit: WindSpeedUnit;
 }) {
   const temps = items
     .map((i) => i.temperature_c)
     .filter((v): v is number => typeof v === "number" && Number.isFinite(v))
     .map((v) => (temperatureUnit === "c" ? v : cToF(v)));
+
+  const precip = items
+    .map((i) => i.precipitation_probability)
+    .filter((v): v is number => typeof v === "number" && Number.isFinite(v))
+    .map((v) => clamp(v, 0, 100));
+
+  const wind = items
+    .map((i) => i.wind_speed_kmh)
+    .filter((v): v is number => typeof v === "number" && Number.isFinite(v))
+    .map((v) => (windSpeedUnit === "kmh" ? v : kmhToMph(v)));
 
   const min = temps.length ? Math.min(...temps) : 0;
   const max = temps.length ? Math.max(...temps) : 0;
@@ -549,8 +561,12 @@ function HourlyTrend({
   const tickMid = min + range / 2;
   const tickMax = max;
 
+  const windMin = wind.length ? Math.min(...wind) : 0;
+  const windMax = wind.length ? Math.max(...wind) : 0;
+  const windRange = windMax - windMin || 1;
+
   const left = 14;
-  const right = 4;
+  const right = 10;
   const top = 8;
   const bottom = 18;
   const width = 120;
@@ -565,6 +581,18 @@ function HourlyTrend({
       const value = temperatureUnit === "c" ? raw : cToF(raw);
       const x = left + (idx / Math.max(1, items.length - 1)) * plotWidth;
       const y = top + (1 - (value - min) / range) * plotHeight;
+      return `${x.toFixed(2)},${y.toFixed(2)}`;
+    })
+    .filter(Boolean)
+    .join(" ");
+
+  const windPoints = items
+    .map((i, idx) => {
+      const raw = i.wind_speed_kmh;
+      if (raw == null || !Number.isFinite(raw)) return null;
+      const value = windSpeedUnit === "kmh" ? raw : kmhToMph(raw);
+      const x = left + (idx / Math.max(1, items.length - 1)) * plotWidth;
+      const y = top + (1 - (value - windMin) / windRange) * plotHeight;
       return `${x.toFixed(2)},${y.toFixed(2)}`;
     })
     .filter(Boolean)
@@ -594,10 +622,17 @@ function HourlyTrend({
     <div>
       <div className="flex items-end justify-between gap-4">
         <div>
-          <p className="text-xs text-zinc-500">Temperature range</p>
+          <p className="text-xs text-zinc-500">Temperature</p>
           <p className="mt-1 text-sm font-medium text-zinc-900 dark:text-zinc-50">
             {temps.length
               ? `${formatNumber(min, 1)}–${formatNumber(max, 1)}°${temperatureUnit.toUpperCase()}`
+              : "—"}
+          </p>
+          <p className="mt-1 text-xs text-zinc-500">
+            Rain max{" "}
+            {precip.length ? `${formatNumber(Math.max(...precip))}%` : "—"} · Wind{" "}
+            {wind.length
+              ? `${formatNumber(windMin, 0)}–${formatNumber(windMax, 0)} ${windSpeedUnit === "kmh" ? "km/h" : "mph"}`
               : "—"}
           </p>
         </div>
@@ -629,6 +664,28 @@ function HourlyTrend({
             />
           </g>
 
+          <g>
+            {items.map((i, idx) => {
+              const v = i.precipitation_probability;
+              if (v == null || !Number.isFinite(v)) return null;
+              const x0 = left + (idx / Math.max(1, items.length)) * plotWidth;
+              const barW = plotWidth / Math.max(1, items.length);
+              const h = (clamp(v, 0, 100) / 100) * plotHeight;
+              return (
+                <rect
+                  key={idx}
+                  x={x0 + 0.5}
+                  y={top + plotHeight - h}
+                  width={Math.max(1, barW - 1)}
+                  height={h}
+                  fill="currentColor"
+                  className="text-sky-500/35 dark:text-sky-400/30"
+                  rx="1"
+                />
+              );
+            })}
+          </g>
+
           <g className="text-zinc-500" fill="currentColor">
             <text x={left - 2} y={top + 3} fontSize="7" textAnchor="end">
               {formatNumber(tickMax, 1)}
@@ -650,6 +707,32 @@ function HourlyTrend({
               strokeLinejoin="round"
               strokeLinecap="round"
             />
+          </g>
+
+          <g>
+            <polyline
+              points={windPoints}
+              fill="none"
+              stroke="#16a34a"
+              strokeWidth="1.8"
+              strokeLinejoin="round"
+              strokeLinecap="round"
+              opacity="0.9"
+            />
+          </g>
+
+          <g className="text-zinc-500" fill="currentColor">
+            <text x={width - right + 1} y={top + 3} fontSize="7" textAnchor="start">
+              {wind.length ? formatNumber(windMax, 0) : "—"}
+            </text>
+            <text
+              x={width - right + 1}
+              y={top + plotHeight + 3}
+              fontSize="7"
+              textAnchor="start"
+            >
+              {wind.length ? formatNumber(windMin, 0) : "—"}
+            </text>
           </g>
 
           <g className="text-zinc-500" fill="currentColor">
@@ -684,6 +767,394 @@ function HourlyTrend({
   );
 }
 
+function DailyTempBand({
+  items,
+  temperatureUnit,
+}: {
+  items: DailyForecastRow[];
+  temperatureUnit: TemperatureUnit;
+}) {
+  const maxValues = items
+    .map((d) => d.temp_max_c)
+    .filter((v): v is number => typeof v === "number" && Number.isFinite(v))
+    .map((v) => (temperatureUnit === "c" ? v : cToF(v)));
+  const minValues = items
+    .map((d) => d.temp_min_c)
+    .filter((v): v is number => typeof v === "number" && Number.isFinite(v))
+    .map((v) => (temperatureUnit === "c" ? v : cToF(v)));
+
+  const all = [...maxValues, ...minValues];
+  const min = all.length ? Math.min(...all) : 0;
+  const max = all.length ? Math.max(...all) : 0;
+  const pad = Math.max(1, (max - min) * 0.12);
+  const yMin = min - pad;
+  const yMax = max + pad;
+  const range = yMax - yMin || 1;
+
+  const left = 20;
+  const right = 8;
+  const top = 10;
+  const bottom = 18;
+  const width = 520;
+  const height = 160;
+  const plotWidth = width - left - right;
+  const plotHeight = height - top - bottom;
+
+  const upper = items
+    .map((d, idx) => {
+      const raw = d.temp_max_c;
+      if (raw == null || !Number.isFinite(raw)) return null;
+      const v = temperatureUnit === "c" ? raw : cToF(raw);
+      const x = left + (idx / Math.max(1, items.length - 1)) * plotWidth;
+      const y = top + (1 - (v - yMin) / range) * plotHeight;
+      return { x, y };
+    })
+    .filter(Boolean) as Array<{ x: number; y: number }>;
+
+  const lower = items
+    .map((d, idx) => {
+      const raw = d.temp_min_c;
+      if (raw == null || !Number.isFinite(raw)) return null;
+      const v = temperatureUnit === "c" ? raw : cToF(raw);
+      const x = left + (idx / Math.max(1, items.length - 1)) * plotWidth;
+      const y = top + (1 - (v - yMin) / range) * plotHeight;
+      return { x, y };
+    })
+    .filter(Boolean) as Array<{ x: number; y: number }>;
+
+  const areaPath =
+    upper.length && lower.length && upper.length === lower.length
+      ? `M ${upper.map((p) => `${p.x.toFixed(2)} ${p.y.toFixed(2)}`).join(" L ")} L ${lower
+          .slice()
+          .reverse()
+          .map((p) => `${p.x.toFixed(2)} ${p.y.toFixed(2)}`)
+          .join(" L ")} Z`
+      : null;
+
+  const upperPath = upper.map((p) => `${p.x.toFixed(2)},${p.y.toFixed(2)}`).join(" ");
+  const lowerPath = lower.map((p) => `${p.x.toFixed(2)},${p.y.toFixed(2)}`).join(" ");
+
+  const yTicks = [
+    { v: yMax, label: formatNumber(yMax, 0) },
+    { v: yMin + range / 2, label: formatNumber(yMin + range / 2, 0) },
+    { v: yMin, label: formatNumber(yMin, 0) },
+  ];
+
+  const xTicks = [
+    { idx: 0, label: items[0] ? formatDateISO(items[0].forecast_date).split(" ")[0] : "" },
+    {
+      idx: Math.min(7, items.length - 1),
+      label: items[Math.min(7, items.length - 1)]
+        ? formatDateISO(items[Math.min(7, items.length - 1)].forecast_date).split(" ")[0]
+        : "",
+    },
+    {
+      idx: items.length - 1,
+      label: items[items.length - 1]
+        ? formatDateISO(items[items.length - 1].forecast_date).split(" ")[0]
+        : "",
+    },
+  ]
+    .filter((t) => t.idx >= 0 && t.idx < items.length)
+    .filter((t, i, arr) => arr.findIndex((x) => x.idx === t.idx) === i);
+
+  return (
+    <div className="rounded-xl border border-zinc-200/80 bg-white/60 p-3 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-zinc-800/80 dark:bg-black/30 dark:ring-white/10">
+      <div className="flex items-end justify-between gap-4">
+        <div>
+          <p className="text-xs text-zinc-500">15-day temperature band</p>
+          <p className="mt-1 text-sm font-medium text-zinc-900 dark:text-zinc-50">
+            {all.length
+              ? `${formatNumber(min, 1)}–${formatNumber(max, 1)}°${temperatureUnit.toUpperCase()}`
+              : "—"}
+          </p>
+        </div>
+      </div>
+
+      <svg viewBox={`0 0 ${width} ${height}`} className="mt-3 h-40 w-full">
+        <g className="text-zinc-900/10 dark:text-white/10" stroke="currentColor">
+          <line x1={left} y1={top} x2={width - right} y2={top} strokeWidth="1" />
+          <line
+            x1={left}
+            y1={top + plotHeight / 2}
+            x2={width - right}
+            y2={top + plotHeight / 2}
+            strokeWidth="1"
+          />
+          <line
+            x1={left}
+            y1={top + plotHeight}
+            x2={width - right}
+            y2={top + plotHeight}
+            strokeWidth="1"
+          />
+        </g>
+
+        <g className="text-zinc-500" fill="currentColor">
+          {yTicks.map((t, i) => {
+            const y = top + (1 - (t.v - yMin) / range) * plotHeight;
+            return (
+              <text key={i} x={left - 6} y={y + 3} fontSize="9" textAnchor="end">
+                {t.label}
+              </text>
+            );
+          })}
+        </g>
+
+        {areaPath ? (
+          <path d={areaPath} fill="currentColor" className="text-sky-500/20" />
+        ) : null}
+
+        <polyline
+          points={upperPath}
+          fill="none"
+          stroke="currentColor"
+          className="text-zinc-900 dark:text-zinc-50"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          opacity="0.9"
+        />
+        <polyline
+          points={lowerPath}
+          fill="none"
+          stroke="currentColor"
+          className="text-zinc-900 dark:text-zinc-50"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          opacity="0.55"
+        />
+
+        <g className="text-zinc-500" fill="currentColor">
+          {xTicks.map((t) => {
+            const x = left + (t.idx / Math.max(1, items.length - 1)) * plotWidth;
+            return (
+              <g key={t.idx}>
+                <line
+                  x1={x}
+                  y1={top + plotHeight}
+                  x2={x}
+                  y2={top + plotHeight + 3}
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  opacity="0.35"
+                />
+                <text x={x} y={height - 6} fontSize="9" textAnchor="middle">
+                  {t.label}
+                </text>
+              </g>
+            );
+          })}
+        </g>
+      </svg>
+    </div>
+  );
+}
+
+function GeoMap({
+  locations,
+  selectedLocationId,
+  weatherById,
+  temperatureUnit,
+}: {
+  locations: LocationRow[];
+  selectedLocationId: string;
+  weatherById: Record<
+    string,
+    {
+      temperature_c: number | null;
+      weather_code: number | null;
+      is_day: boolean | null;
+      updated_at: string;
+    }
+  >;
+  temperatureUnit: TemperatureUnit;
+}) {
+  const width = 520;
+  const height = 260;
+  const pad = 10;
+  const plotWidth = width - pad * 2;
+  const plotHeight = height - pad * 2;
+
+  const points = useMemo(() => {
+    return locations
+      .filter((l) => Number.isFinite(l.latitude) && Number.isFinite(l.longitude))
+      .map((l) => {
+        const x = pad + ((l.longitude + 180) / 360) * plotWidth;
+        const y = pad + ((90 - l.latitude) / 180) * plotHeight;
+        return { id: l.id, name: l.name, country: l.country, x, y };
+      });
+  }, [locations, plotWidth, plotHeight]);
+
+  const selected = useMemo(
+    () => locations.find((l) => l.id === selectedLocationId) ?? null,
+    [locations, selectedLocationId]
+  );
+
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const hovered = useMemo(() => {
+    if (!hoveredId) return null;
+    const p = points.find((x) => x.id === hoveredId) ?? null;
+    if (!p) return null;
+    return { point: p, weather: weatherById[hoveredId] ?? null };
+  }, [hoveredId, points, weatherById]);
+
+  function tempColor(tC: number | null) {
+    if (tC == null || !Number.isFinite(tC)) return "#0f172a";
+    const t = clamp((tC + 5) / 40, 0, 1);
+    const r = Math.round(37 + (244 - 37) * t);
+    const g = Math.round(99 + (63 - 99) * t);
+    const b = Math.round(235 + (94 - 235) * t);
+    return `rgb(${r},${g},${b})`;
+  }
+
+  const meridians = [-120, -60, 0, 60, 120];
+  const parallels = [-60, -30, 0, 30, 60];
+
+  return (
+    <div className="space-y-3">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <p className="text-xs text-zinc-500">Cities</p>
+          <p className="mt-1 text-sm font-medium text-zinc-900 dark:text-zinc-50">
+            {locations.length}
+            {selected ? (
+              <span className="text-zinc-500">
+                {" "}
+                · selected {selected.name}
+                {selected.country ? `, ${selected.country}` : ""}
+              </span>
+            ) : null}
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="inline-flex items-center gap-2 rounded-full bg-black/[0.06] px-3 py-1 text-xs font-medium text-zinc-800 dark:bg-white/[0.10] dark:text-zinc-100">
+            <span className="h-2 w-2 rounded-full bg-zinc-900 dark:bg-white" />
+            City
+          </span>
+          <span className="inline-flex items-center gap-2 rounded-full bg-black/[0.06] px-3 py-1 text-xs font-medium text-zinc-800 dark:bg-white/[0.10] dark:text-zinc-100">
+            <span className="h-2 w-2 rounded-full bg-blue-600" />
+            Selected
+          </span>
+        </div>
+      </div>
+
+      <div className="overflow-hidden rounded-xl border border-zinc-200/80 bg-white/60 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-zinc-800/80 dark:bg-black/30 dark:ring-white/10">
+        <svg viewBox={`0 0 ${width} ${height}`} className="h-56 w-full">
+          <rect x="0" y="0" width={width} height={height} fill="transparent" />
+
+          <g className="text-zinc-900/10 dark:text-white/10" stroke="currentColor">
+            {meridians.map((lon) => {
+              const x = pad + ((lon + 180) / 360) * plotWidth;
+              return (
+                <line
+                  key={lon}
+                  x1={x}
+                  y1={pad}
+                  x2={x}
+                  y2={height - pad}
+                  strokeWidth="1"
+                />
+              );
+            })}
+            {parallels.map((lat) => {
+              const y = pad + ((90 - lat) / 180) * plotHeight;
+              return (
+                <line
+                  key={lat}
+                  x1={pad}
+                  y1={y}
+                  x2={width - pad}
+                  y2={y}
+                  strokeWidth="1"
+                />
+              );
+            })}
+          </g>
+
+          <g className="text-zinc-500" fill="currentColor">
+            <text x={pad} y={height - 8} fontSize="9">
+              -180°
+            </text>
+            <text x={width - pad} y={height - 8} fontSize="9" textAnchor="end">
+              180°
+            </text>
+            <text x={width - pad} y={pad + 10} fontSize="9" textAnchor="end">
+              90°N
+            </text>
+            <text x={width - pad} y={height - pad - 2} fontSize="9" textAnchor="end">
+              90°S
+            </text>
+          </g>
+
+          <g>
+            {points.map((p) => {
+              const selected = p.id === selectedLocationId;
+              const w = weatherById[p.id] ?? null;
+              const fill = tempColor(w?.temperature_c ?? null);
+              return (
+                <circle
+                  key={p.id}
+                  cx={p.x}
+                  cy={p.y}
+                  r={selected ? 5 : 3.5}
+                  fill={selected ? "#2563eb" : fill}
+                  opacity={selected ? 0.95 : 0.65}
+                  onMouseEnter={() => setHoveredId(p.id)}
+                  onMouseLeave={() => setHoveredId(null)}
+                />
+              );
+            })}
+          </g>
+
+          {hovered ? (
+            <g>
+              <rect
+                x={clamp(hovered.point.x + 8, 8, width - 178)}
+                y={clamp(hovered.point.y - 40, 8, height - 56)}
+                width={170}
+                height={48}
+                rx={10}
+                fill="currentColor"
+                className="text-white/90 dark:text-black/85"
+                opacity={0.95}
+              />
+              <text
+                x={clamp(hovered.point.x + 16, 12, width - 170)}
+                y={clamp(hovered.point.y - 22, 20, height - 36)}
+                fontSize="10"
+                fill="currentColor"
+                className="text-zinc-900 dark:text-zinc-50"
+              >
+                {hovered.point.name}
+                {hovered.point.country ? `, ${hovered.point.country}` : ""}
+              </text>
+              <text
+                x={clamp(hovered.point.x + 16, 12, width - 170)}
+                y={clamp(hovered.point.y - 8, 34, height - 22)}
+                fontSize="9"
+                fill="currentColor"
+                className="text-zinc-700 dark:text-zinc-200"
+              >
+                {hovered.weather?.temperature_c == null
+                  ? "—"
+                  : `${formatNumber(
+                      temperatureUnit === "c"
+                        ? hovered.weather.temperature_c
+                        : cToF(hovered.weather.temperature_c),
+                      1
+                    )}°${temperatureUnit.toUpperCase()}`}{" "}
+                · {describeWeatherCode(hovered.weather?.weather_code)}
+              </text>
+            </g>
+          ) : null}
+        </svg>
+      </div>
+    </div>
+  );
+}
+
 export function ProDashboard({ user }: { user: User | null }) {
   const [selectedLocationId, setSelectedLocationId] = useState("");
   const [temperatureUnit, setTemperatureUnit] = useState<TemperatureUnit>("c");
@@ -695,7 +1166,22 @@ export function ProDashboard({ user }: { user: User | null }) {
   const [alertsLoading, setAlertsLoading] = useState(false);
   const [alertsError, setAlertsError] = useState<string | null>(null);
 
-  const [currentWeather, setCurrentWeather] = useState<CurrentWeatherRow | null>(  [edited]
+  const [mapLocations, setMapLocations] = useState<LocationRow[]>([]);
+  const [mapLoading, setMapLoading] = useState(false);
+  const [mapError, setMapError] = useState<string | null>(null);
+  const [mapWeatherById, setMapWeatherById] = useState<
+    Record<
+      string,
+      {
+        temperature_c: number | null;
+        weather_code: number | null;
+        is_day: boolean | null;
+        updated_at: string;
+      }
+    >
+  >({});
+
+  const [currentWeather, setCurrentWeather] = useState<CurrentWeatherRow | null>(
     null
   );
   const [dailyForecasts, setDailyForecasts] = useState<DailyForecastRow[]>([]);
@@ -706,6 +1192,153 @@ export function ProDashboard({ user }: { user: User | null }) {
   const today = dailyForecasts[0] ?? null;
   const outdoor = useMemo(() => computeOutdoorScore(dailyForecasts), [dailyForecasts]);
   const defaultLocationId = preferences?.default_location_id ?? null;
+
+  useEffect(() => {
+    const supabase = getSupabaseBrowserClient();
+    let active = true;
+
+    async function load() {
+      setMapLoading(true);
+      setMapError(null);
+      setMapWeatherById({});
+
+      if (user) {
+        const result = await supabase
+          .from("favorite_locations")
+          .select(
+            "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"
+          )
+          .eq("user_id", user.id);
+
+        if (!active) return;
+        if (result.error) {
+          setMapError(result.error.message);
+          setMapLocations([]);
+          setMapLoading(false);
+          return;
+        }
+
+        const rows = (result.data ?? [])
+          .map((r) => r.locations)
+          .filter(Boolean) as unknown as LocationRow[];
+        const favoriteIds = rows.map((r) => r.id);
+        if (favoriteIds.length === 0) {
+          setMapLocations([]);
+          setMapLoading(false);
+          return;
+        }
+
+        const availableResult = await supabase
+          .from("current_weather")
+          .select("location_id")
+          .in("location_id", favoriteIds);
+
+        if (!active) return;
+        if (availableResult.error) {
+          setMapError(availableResult.error.message);
+          setMapLocations([]);
+          setMapLoading(false);
+          return;
+        }
+
+        const availableIds = new Set(
+          (availableResult.data ?? []).map((r) => r.location_id)
+        );
+        const availableRows = rows
+          .filter((r) => availableIds.has(r.id))
+          .sort((a, b) => a.name.localeCompare(b.name));
+
+        setMapLocations(availableRows);
+        const ids = availableRows.map((r) => r.id);
+        if (ids.length > 0) {
+          const weatherResult = await supabase
+            .from("current_weather")
+            .select("location_id,temperature_c,weather_code,is_day,updated_at")
+            .in("location_id", ids);
+          if (!active) return;
+          if (!weatherResult.error) {
+            const next: Record<
+              string,
+              {
+                temperature_c: number | null;
+                weather_code: number | null;
+                is_day: boolean | null;
+                updated_at: string;
+              }
+            > = {};
+            for (const w of weatherResult.data ?? []) {
+              next[w.location_id] = {
+                temperature_c: w.temperature_c,
+                weather_code: w.weather_code,
+                is_day: w.is_day,
+                updated_at: w.updated_at,
+              };
+            }
+            setMapWeatherById(next);
+          }
+        }
+        setMapLoading(false);
+        return;
+      }
+
+      const result = await supabase
+        .from("current_weather")
+        .select(
+          "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"
+        )
+        .order("updated_at", { ascending: false })
+        .limit(24);
+
+      if (!active) return;
+      if (result.error) {
+        setMapError(result.error.message);
+        setMapLocations([]);
+        setMapLoading(false);
+        return;
+      }
+
+      const rows = (result.data ?? [])
+        .map((r) => r.locations)
+        .filter(Boolean) as unknown as LocationRow[];
+      rows.sort((a, b) => a.name.localeCompare(b.name));
+      setMapLocations(rows);
+      const ids = rows.map((r) => r.id);
+      if (ids.length > 0) {
+        const weatherResult = await supabase
+          .from("current_weather")
+          .select("location_id,temperature_c,weather_code,is_day,updated_at")
+          .in("location_id", ids);
+        if (!active) return;
+        if (!weatherResult.error) {
+          const next: Record<
+            string,
+            {
+              temperature_c: number | null;
+              weather_code: number | null;
+              is_day: boolean | null;
+              updated_at: string;
+            }
+          > = {};
+          for (const w of weatherResult.data ?? []) {
+            next[w.location_id] = {
+              temperature_c: w.temperature_c,
+              weather_code: w.weather_code,
+              is_day: w.is_day,
+              updated_at: w.updated_at,
+            };
+          }
+          setMapWeatherById(next);
+        }
+      }
+      setMapLoading(false);
+    }
+
+    void load();
+
+    return () => {
+      active = false;
+    };
+  }, [user?.id]);
 
   useEffect(() => {
     if (!user) {
@@ -1439,6 +2072,31 @@ export function ProDashboard({ user }: { user: User | null }) {
           </GlassCard>
 
           <GlassCard
+            icon={<IconMapPin className="h-4 w-4" />}
+            title="Map"
+            subtitle="Latitude/longitude overview"
+          >
+            {mapLoading ? (
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">Loading…</p>
+            ) : mapError ? (
+              <div className="rounded-xl border border-red-200/70 bg-red-50/80 p-3 text-xs text-red-700 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-300 dark:ring-white/10">
+                {mapError}
+              </div>
+            ) : mapLocations.length === 0 ? (
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                No cities to plot yet.
+              </p>
+            ) : (
+              <GeoMap
+                locations={mapLocations}
+                selectedLocationId={selectedLocationId}
+                weatherById={mapWeatherById}
+                temperatureUnit={temperatureUnit}
+              />
+            )}
+          </GlassCard>
+
+          <GlassCard
             icon={<IconTrend className="h-4 w-4" />}
             title="Next 24 Hours"
             subtitle="Hourly trend"
@@ -1455,6 +2113,7 @@ export function ProDashboard({ user }: { user: User | null }) {
               <HourlyTrend
                 items={hourlyForecasts}
                 temperatureUnit={temperatureUnit}
+                windSpeedUnit={windSpeedUnit}
               />
             )}
           </GlassCard>
@@ -1473,8 +2132,10 @@ export function ProDashboard({ user }: { user: User | null }) {
                 No daily forecasts yet. Run updated SQL and restart worker.
               </p>
             ) : (
-              <div className="overflow-x-auto">
-                <table className="w-full border-separate border-spacing-y-2 text-sm">
+              <div className="space-y-4">
+                <DailyTempBand items={dailyForecasts} temperatureUnit={temperatureUnit} />
+                <div className="overflow-x-auto">
+                  <table className="w-full border-separate border-spacing-y-2 text-sm">
                   <thead>
                     <tr className="text-left text-xs text-zinc-500">
                       <th className="px-3"> </th>
@@ -1550,7 +2211,8 @@ export function ProDashboard({ user }: { user: User | null }) {
                       );
                     })}
                   </tbody>
-                </table>
+                  </table>
+                </div>
               </div>
             )}
           </GlassCard>

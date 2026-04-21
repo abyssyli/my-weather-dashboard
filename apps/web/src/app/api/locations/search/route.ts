@@ -28,7 +28,7 @@ export async function GET(request: Request) {
     headers: { accept: "application/json" },
     cache: "no-store",
   });
-  [edited]
+
   if (!response.ok) {
     return NextResponse.json(
       { error: `Geocoding request failed: ${response.status}` },
@@ -48,3 +48,4 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
+

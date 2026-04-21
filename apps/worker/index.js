@@ -1,5 +1,3 @@
-
-/* minor adjust */
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
