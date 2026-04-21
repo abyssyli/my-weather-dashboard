@@ -1,5 +1,3 @@
-
-// task4 project adjust
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";
@@ -13,7 +11,7 @@ export function formatDateISO(dateIso: string) {
     weekday: "short",
     month: "short",
     day: "numeric",
-  });
+  });  [edited]
 }
 
 export function formatDateTimeISO(dateIso: string) {

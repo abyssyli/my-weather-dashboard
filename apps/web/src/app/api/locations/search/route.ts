@@ -1,5 +1,3 @@
-
-// optimize code detail
 import { NextResponse } from "next/server";
 
 type GeocodingResult = {
@@ -43,11 +41,10 @@ export async function GET(request: Request) {
     name: r.name,
     country: r.country ?? null,
     admin1: r.admin1 ?? null,
-    latitude: r.latitude,
+    latitude: r.latitude,  [edited]
     longitude: r.longitude,
     timezone: r.timezone ?? "auto",
   }));
 
   return NextResponse.json({ results });
 }
-

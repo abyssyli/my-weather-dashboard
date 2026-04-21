@@ -17,4 +17,4 @@ export function getSupabaseAdminClient() {
 }
 
 
-/* minor adjust */
+// optimize code detail

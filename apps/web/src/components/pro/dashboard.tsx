@@ -1495,7 +1495,7 @@ export function ProDashboard({ user }: { user: User | null }) {
                             ? d.temp_max_c
                             : cToF(d.temp_max_c);
                       const min =
-                        d.temp_min_c == null  [edited]
+                        d.temp_min_c == null
                           ? null
                           : temperatureUnit === "c"
                             ? d.temp_min_c
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+// optimize code detail

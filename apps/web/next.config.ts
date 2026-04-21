@@ -5,5 +5,7 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
 };
-  [edited]
+
 export default nextConfig;
+
+/* daily modify record */

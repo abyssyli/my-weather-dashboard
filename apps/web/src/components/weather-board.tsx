@@ -33,7 +33,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     const supabase = getSupabaseBrowserClient();
     let active = true;
 
-    async function loadLocations() {  [edited]
+    async function loadLocations() {
       setLoading(true);
       setError(null);
 
@@ -84,7 +84,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
       }
 
       setLocations((result.data ?? []) as LocationRow[]);
-      setLoading(false);
+      setLoading(false);  [edited]
     }
 
     void loadLocations();

@@ -163,7 +163,7 @@ export default function SettingsPage() {
       .maybeSingle();
 
     if (result.error) {
-      setError(result.error.message);  [edited]
+      setError(result.error.message);
       setSaving(false);
       return;
     }
@@ -353,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+/* daily modify record */

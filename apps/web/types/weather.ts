@@ -49,7 +49,7 @@ export type DailyForecast = {
   forecast_date: string;
   temp_max_c: number | null;
   temp_min_c: number | null;
-  precipitation_sum_mm: number | null;  [edited]
+  precipitation_sum_mm: number | null;
   precipitation_probability_max: number | null;
   wind_speed_max_kmh: number | null;
   weather_code: number | null;
@@ -74,7 +74,7 @@ export type AlertRuleType = "precipitation" | "temperature_max" | "wind_speed";
 export type AlertComparator = "gt" | "gte" | "lt" | "lte";
 
 export type AlertRule = {
-  id: string;
+  id: string;  [edited]
   user_id: string;
   location_id: string | null;
   rule_type: AlertRuleType;

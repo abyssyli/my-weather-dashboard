@@ -194,7 +194,7 @@ In apps/worker/package.json use:
 ## Deployment Rules
 ### Vercel
 - deploy apps/web only
-- set root directory to apps/web  [edited]
+- set root directory to apps/web
 - add NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 ### Railway
@@ -227,3 +227,4 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
+/* daily modify record */

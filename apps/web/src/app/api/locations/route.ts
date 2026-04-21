@@ -1,5 +1,5 @@
 
-# minor content update
+/* minor adjust */
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 

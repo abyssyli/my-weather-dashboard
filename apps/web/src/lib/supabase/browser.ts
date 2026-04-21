@@ -11,9 +11,9 @@ export function getSupabaseBrowserClient() {
   if (!supabaseUrl || !supabaseAnonKey) {
     throw new Error(
       "Missing NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY in apps/web/.env.local"
-    );
+    );  [edited]
   }
-  [edited]
+
   browserClient = createClient(supabaseUrl, supabaseAnonKey);
   return browserClient;
 }

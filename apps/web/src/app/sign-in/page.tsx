@@ -116,7 +116,7 @@ export default function SignInPage() {
             }}
             className="font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
           >
-            {mode === "sign-in"  [edited]
+            {mode === "sign-in"
               ? "Need an account? Sign up"
               : "Already have an account? Sign in"}
           </button>
@@ -130,7 +130,7 @@ export default function SignInPage() {
         {message ? (
           <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
             {message}
-          </p>
+          </p>  [edited]
         ) : null}
       </form>
     </main>
