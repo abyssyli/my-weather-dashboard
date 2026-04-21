@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-  [edited]
+
 ## Supabase SQL Setup
 
 Run the SQL files in order:
@@ -27,7 +27,7 @@ Run the SQL files in order:
 1. `sql/001_schema.sql`
 2. `sql/002_rls.sql`
 3. `sql/003_seed_locations.sql`
-
+  [edited]
 In the Supabase Dashboard:
 
 1. Go to SQL Editor

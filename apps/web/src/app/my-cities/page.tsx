@@ -1,5 +1,5 @@
 
-/* minor adjust */
+/* daily modify record */
 "use client";
 
 import { CityManager } from "@/components/city-manager";

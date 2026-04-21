@@ -151,7 +151,7 @@ function scoreLabel(score: number) {
   return "Poor";
 }
 
-function clamp(n: number, min: number, max: number) {
+function clamp(n: number, min: number, max: number) {  [edited]
   return Math.min(max, Math.max(min, n));
 }
 
@@ -1559,5 +1559,3 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
-
-# minor content update

@@ -1,3 +1,5 @@
+
+# minor content update
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";
@@ -5,7 +7,7 @@ export function formatNumber(value: number | null | undefined, digits = 0) {
 }
 
 export function formatDateISO(dateIso: string) {
-  const date = new Date(dateIso);  [edited]
+  const date = new Date(dateIso);
   if (Number.isNaN(date.getTime())) return dateIso;
   return date.toLocaleDateString("en-US", {
     weekday: "short",

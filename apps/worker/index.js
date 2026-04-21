@@ -149,7 +149,7 @@ async function upsertCurrentWeather(locationId, normalizedWeather) {
   if (result.error) throw result.error;
 }
 
-async function upsertDailyForecasts(locationId, forecasts) {
+async function upsertDailyForecasts(locationId, forecasts) {  [edited]
   if (!forecasts.length) return;
   const rows = forecasts.map((f) => ({ location_id: locationId, ...f }));
   const result = await supabase
@@ -292,5 +292,3 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-// optimize code detail

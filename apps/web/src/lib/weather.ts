@@ -29,7 +29,7 @@ export function describeWeatherCode(code: number | null | undefined) {
     86: "Snow Showers",
     95: "Thunderstorm",
     96: "Thunderstorm w/ Hail",
-    99: "Thunderstorm w/ Heavy Hail",
+    99: "Thunderstorm w/ Heavy Hail",  [edited]
   };
 
   return mapping[code] ?? `Code ${code}`;
@@ -41,6 +41,3 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
-
-
-/* daily modify record */

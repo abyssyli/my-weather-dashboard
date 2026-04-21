@@ -10,7 +10,7 @@ type UserPreferencesRow = {
   user_id: string;
   temperature_unit: "c" | "f";
   wind_speed_unit: "kmh" | "mph";
-  default_location_id: string | null;  [edited]
+  default_location_id: string | null;
   timezone_display: "location" | "utc";
   time_format: "12h" | "24h";
   alerts_enabled: boolean;
@@ -353,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+// optimize code detail

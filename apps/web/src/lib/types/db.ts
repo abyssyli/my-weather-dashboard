@@ -25,4 +25,7 @@ export type CurrentWeatherRow = {
   is_day: boolean | null;
   observed_at: string | null;
   updated_at: string;
-};  [edited]
+};
+
+
+// optimize code detail

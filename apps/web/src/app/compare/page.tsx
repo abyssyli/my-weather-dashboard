@@ -321,7 +321,7 @@ export default function ComparePage() {
   }, [forecasts]);
 
   const byCityAndDate = useMemo(() => {
-    const map = new Map<string, DailyForecastRow>();  [edited]
+    const map = new Map<string, DailyForecastRow>();
     for (const r of forecasts) {
       map.set(`${r.location_id}:${r.forecast_date}`, r);
     }
@@ -360,7 +360,7 @@ export default function ComparePage() {
     return (
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
         <GlassCard
-          icon={<IconCompare className="h-5 w-5" />}
+          icon={<IconCompare className="h-5 w-5" />}  [edited]
           title="Compare"
           subtitle="Compare 2–4 cities over 15 days"
         >

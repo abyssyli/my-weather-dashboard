@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useState } from "react";
@@ -61,7 +59,7 @@ export default function SignUpPage() {
   }
 
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 py-10">
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 py-10">  [edited]
       <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
         {mode === "sign-in" ? "Sign in" : "Create account"}
       </h1>
@@ -138,4 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-

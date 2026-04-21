@@ -72,7 +72,7 @@ export function Header() {
             />
             <NavLink
               href="/my-cities"
-              label="My Cities"
+              label="My Cities"  [edited]
               icon={<IconMapPin className="h-4 w-4" />}
             />
             <NavLink
@@ -88,7 +88,7 @@ export function Header() {
             <NavLink
               href="/settings"
               label="Settings"
-              icon={<IconSettings className="h-4 w-4" />}  [edited]
+              icon={<IconSettings className="h-4 w-4" />}
             />
           </nav>
         </div>

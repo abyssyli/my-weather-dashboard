@@ -6,7 +6,7 @@ import { Header } from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],  [edited]
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
@@ -38,3 +38,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+/* daily modify record */

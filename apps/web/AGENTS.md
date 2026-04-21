@@ -1,5 +1,5 @@
 
-// task4 project adjust
+/* minor adjust */
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 

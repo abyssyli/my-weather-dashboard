@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f5f7;
+  --background: #f5f5f7;  [edited]
   --foreground: #111827;
 }
 
@@ -29,5 +29,3 @@ body {
     "Apple Color Emoji",
     "Segoe UI Emoji";
 }
-
-/* daily modify record */

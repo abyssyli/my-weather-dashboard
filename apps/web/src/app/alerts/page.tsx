@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -373,7 +371,7 @@ export default function AlertsPage() {
         threshold: thresholdNumber,
         horizon_days: horizonNumber,
       })
-      .eq("id", id)
+      .eq("id", id)  [edited]
       .eq("user_id", user.id)
       .select(
         "id,user_id,location_id,rule_type,comparator,threshold,horizon_days,enabled,created_at,updated_at"

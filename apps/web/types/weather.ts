@@ -1,3 +1,5 @@
+
+/* minor adjust */
 export type Location = {
   id: string;
   name: string;
@@ -33,7 +35,7 @@ export type TimezoneDisplay = "location" | "utc";
 export type TimeFormat = "12h" | "24h";
 
 export type UserPreferences = {
-  user_id: string;  [edited]
+  user_id: string;
   temperature_unit: TemperatureUnit;
   wind_speed_unit: WindSpeedUnit;
   default_location_id: string | null;

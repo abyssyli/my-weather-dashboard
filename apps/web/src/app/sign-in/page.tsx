@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import { useEffect, useState } from "react";
@@ -125,7 +127,7 @@ export default function SignInPage() {
         {error ? (
           <p className="mt-4 text-sm text-red-600 dark:text-red-400">
             {error}
-          </p>  [edited]
+          </p>
         ) : null}
         {message ? (
           <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
@@ -136,3 +138,4 @@ export default function SignInPage() {
     </main>
   );
 }
+
