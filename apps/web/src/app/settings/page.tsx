@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -90,7 +88,7 @@ export default function SettingsPage() {
             "user_id,temperature_unit,wind_speed_unit,default_location_id,timezone_display,time_format,alerts_enabled,created_at,updated_at"
           )
           .eq("user_id", user.id)
-          .maybeSingle(),
+          .maybeSingle(),  [edited]
         supabase
           .from("favorite_locations")
           .select(

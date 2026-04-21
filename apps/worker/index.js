@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -190,7 +192,7 @@ async function finalizeSyncRun(runId, patch) {
   if (result.error) throw result.error;
 }
 
-async function pollOnce() {  [edited]
+async function pollOnce() {
   const startedAt = new Date();
   let runId = null;
 

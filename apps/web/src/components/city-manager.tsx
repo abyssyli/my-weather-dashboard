@@ -289,7 +289,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
               <p className="mt-2 text-xs text-zinc-500">Searching…</p>
             ) : null}
 
-            {searchResults.length > 0 ? (  [edited]
+            {searchResults.length > 0 ? (
               <ul className="mt-2 space-y-2">
                 {searchResults.slice(0, 5).map((r) => (
                   <li
@@ -386,3 +386,5 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
+
+/* minor adjust */

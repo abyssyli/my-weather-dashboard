@@ -87,7 +87,7 @@ export function Header() {
             />
             <NavLink
               href="/settings"
-              label="Settings"
+              label="Settings"  [edited]
               icon={<IconSettings className="h-4 w-4" />}
             />
           </nav>
@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-// task4 project adjust

@@ -1,3 +1,5 @@
+
+/* daily modify record */
 # Weather Pulse
 
 ## Project Overview
@@ -38,7 +40,7 @@ Frontend:
 - Supabase JS client
 
 Backend / Data:
-- Supabase Postgres  [edited]
+- Supabase Postgres
 - Supabase Auth
 - Supabase Realtime
 
