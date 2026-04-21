@@ -1,5 +1,3 @@
-
-// optimize code detail
 {
   "name": "weather-pulse",
   "private": true,
@@ -8,10 +6,9 @@
     "apps/worker"
   ],
   "scripts": {
-    "dev:web": "npm run dev --workspace web",
+    "dev:web": "npm run dev --workspace web",  [edited]
     "dev:worker": "npm run dev --workspace worker",
     "lint:web": "npm run lint --workspace web",
     "start:worker": "npm run start --workspace worker"
   }
 }
-

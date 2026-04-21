@@ -32,7 +32,7 @@ function NavLink({
         "group flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
         active
           ? "bg-black/[0.06] text-zinc-900 dark:bg-white/[0.08] dark:text-zinc-50"
-          : "text-zinc-600 hover:bg-black/[0.04] hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/[0.06] dark:hover:text-zinc-50",  [edited]
+          : "text-zinc-600 hover:bg-black/[0.04] hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/[0.06] dark:hover:text-zinc-50",
       ].join(" ")}
     >
       <span className="text-zinc-500 group-hover:text-zinc-900 dark:text-zinc-400 dark:group-hover:text-zinc-50">
@@ -46,7 +46,7 @@ function NavLink({
 export function Header() {
   const router = useRouter();
   const { user, loading } = useAuth();
-
+  [edited]
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
     await supabase.auth.signOut();

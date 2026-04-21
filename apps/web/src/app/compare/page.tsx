@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -154,7 +152,7 @@ function MultiCityTempChart({
                     {t.label}
                   </text>
                 ) : null}
-              </g>
+              </g>  [edited]
             );
           })}
         </g>

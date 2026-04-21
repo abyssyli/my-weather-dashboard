@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -260,3 +258,5 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     </section>
   );
 }
+
+// optimize code detail

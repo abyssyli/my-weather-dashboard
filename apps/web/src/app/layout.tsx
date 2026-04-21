@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Weather Pulse",
   description: "Realtime weather dashboard powered by Supabase",
-};
+};  [edited]
 
 export default function RootLayout({
   children,
@@ -36,5 +36,5 @@ export default function RootLayout({
         </AuthProvider>
       </body>
     </html>
-  );  [edited]
+  );
 }

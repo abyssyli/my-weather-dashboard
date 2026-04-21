@@ -1,5 +1,3 @@
-
-/* minor adjust */
 export type Location = {
   id: string;
   name: string;
@@ -16,7 +14,7 @@ export type FavoriteLocation = {
   created_at: string;
 };
 
-export type CurrentWeather = {
+export type CurrentWeather = {  [edited]
   location_id: string;
   temperature_c: number | null;
   apparent_temperature_c: number | null;

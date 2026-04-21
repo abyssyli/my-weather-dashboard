@@ -1,3 +1,5 @@
+
+/* minor adjust */
 import { NextResponse } from "next/server";
 
 type GeocodingResult = {
@@ -46,5 +48,6 @@ export async function GET(request: Request) {
     timezone: r.timezone ?? "auto",
   }));
 
-  return NextResponse.json({ results });  [edited]
+  return NextResponse.json({ results });
 }
+

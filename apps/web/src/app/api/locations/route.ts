@@ -1,9 +1,11 @@
+
+// task4 project adjust
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
 type CreateLocationInput = {
   name: string;
-  country?: string | null;  [edited]
+  country?: string | null;
   latitude: number;
   longitude: number;
   timezone: string;

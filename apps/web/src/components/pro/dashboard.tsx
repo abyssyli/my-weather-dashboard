@@ -1449,7 +1449,7 @@ export function ProDashboard({ user }: { user: User | null }) {
               </p>
             ) : hourlyForecasts.length === 0 ? (
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                No hourly forecasts yet. Run updated SQL and restart worker.  [edited]
+                No hourly forecasts yet. Run updated SQL and restart worker.
               </p>
             ) : (
               <HourlyTrend
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+/* minor adjust */

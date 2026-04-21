@@ -1,5 +1,5 @@
 
-// optimize code detail
+/* daily modify record */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {

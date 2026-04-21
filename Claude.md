@@ -169,7 +169,7 @@ NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
 ### apps/worker/.env
-SUPABASE_URL=  [edited]
+SUPABASE_URL=
 SUPABASE_SERVICE_ROLE_KEY=
 OPEN_METEO_BASE_URL=https://api.open-meteo.com/v1/forecast
 POLL_INTERVAL_MS=600000
@@ -227,3 +227,4 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
+/* daily modify record */

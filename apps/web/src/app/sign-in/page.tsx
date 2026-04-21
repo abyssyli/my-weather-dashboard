@@ -86,7 +86,7 @@ export default function SignInPage() {
           Password
           <input
             type="password"
-            value={password}  [edited]
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
             minLength={6}
@@ -136,3 +136,6 @@ export default function SignInPage() {
     </main>
   );
 }
+
+
+// optimize code detail

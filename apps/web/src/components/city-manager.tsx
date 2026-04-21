@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -251,7 +249,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
 
     const next = favoriteLocationIds.filter((id) => id !== locationId);
     setFavoriteLocationIds(next);
-    setSaving(false);
+    setSaving(false);  [edited]
     onFavoriteLocationIdsChangeRef.current?.(next);
   }
 

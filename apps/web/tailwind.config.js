@@ -1,6 +1,6 @@
-module.exports = {
+module.exports = {  [edited]
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {  [edited]
+  theme: {
     extend: {},
   },
   plugins: [],
