@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -173,7 +175,7 @@ export default function SettingsPage() {
   }
 
   if (authLoading) {
-    return (  [edited]
+    return (
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">
         <GlassCard
           icon={<IconSettings className="h-5 w-5" />}

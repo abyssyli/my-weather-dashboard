@@ -1,3 +1,3 @@
-
-// optimize code detail
 @AGENTS.md
+
+/* minor adjust */

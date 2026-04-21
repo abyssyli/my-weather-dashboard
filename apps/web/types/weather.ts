@@ -27,7 +27,7 @@ export type CurrentWeather = {
   updated_at: string;
 };
 
-export type TemperatureUnit = "c" | "f";  [edited]
+export type TemperatureUnit = "c" | "f";
 export type WindSpeedUnit = "kmh" | "mph";
 export type TimezoneDisplay = "location" | "utc";
 export type TimeFormat = "12h" | "24h";
@@ -91,7 +91,7 @@ export type SyncRunStatus = "running" | "success" | "partial" | "failed";
 export type SyncRun = {
   id: string;
   started_at: string;
-  finished_at: string | null;
+  finished_at: string | null;  [edited]
   status: SyncRunStatus;
   locations_total: number;
   locations_ok: number;

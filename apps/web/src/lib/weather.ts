@@ -18,7 +18,7 @@ export function describeWeatherCode(code: number | null | undefined) {
     65: "Heavy Rain",
     66: "Light Freezing Rain",
     67: "Freezing Rain",
-    71: "Light Snow",  [edited]
+    71: "Light Snow",
     73: "Snow",
     75: "Heavy Snow",
     77: "Snow Grains",
@@ -41,3 +41,4 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
+  [edited]

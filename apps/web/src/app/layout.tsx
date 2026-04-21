@@ -1,5 +1,3 @@
-
-# minor content update
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -34,7 +32,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[radial-gradient(1200px_circle_at_20%_-10%,rgba(255,255,255,0.9),transparent_55%),radial-gradient(900px_circle_at_80%_0%,rgba(96,165,250,0.22),transparent_50%),radial-gradient(900px_circle_at_30%_70%,rgba(167,139,250,0.16),transparent_55%)] text-zinc-900 dark:bg-[radial-gradient(1200px_circle_at_20%_-10%,rgba(255,255,255,0.08),transparent_55%),radial-gradient(900px_circle_at_80%_0%,rgba(96,165,250,0.18),transparent_50%),radial-gradient(900px_circle_at_30%_70%,rgba(167,139,250,0.14),transparent_55%)] dark:text-zinc-50">
         <AuthProvider>
           <Header />
-          {children}
+          {children}  [edited]
         </AuthProvider>
       </body>
     </html>

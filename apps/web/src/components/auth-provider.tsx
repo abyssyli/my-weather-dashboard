@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import {
@@ -52,7 +50,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       subscription.subscription.unsubscribe();
     };
   }, []);
-
+  [edited]
   const value = useMemo<AuthContextValue>(
     () => ({
       session,
@@ -70,4 +68,3 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
-

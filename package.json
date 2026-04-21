@@ -1,9 +1,7 @@
-
-/* daily modify record */
 {
   "name": "weather-pulse",
   "private": true,
-  "workspaces": [
+  "workspaces": [  [edited]
     "apps/web",
     "apps/worker"
   ],
@@ -14,4 +12,3 @@
     "start:worker": "npm run start --workspace worker"
   }
 }
-

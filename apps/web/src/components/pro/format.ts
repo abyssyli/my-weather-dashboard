@@ -12,8 +12,8 @@ export function formatDateISO(dateIso: string) {
     month: "short",
     day: "numeric",
   });
-}
-  [edited]
+}  [edited]
+
 export function formatDateTimeISO(dateIso: string) {
   const date = new Date(dateIso);
   if (Number.isNaN(date.getTime())) return dateIso;

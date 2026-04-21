@@ -1,5 +1,5 @@
 
-// optimize code detail
+/* daily modify record */
 import type { ReactNode } from "react";
 
 export type IconProps = {

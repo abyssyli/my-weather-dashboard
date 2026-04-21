@@ -1,3 +1,5 @@
+
+// task4 project adjust
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {
@@ -60,7 +62,7 @@ function IconCloud({ className }: { className?: string }) {
     </Svg>
   );
 }
-  [edited]
+
 function IconRain({ className }: { className?: string }) {
   return (
     <Svg className={className}>
@@ -142,3 +144,4 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
+

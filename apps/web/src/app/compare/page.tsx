@@ -217,7 +217,7 @@ function GlassCard({
       <div className="mt-4">{children}</div>
     </section>
   );
-}
+}  [edited]
 
 export default function ComparePage() {
   const { user, loading: authLoading } = useAuth();
@@ -528,5 +528,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-/* daily modify record */

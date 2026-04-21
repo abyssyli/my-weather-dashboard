@@ -1,3 +1,5 @@
+
+/* daily modify record */
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -292,5 +294,3 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-// optimize code detail
