@@ -40,7 +40,7 @@ export function IconMapPin(props: IconProps) {
       <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />
       <path d="M12 10.5a2.5 2.5 0 1 0 0-.01Z" />
     </BaseIcon>
-  );
+  );  [edited]
 }
 
 export function IconCompare(props: IconProps) {
@@ -120,5 +120,3 @@ export function IconSparkles(props: IconProps) {
     </BaseIcon>
   );
 }
-
-// task4 project adjust

@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -19,7 +17,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     Record<string, CurrentWeatherRow | undefined>
   >({});
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);  [edited]
 
   const locationIds = useMemo(
     () =>

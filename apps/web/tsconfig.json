@@ -9,12 +9,12 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,  [edited]
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
-      {
+      {  [edited]
         "name": "next"
       }
     ],

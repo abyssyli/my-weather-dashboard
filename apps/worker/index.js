@@ -1,5 +1,3 @@
-
-// optimize code detail
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -253,7 +251,7 @@ async function pollOnce() {
   );
 
   try {
-    await finalizeSyncRun(runId, {
+    await finalizeSyncRun(runId, {  [edited]
       finished_at: new Date().toISOString(),
       status,
       locations_total: locationsTotal,

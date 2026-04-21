@@ -1,5 +1,7 @@
+
+// task4 project adjust
 import { NextResponse } from "next/server";
-import { getSupabaseAdminClient } from "@/lib/supabase/admin";  [edited]
+import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
 type CreateLocationInput = {
   name: string;

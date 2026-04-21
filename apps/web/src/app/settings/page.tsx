@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -355,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+// update log: auto edit 01

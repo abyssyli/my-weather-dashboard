@@ -1,5 +1,3 @@
-
-# minor content update
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -27,7 +25,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 Run the SQL files in order:
 
 1. `sql/001_schema.sql`
-2. `sql/002_rls.sql`
+2. `sql/002_rls.sql`  [edited]
 3. `sql/003_seed_locations.sql`
 
 In the Supabase Dashboard:

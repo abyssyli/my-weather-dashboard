@@ -19,4 +19,4 @@ export function getSupabaseBrowserClient() {
 }
 
 
-/* daily modify record */
+// update log: auto edit 01

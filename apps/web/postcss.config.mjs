@@ -3,5 +3,5 @@ const config = {
     "@tailwindcss/postcss": {},
   },
 };
-
-export default config;  [edited]
+  [edited]
+export default config;

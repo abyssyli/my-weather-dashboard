@@ -19,7 +19,7 @@ export async function GET(request: Request) {
   }
 
   const apiUrl = new URL("https://geocoding-api.open-meteo.com/v1/search");
-  apiUrl.searchParams.set("name", q);  [edited]
+  apiUrl.searchParams.set("name", q);
   apiUrl.searchParams.set("count", "10");
   apiUrl.searchParams.set("language", "en");
   apiUrl.searchParams.set("format", "json");
@@ -48,3 +48,6 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
+
+
+// update log: auto edit 01

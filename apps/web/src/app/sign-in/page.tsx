@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 
-export default function SignInPage() {  [edited]
+export default function SignInPage() {
   const router = useRouter();
   const { user, loading } = useAuth();
   const [mode, setMode] = useState<"sign-in" | "sign-up">("sign-in");
@@ -136,3 +136,6 @@ export default function SignInPage() {  [edited]
     </main>
   );
 }
+
+
+# minor content update

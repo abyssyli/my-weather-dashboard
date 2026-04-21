@@ -529,4 +529,4 @@ export default function ComparePage() {
   );
 }
 
-// update log: auto edit 01
+# minor content update

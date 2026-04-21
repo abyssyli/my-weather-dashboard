@@ -26,4 +26,4 @@ export default function MyCitiesPage() {
   );
 }
 
-// optimize code detail
+/* minor adjust */

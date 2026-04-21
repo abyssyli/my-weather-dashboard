@@ -25,7 +25,7 @@ export type CurrentWeather = {
   is_day: boolean | null;
   observed_at: string | null;
   updated_at: string;
-};
+};  [edited]
 
 export type TemperatureUnit = "c" | "f";
 export type WindSpeedUnit = "kmh" | "mph";
@@ -102,5 +102,3 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
-
-/* minor adjust */

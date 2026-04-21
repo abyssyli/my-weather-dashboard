@@ -34,7 +34,7 @@ type UserPreferencesRow = {
   default_location_id: string | null;
   timezone_display: "location" | "utc";
   time_format: "12h" | "24h";
-  alerts_enabled: boolean;
+  alerts_enabled: boolean;  [edited]
   created_at: string;
   updated_at: string;
 };
@@ -1559,5 +1559,3 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
-
-# minor content update
