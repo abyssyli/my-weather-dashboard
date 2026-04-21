@@ -17,7 +17,7 @@ export function formatDateISO(dateIso: string) {
 export function formatDateTimeISO(dateIso: string) {
   const date = new Date(dateIso);
   if (Number.isNaN(date.getTime())) return dateIso;
-  return date.toLocaleString();  [edited]
+  return date.toLocaleString();
 }
 
 export function cToF(c: number) {
@@ -27,3 +27,5 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
+
+// update log: auto edit 01

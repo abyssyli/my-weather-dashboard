@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -172,7 +174,7 @@ export default function SettingsPage() {
     setSaving(false);
   }
 
-  if (authLoading) {  [edited]
+  if (authLoading) {
     return (
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-6">
         <GlassCard

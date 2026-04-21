@@ -103,4 +103,4 @@ export type SyncRun = {
   created_at: string;
 };
 
-/* daily modify record */
+// update log: auto edit 01

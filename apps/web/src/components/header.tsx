@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import Link from "next/link";
@@ -46,7 +44,7 @@ function NavLink({
 }
 
 export function Header() {
-  const router = useRouter();
+  const router = useRouter();  [edited]
   const { user, loading } = useAuth();
 
   async function handleSignOut() {

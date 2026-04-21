@@ -96,7 +96,7 @@ export function IconTrend(props: IconProps) {
   return (
     <BaseIcon {...props}>
       <path d="M4 16l6-6 4 4 6-6" />
-      <path d="M20 8v6h-6" />  [edited]
+      <path d="M20 8v6h-6" />
     </BaseIcon>
   );
 }
@@ -109,7 +109,7 @@ export function IconDatabase(props: IconProps) {
       <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
     </BaseIcon>
   );
-}
+}  [edited]
 
 export function IconSparkles(props: IconProps) {
   return (

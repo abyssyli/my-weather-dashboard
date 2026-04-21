@@ -1,5 +1,3 @@
-
-/* daily modify record */
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {
@@ -72,7 +70,7 @@ function IconRain({ className }: { className?: string }) {
       <path d="M16 17l-1 2" />
     </Svg>
   );
-}
+}  [edited]
 
 function IconSnow({ className }: { className?: string }) {
   return (
@@ -144,4 +142,3 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
-

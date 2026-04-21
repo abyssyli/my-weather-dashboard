@@ -109,7 +109,7 @@ export default function AlertsPage() {
 
   const locationById = useMemo(() => {
     const map = new Map<string, LocationRow>();
-    for (const l of locations) map.set(l.id, l);  [edited]
+    for (const l of locations) map.set(l.id, l);
     return map;
   }, [locations]);
 
@@ -777,3 +777,5 @@ export default function AlertsPage() {
     </main>
   );
 }
+
+// optimize code detail

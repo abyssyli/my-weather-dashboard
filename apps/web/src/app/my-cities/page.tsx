@@ -12,12 +12,12 @@ export default function MyCitiesPage() {
         <h1 className="text-xl font-semibold tracking-[-0.02em] text-zinc-900 dark:text-zinc-50">
           My Cities
         </h1>
-        <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">  [edited]
+        <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
           {user
             ? "Manage favorites and add new cities via search."
             : "Sign in to save favorites and unlock Pro features."}
         </p>
-
+  [edited]
         <div className="mt-6 max-w-xl">
           <CityManager />
         </div>

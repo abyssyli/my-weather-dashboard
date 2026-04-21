@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -99,7 +97,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
   useEffect(() => {
     if (authLoading) return;
     if (locationIds.length === 0) return;
-
+  [edited]
     const supabase = getSupabaseBrowserClient();
     let active = true;
 

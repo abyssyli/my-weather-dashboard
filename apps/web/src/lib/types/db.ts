@@ -23,9 +23,6 @@ export type CurrentWeatherRow = {
   precipitation: number | null;
   weather_code: number | null;
   is_day: boolean | null;
-  observed_at: string | null;
+  observed_at: string | null;  [edited]
   updated_at: string;
 };
-
-
-/* daily modify record */

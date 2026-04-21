@@ -1,5 +1,5 @@
 
-// update log: auto edit 01
+// task4 project adjust
 "use client";
 
 import { useEffect, useState } from "react";

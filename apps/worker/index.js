@@ -1,5 +1,5 @@
 
-/* minor adjust */
+// task4 project adjust
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
