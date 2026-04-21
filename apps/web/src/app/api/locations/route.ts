@@ -3,7 +3,7 @@ import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
 type CreateLocationInput = {
   name: string;
-  country?: string | null;
+  country?: string | null;  [edited]
   latitude: number;
   longitude: number;
   timezone: string;
@@ -75,4 +75,4 @@ export async function POST(request: Request) {
   }
 
   return NextResponse.json({ location: upsertResult.data });
-}  [edited]
+}

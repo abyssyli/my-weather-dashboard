@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -1451,7 +1449,7 @@ export function ProDashboard({ user }: { user: User | null }) {
               </p>
             ) : hourlyForecasts.length === 0 ? (
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                No hourly forecasts yet. Run updated SQL and restart worker.
+                No hourly forecasts yet. Run updated SQL and restart worker.  [edited]
               </p>
             ) : (
               <HourlyTrend

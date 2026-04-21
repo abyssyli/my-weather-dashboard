@@ -46,8 +46,5 @@ export async function GET(request: Request) {
     timezone: r.timezone ?? "auto",
   }));
 
-  return NextResponse.json({ results });
+  return NextResponse.json({ results });  [edited]
 }
-
-
-// optimize code detail

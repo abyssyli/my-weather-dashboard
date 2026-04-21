@@ -32,7 +32,7 @@ function NavLink({
         "group flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
         active
           ? "bg-black/[0.06] text-zinc-900 dark:bg-white/[0.08] dark:text-zinc-50"
-          : "text-zinc-600 hover:bg-black/[0.04] hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/[0.06] dark:hover:text-zinc-50",
+          : "text-zinc-600 hover:bg-black/[0.04] hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/[0.06] dark:hover:text-zinc-50",  [edited]
       ].join(" ")}
     >
       <span className="text-zinc-500 group-hover:text-zinc-900 dark:text-zinc-400 dark:group-hover:text-zinc-50">
@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-// update log: auto edit 01

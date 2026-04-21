@@ -1,5 +1,3 @@
-
-/* minor adjust */
 import type { ReactNode } from "react";
 
 export type IconProps = {
@@ -108,7 +106,7 @@ export function IconDatabase(props: IconProps) {
     <BaseIcon {...props}>
       <path d="M12 4c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3Z" />
       <path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7" />
-      <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+      <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />  [edited]
     </BaseIcon>
   );
 }

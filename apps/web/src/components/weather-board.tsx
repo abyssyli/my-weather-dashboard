@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -12,7 +14,7 @@ type Props = {
 
 export function WeatherBoard({ favoriteLocationIds }: Props) {
   const { user, loading: authLoading } = useAuth();
-  const [locations, setLocations] = useState<LocationRow[]>([]);  [edited]
+  const [locations, setLocations] = useState<LocationRow[]>([]);
   const [weatherByLocationId, setWeatherByLocationId] = useState<
     Record<string, CurrentWeatherRow | undefined>
   >({});

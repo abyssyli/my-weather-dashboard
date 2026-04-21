@@ -1,3 +1,3 @@
-@AGENTS.md
 
-/* daily modify record */
+# minor content update
+@AGENTS.md

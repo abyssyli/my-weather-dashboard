@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 # Weather Pulse
 
 ## Project Overview
@@ -171,7 +169,7 @@ NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
 ### apps/worker/.env
-SUPABASE_URL=
+SUPABASE_URL=  [edited]
 SUPABASE_SERVICE_ROLE_KEY=
 OPEN_METEO_BASE_URL=https://api.open-meteo.com/v1/forecast
 POLL_INTERVAL_MS=600000

@@ -1,5 +1,5 @@
 
-// task4 project adjust
+/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

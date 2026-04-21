@@ -36,7 +36,5 @@ export default function RootLayout({
         </AuthProvider>
       </body>
     </html>
-  );
+  );  [edited]
 }
-
-/* daily modify record */
