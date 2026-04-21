@@ -1,4 +1,6 @@
-import { defineConfig, globalIgnores } from "eslint/config";  [edited]
+
+// task4 project adjust
+import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 

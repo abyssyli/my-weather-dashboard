@@ -1,5 +1,3 @@
-
-# minor content update
 export type Location = {
   id: string;
   name: string;
@@ -47,7 +45,7 @@ export type UserPreferences = {
 };
 
 export type DailyForecast = {
-  location_id: string;
+  location_id: string;  [edited]
   forecast_date: string;
   temp_max_c: number | null;
   temp_min_c: number | null;

@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -217,7 +215,7 @@ export default function SettingsPage() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              void save();
+              void save();  [edited]
             }}
             className="space-y-4"
           >

@@ -262,7 +262,7 @@ export default function ComparePage() {
         .map((r) => r.locations)
         .filter(Boolean) as unknown as LocationRow[];
       rows.sort((a, b) => a.name.localeCompare(b.name));
-      setLocations(rows);  [edited]
+      setLocations(rows);
       setLoading(false);
 
       setSelectedIds((prev) => {
@@ -528,3 +528,5 @@ export default function ComparePage() {
     </main>
   );
 }
+
+/* minor adjust */

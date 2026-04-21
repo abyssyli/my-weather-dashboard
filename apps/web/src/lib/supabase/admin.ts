@@ -17,4 +17,4 @@ export function getSupabaseAdminClient() {
 }
 
 
-// optimize code detail
+/* daily modify record */

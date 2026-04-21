@@ -7,7 +7,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import {
   IconBell,
-  IconCompare,
+  IconCompare,  [edited]
   IconDashboard,
   IconMapPin,
   IconSettings,
@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-/* daily modify record */

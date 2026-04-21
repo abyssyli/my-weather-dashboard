@@ -461,7 +461,7 @@ export default function AlertsPage() {
     );
   }
 
-  return (  [edited]
+  return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[420px_1fr]">
         <GlassCard
@@ -777,3 +777,5 @@ export default function AlertsPage() {
     </main>
   );
 }
+
+# minor content update

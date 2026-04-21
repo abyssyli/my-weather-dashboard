@@ -1,5 +1,3 @@
-
-/* daily modify record */
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {
@@ -135,7 +133,7 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
       <IconMoon className={className} />
     ) : (
       <IconSun className={className} />
-    );
+    );  [edited]
   }
   if (kind === "cloud") return <IconCloud className={className} />;
   if (kind === "fog") return <IconFog className={className} />;
@@ -144,4 +142,3 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
-

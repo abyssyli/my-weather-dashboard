@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   }
 
   let supabase: ReturnType<typeof getSupabaseAdminClient>;
-  try {
+  try {  [edited]
     supabase = getSupabaseAdminClient();
   } catch (e) {
     const message = e instanceof Error ? e.message : "Server misconfiguration";
@@ -76,5 +76,3 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ location: upsertResult.data });
 }
-
-// task4 project adjust

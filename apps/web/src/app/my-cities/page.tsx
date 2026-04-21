@@ -1,5 +1,5 @@
 
-/* daily modify record */
+// update log: auto edit 01
 "use client";
 
 import { CityManager } from "@/components/city-manager";

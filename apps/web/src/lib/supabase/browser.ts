@@ -6,7 +6,7 @@ export function getSupabaseBrowserClient() {
   if (browserClient) return browserClient;
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;  [edited]
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseAnonKey) {
     throw new Error(
@@ -17,3 +17,6 @@ export function getSupabaseBrowserClient() {
   browserClient = createClient(supabaseUrl, supabaseAnonKey);
   return browserClient;
 }
+
+
+// task4 project adjust

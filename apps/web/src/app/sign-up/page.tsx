@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useState } from "react";
@@ -14,7 +12,7 @@ export default function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);  [edited]
   const [message, setMessage] = useState<string | null>(null);
 
   useEffect(() => {
@@ -138,4 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-

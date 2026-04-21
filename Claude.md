@@ -81,7 +81,7 @@ Constraints:
 
 ### current_weather
 Stores the latest weather snapshot for each location.
-
+  [edited]
 Columns:
 - location_id uuid primary key references public.locations(id) on delete cascade
 - temperature_c numeric
@@ -122,7 +122,7 @@ Use the classroom-style pattern:
 
 ## Frontend Requirements
 ### Public behavior
-- if the user is not logged in, show a default list of cities  [edited]
+- if the user is not logged in, show a default list of cities
 - show current temperature, feels like, humidity, wind speed, weather state, and last updated time
 
 ### Authenticated behavior
