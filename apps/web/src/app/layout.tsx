@@ -1,6 +1,4 @@
-
-# minor content update
-import type { Metadata } from "next";
+import type { Metadata } from "next";  [edited]
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/auth-provider";

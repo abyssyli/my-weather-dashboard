@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -528,5 +530,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-/* minor adjust */

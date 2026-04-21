@@ -1,5 +1,5 @@
 
-// task4 project adjust
+// update log: auto edit 01
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {

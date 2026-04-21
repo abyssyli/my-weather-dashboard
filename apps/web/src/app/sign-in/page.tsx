@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useState } from "react";
@@ -47,7 +45,7 @@ export default function SignInPage() {
 
     const result = await supabase.auth.signInWithPassword({
       email,
-      password,
+      password,  [edited]
     });
     if (result.error) {
       setError(result.error.message);
@@ -138,4 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-

@@ -81,7 +81,7 @@ Constraints:
 
 ### current_weather
 Stores the latest weather snapshot for each location.
-  [edited]
+
 Columns:
 - location_id uuid primary key references public.locations(id) on delete cascade
 - temperature_c numeric
@@ -227,3 +227,4 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
+// task4 project adjust

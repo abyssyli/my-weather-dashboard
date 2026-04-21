@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 export type LocationRow = {
   id: string;
   name: string;
@@ -29,3 +27,5 @@ export type CurrentWeatherRow = {
   updated_at: string;
 };
 
+
+// task4 project adjust

@@ -1,7 +1,9 @@
+
+/* daily modify record */
 const config = {
   plugins: {
     "@tailwindcss/postcss": {},
   },
 };
-  [edited]
+
 export default config;

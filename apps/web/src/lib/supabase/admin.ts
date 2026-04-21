@@ -15,6 +15,4 @@ export function getSupabaseAdminClient() {
     auth: { persistSession: false, autoRefreshToken: false },
   });
 }
-
-
-/* daily modify record */
+  [edited]

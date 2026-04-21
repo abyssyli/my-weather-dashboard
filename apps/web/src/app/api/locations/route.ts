@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   }
 
   let supabase: ReturnType<typeof getSupabaseAdminClient>;
-  try {  [edited]
+  try {
     supabase = getSupabaseAdminClient();
   } catch (e) {
     const message = e instanceof Error ? e.message : "Server misconfiguration";
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     .from("locations")
     .upsert(
       { name, country, latitude, longitude, timezone },
-      { onConflict: "name,country,latitude,longitude" }
+      { onConflict: "name,country,latitude,longitude" }  [edited]
     )
     .select("id,name,country,latitude,longitude,timezone,created_at")
     .limit(1)

@@ -7,7 +7,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import {
   IconBell,
-  IconCompare,  [edited]
+  IconCompare,
   IconDashboard,
   IconMapPin,
   IconSettings,
@@ -15,7 +15,7 @@ import {
 
 function NavLink({
   href,
-  label,
+  label,  [edited]
   icon,
 }: {
   href: string;

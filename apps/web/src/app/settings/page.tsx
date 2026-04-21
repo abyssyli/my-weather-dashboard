@@ -215,7 +215,7 @@ export default function SettingsPage() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              void save();  [edited]
+              void save();
             }}
             className="space-y-4"
           >
@@ -353,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+/* minor adjust */

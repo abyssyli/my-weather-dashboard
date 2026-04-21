@@ -1,3 +1,5 @@
+
+// task4 project adjust
 {
   "compilerOptions": {
     "target": "ES2017",
@@ -16,7 +18,7 @@
     "plugins": [
       {
         "name": "next"
-      }  [edited]
+      }
     ],
     "paths": {
       "@/*": ["./src/*"]

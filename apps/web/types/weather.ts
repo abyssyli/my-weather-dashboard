@@ -45,7 +45,7 @@ export type UserPreferences = {
 };
 
 export type DailyForecast = {
-  location_id: string;  [edited]
+  location_id: string;
   forecast_date: string;
   temp_max_c: number | null;
   temp_min_c: number | null;
@@ -102,3 +102,5 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
+
+// optimize code detail
