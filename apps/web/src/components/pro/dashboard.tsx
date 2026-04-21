@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -629,7 +627,7 @@ function HourlyTrend({
               y2={top + plotHeight}
               strokeWidth="1"
             />
-          </g>
+          </g>  [edited]
 
           <g className="text-zinc-500" fill="currentColor">
             <text x={left - 2} y={top + 3} fontSize="7" textAnchor="end">

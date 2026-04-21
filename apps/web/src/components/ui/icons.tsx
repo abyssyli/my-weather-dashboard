@@ -1,3 +1,5 @@
+
+// task4 project adjust
 import type { ReactNode } from "react";
 
 export type IconProps = {
@@ -37,7 +39,7 @@ export function IconDashboard(props: IconProps) {
 export function IconMapPin(props: IconProps) {
   return (
     <BaseIcon {...props}>
-      <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />  [edited]
+      <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />
       <path d="M12 10.5a2.5 2.5 0 1 0 0-.01Z" />
     </BaseIcon>
   );

@@ -239,7 +239,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-xs text-zinc-500">Precip</dt>
+                  <dt className="text-xs text-zinc-500">Precip</dt>  [edited]
                   <dd className="text-sm font-medium text-zinc-900 dark:text-zinc-50">
                     {w?.precipitation == null
                       ? "—"
@@ -258,5 +258,3 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     </section>
   );
 }
-
-# minor content update

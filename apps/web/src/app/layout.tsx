@@ -39,4 +39,4 @@ export default function RootLayout({
   );
 }
 
-// update log: auto edit 01
+// task4 project adjust

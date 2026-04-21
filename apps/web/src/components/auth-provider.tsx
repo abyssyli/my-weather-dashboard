@@ -70,4 +70,4 @@ export function useAuth() {
 }
 
 
-/* daily modify record */
+/* minor adjust */

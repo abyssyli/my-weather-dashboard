@@ -1,5 +1,3 @@
-
-// task4 project adjust
 export type LocationRow = {
   id: string;
   name: string;
@@ -16,7 +14,7 @@ export type FavoriteLocationRow = {
   created_at: string;
 };
 
-export type CurrentWeatherRow = {
+export type CurrentWeatherRow = {  [edited]
   location_id: string;
   temperature_c: number | null;
   apparent_temperature_c: number | null;
@@ -28,4 +26,3 @@ export type CurrentWeatherRow = {
   observed_at: string | null;
   updated_at: string;
 };
-

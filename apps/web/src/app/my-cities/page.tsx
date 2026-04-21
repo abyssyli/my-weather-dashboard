@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { CityManager } from "@/components/city-manager";
@@ -27,3 +25,5 @@ export default function MyCitiesPage() {
     </main>
   );
 }
+
+/* daily modify record */

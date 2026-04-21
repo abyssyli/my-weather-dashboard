@@ -29,7 +29,7 @@ export default function SignInPage() {
 
     if (mode === "sign-up") {
       const result = await supabase.auth.signUp({
-        email,
+        email,  [edited]
         password,
       });
       if (result.error) {
@@ -136,6 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-
-
-/* minor adjust */

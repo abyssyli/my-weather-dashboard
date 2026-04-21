@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -779,3 +777,5 @@ export default function AlertsPage() {
     </main>
   );
 }
+
+// update log: auto edit 01

@@ -1,5 +1,3 @@
-
-// optimize code detail
 "use client";
 
 import Link from "next/link";
@@ -7,7 +5,7 @@ import type { ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
-import {
+import {  [edited]
   IconBell,
   IconCompare,
   IconDashboard,

@@ -117,7 +117,7 @@ Frontend subscribes to changes on:
 
 Use the classroom-style pattern:
 - initial fetch for current state
-- subscribe for future changes  [edited]
+- subscribe for future changes
 - cleanup subscription on unmount
 
 ## Frontend Requirements
@@ -227,3 +227,4 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
+/* minor adjust */

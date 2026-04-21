@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useState } from "react";
@@ -119,7 +117,7 @@ export default function SignUpPage() {
             className="rounded-full px-2 py-1 font-medium text-zinc-600 hover:bg-black/[0.04] hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/[0.06] dark:hover:text-zinc-50"
           >
             {mode === "sign-in"
-              ? "Need an account? Sign up"
+              ? "Need an account? Sign up"  [edited]
               : "Already have an account? Sign in"}
           </button>
         </div>
@@ -138,4 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-
