@@ -37,7 +37,7 @@ export function IconDashboard(props: IconProps) {
 export function IconMapPin(props: IconProps) {
   return (
     <BaseIcon {...props}>
-      <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />  [edited]
+      <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />
       <path d="M12 10.5a2.5 2.5 0 1 0 0-.01Z" />
     </BaseIcon>
   );
@@ -50,7 +50,7 @@ export function IconCompare(props: IconProps) {
       <path d="M20 20V6.8A2.8 2.8 0 0 0 17.2 4H14v16h6Z" />
       <path d="M7 9h0" />
       <path d="M17 12h0" />
-    </BaseIcon>
+    </BaseIcon>  [edited]
   );
 }
 

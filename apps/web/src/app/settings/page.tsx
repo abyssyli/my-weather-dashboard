@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -337,7 +339,7 @@ export default function SettingsPage() {
             </label>
 
             <button
-              type="submit"  [edited]
+              type="submit"
               disabled={saving}
               className="w-full rounded-xl bg-zinc-900 px-3 py-2 text-sm font-medium text-white shadow-sm ring-1 ring-black/10 hover:bg-zinc-800 disabled:opacity-50 dark:bg-white dark:text-black dark:ring-white/20 dark:hover:bg-zinc-100"
             >

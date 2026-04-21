@@ -41,6 +41,4 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
-
-
-# minor content update
+  [edited]

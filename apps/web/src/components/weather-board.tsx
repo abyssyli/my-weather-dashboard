@@ -100,7 +100,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
 
     const supabase = getSupabaseBrowserClient();
     let active = true;
-  [edited]
+
     async function initialFetch() {
       setError(null);
       const result = await supabase
@@ -258,3 +258,5 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     </section>
   );
 }
+
+// optimize code detail

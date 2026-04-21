@@ -120,7 +120,7 @@ export default function SignUpPage() {
               ? "Need an account? Sign up"
               : "Already have an account? Sign in"}
           </button>
-        </div>  [edited]
+        </div>
 
         {error ? (
           <p className="mt-4 text-sm text-red-600 dark:text-red-400">
@@ -136,3 +136,6 @@ export default function SignUpPage() {
     </main>
   );
 }
+
+
+/* daily modify record */

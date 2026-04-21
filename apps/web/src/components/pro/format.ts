@@ -24,8 +24,6 @@ export function cToF(c: number) {
   return (c * 9) / 5 + 32;
 }
 
-export function kmhToMph(kmh: number) {
+export function kmhToMph(kmh: number) {  [edited]
   return kmh / 1.60934;
 }
-
-/* daily modify record */

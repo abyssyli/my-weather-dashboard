@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {
@@ -73,7 +71,7 @@ function IconRain({ className }: { className?: string }) {
     </Svg>
   );
 }
-
+  [edited]
 function IconSnow({ className }: { className?: string }) {
   return (
     <Svg className={className}>
@@ -144,4 +142,3 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
-

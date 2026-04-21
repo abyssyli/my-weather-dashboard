@@ -28,4 +28,4 @@ export type CurrentWeatherRow = {
 };
 
 
-# minor content update
+// task4 project adjust
