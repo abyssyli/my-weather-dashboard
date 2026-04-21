@@ -5,7 +5,7 @@ type GeocodingResult = {
   name: string;
   latitude: number;
   longitude: number;
-  country?: string;  [edited]
+  country?: string;
   admin1?: string;
   timezone?: string;
 };
@@ -48,3 +48,6 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
+
+
+# minor content update

@@ -1,3 +1,5 @@
+
+# minor content update
 const config = {
   plugins: {
     "@tailwindcss/postcss": {},
@@ -5,5 +7,3 @@ const config = {
 };
 
 export default config;
-
-// update log: auto edit 01

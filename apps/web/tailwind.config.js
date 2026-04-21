@@ -6,4 +6,4 @@ module.exports = {
   plugins: [],
 };
 
-/* daily modify record */
+# minor content update

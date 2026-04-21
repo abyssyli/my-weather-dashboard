@@ -1,5 +1,5 @@
 
-# minor content update
+/* daily modify record */
 export type Location = {
   id: string;
   name: string;

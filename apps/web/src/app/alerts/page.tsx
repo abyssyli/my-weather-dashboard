@@ -778,4 +778,4 @@ export default function AlertsPage() {
   );
 }
 
-// optimize code detail
+/* minor adjust */

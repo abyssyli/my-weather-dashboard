@@ -1,6 +1,4 @@
-
-// task4 project adjust
-import type { NextConfig } from "next";
+import type { NextConfig } from "next";  [edited]
 
 const nextConfig: NextConfig = {
   typescript: {

@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -287,7 +289,7 @@ export default function ComparePage() {
     let active = true;
 
     async function loadForecasts() {
-      setError(null);  [edited]
+      setError(null);
       const result = await supabase
         .from("daily_forecasts")
         .select(

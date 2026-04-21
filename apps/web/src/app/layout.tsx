@@ -1,12 +1,10 @@
-
-// update log: auto edit 01
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/auth-provider";
 import { Header } from "@/components/header";
 
-const geistSans = Geist({
+const geistSans = Geist({  [edited]
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";  [edited]
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
@@ -136,3 +136,6 @@ export default function SignUpPage() {
     </main>
   );
 }
+
+
+/* minor adjust */

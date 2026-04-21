@@ -7,7 +7,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import {
   IconBell,
-  IconCompare,  [edited]
+  IconCompare,
   IconDashboard,
   IconMapPin,
   IconSettings,
@@ -89,7 +89,7 @@ export function Header() {
               href="/settings"
               label="Settings"
               icon={<IconSettings className="h-4 w-4" />}
-            />
+            />  [edited]
           </nav>
         </div>
 
