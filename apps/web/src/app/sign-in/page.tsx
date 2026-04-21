@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -35,7 +33,7 @@ export default function SignInPage() {
         password,
       });
       if (result.error) {
-        setError(result.error.message);
+        setError(result.error.message);  [edited]
         setSubmitting(false);
         return;
       }
@@ -138,4 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-

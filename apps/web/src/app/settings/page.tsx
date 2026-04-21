@@ -145,7 +145,7 @@ export default function SettingsPage() {
 
     const result = await supabase
       .from("user_preferences")
-      .upsert(  [edited]
+      .upsert(
         {
           user_id: user.id,
           temperature_unit: preferences.temperature_unit,
@@ -353,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+/* daily modify record */

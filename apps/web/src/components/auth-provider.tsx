@@ -1,11 +1,9 @@
-
-// update log: auto edit 01
 "use client";
 
 import {
   createContext,
   useContext,
-  useEffect,
+  useEffect,  [edited]
   useMemo,
   useState,
 } from "react";
@@ -70,4 +68,3 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
-

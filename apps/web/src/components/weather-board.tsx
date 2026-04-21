@@ -178,7 +178,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     );
   }
 
-  return (  [edited]
+  return (
     <section>
       {error ? (
         <div className="mb-4 rounded-2xl border border-red-200/70 bg-red-50/80 p-4 text-sm text-red-700 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-300 dark:ring-white/10">
@@ -224,7 +224,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
                 </div>
                 <div>
                   <dt className="text-xs text-zinc-500">Humidity</dt>
-                  <dd className="text-sm font-medium text-zinc-900 dark:text-zinc-50">
+                  <dd className="text-sm font-medium text-zinc-900 dark:text-zinc-50">  [edited]
                     {w?.relative_humidity == null
                       ? "—"
                       : `${w.relative_humidity}%`}

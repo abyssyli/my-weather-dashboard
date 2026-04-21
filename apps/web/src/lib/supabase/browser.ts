@@ -1,7 +1,5 @@
-
-// task4 project adjust
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-
+  [edited]
 let browserClient: SupabaseClient | null = null;
 
 export function getSupabaseBrowserClient() {
@@ -19,4 +17,3 @@ export function getSupabaseBrowserClient() {
   browserClient = createClient(supabaseUrl, supabaseAnonKey);
   return browserClient;
 }
-

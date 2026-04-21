@@ -31,7 +31,7 @@ export default function SignUpPage() {
       const result = await supabase.auth.signUp({
         email,
         password,
-      });
+      });  [edited]
       if (result.error) {
         setError(result.error.message);
         setSubmitting(false);
@@ -136,6 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-
-
-// task4 project adjust

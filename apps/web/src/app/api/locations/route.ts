@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -48,7 +50,7 @@ export async function POST(request: Request) {
   } catch (e) {
     const message = e instanceof Error ? e.message : "Server misconfiguration";
     return NextResponse.json({ error: message }, { status: 500 });
-  }  [edited]
+  }
 
   const upsertResult = await supabase
     .from("locations")

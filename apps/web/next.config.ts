@@ -8,4 +8,4 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-/* daily modify record */
+// optimize code detail

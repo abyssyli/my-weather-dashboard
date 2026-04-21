@@ -215,7 +215,7 @@ export default function AlertsPage() {
       ]);
 
       if (!active) return;
-
+  [edited]
       if (rulesResult.error) {
         setError(rulesResult.error.message);
         setLoading(false);
@@ -438,7 +438,7 @@ export default function AlertsPage() {
   if (authLoading) {
     return (
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
-        <GlassCard icon={<IconBell className="h-5 w-5" />} title="Alerts" subtitle="Loading…">  [edited]
+        <GlassCard icon={<IconBell className="h-5 w-5" />} title="Alerts" subtitle="Loading…">
           <p className="text-sm text-zinc-600 dark:text-zinc-400">Loading…</p>
         </GlassCard>
       </main>

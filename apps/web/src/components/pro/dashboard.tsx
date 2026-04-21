@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -697,7 +695,7 @@ export function ProDashboard({ user }: { user: User | null }) {
   const [alertsLoading, setAlertsLoading] = useState(false);
   const [alertsError, setAlertsError] = useState<string | null>(null);
 
-  const [currentWeather, setCurrentWeather] = useState<CurrentWeatherRow | null>(
+  const [currentWeather, setCurrentWeather] = useState<CurrentWeatherRow | null>(  [edited]
     null
   );
   const [dailyForecasts, setDailyForecasts] = useState<DailyForecastRow[]>([]);

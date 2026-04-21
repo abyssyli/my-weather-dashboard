@@ -86,7 +86,7 @@ export function Header() {
               icon={<IconBell className="h-4 w-4" />}
             />
             <NavLink
-              href="/settings"  [edited]
+              href="/settings"
               label="Settings"
               icon={<IconSettings className="h-4 w-4" />}
             />
@@ -130,3 +130,5 @@ export function Header() {
     </header>
   );
 }
+
+# minor content update
