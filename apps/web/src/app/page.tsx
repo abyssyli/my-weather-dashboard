@@ -1,4 +1,6 @@
-import { redirect } from "next/navigation";  [edited]
+
+// task4 project adjust
+import { redirect } from "next/navigation";
 
 export default function Home() {
   redirect("/dashboard");

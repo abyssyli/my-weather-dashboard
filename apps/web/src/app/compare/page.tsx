@@ -414,7 +414,7 @@ export default function ComparePage() {
                   : "text-zinc-600 hover:bg-black/[0.04] dark:text-zinc-400 dark:hover:bg-white/[0.06]",
               ].join(" ")}
             >
-              ℃
+              ℃  [edited]
             </button>
             <button
               type="button"
@@ -528,5 +528,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-/* minor adjust */

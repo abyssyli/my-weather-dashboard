@@ -77,4 +77,4 @@ export async function POST(request: Request) {
   return NextResponse.json({ location: upsertResult.data });
 }
 
-// optimize code detail
+// update log: auto edit 01

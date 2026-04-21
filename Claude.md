@@ -149,7 +149,7 @@ Responsibilities:
 2. request weather data from Open-Meteo for each city
 3. normalize the response
 4. upsert into public.current_weather using location_id
-5. log success/failure
+5. log success/failure  [edited]
 6. repeat on a schedule
 
 Worker must:
@@ -220,7 +220,7 @@ When working on this repo:
    - update worker normalization
    - update frontend types and UI
 5. when debugging missing live updates, check:
-   - worker logs  [edited]
+   - worker logs
    - current_weather writes
    - Realtime enabled on the table
    - frontend subscription code

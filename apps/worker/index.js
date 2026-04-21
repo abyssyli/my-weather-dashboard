@@ -85,7 +85,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
 
   const json = await response.json();
   const current = json.current;
-  if (!current) throw new Error("Open-Meteo response missing current field");
+  if (!current) throw new Error("Open-Meteo response missing current field");  [edited]
 
   const daily = json.daily;
   if (!daily || !Array.isArray(daily.time)) {
@@ -292,5 +292,3 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-# minor content update

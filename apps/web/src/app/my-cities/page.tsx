@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import { CityManager } from "@/components/city-manager";
@@ -25,5 +27,3 @@ export default function MyCitiesPage() {
     </main>
   );
 }
-
-# minor content update

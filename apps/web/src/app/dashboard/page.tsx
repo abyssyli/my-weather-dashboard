@@ -5,7 +5,5 @@ import { ProDashboard } from "@/components/pro/dashboard";
 
 export default function DashboardPage() {
   const { user } = useAuth();
-  return <ProDashboard user={user} />;
+  return <ProDashboard user={user} />;  [edited]
 }
-
-/* daily modify record */

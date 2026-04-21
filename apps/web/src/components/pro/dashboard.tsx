@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";  [edited]
 import type { User } from "@supabase/supabase-js";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
@@ -514,7 +514,7 @@ function CityPicker({
             onClick={() => onSetDefaultLocation(selectedLocationId)}
             className="rounded-full px-2 py-1 text-xs font-medium text-zinc-600 hover:bg-black/[0.04] disabled:opacity-50 dark:text-zinc-400 dark:hover:bg-white/[0.06]"
           >
-            Set default  [edited]
+            Set default
           </button>
         </div>
       ) : null}

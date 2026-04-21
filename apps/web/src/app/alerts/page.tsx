@@ -498,7 +498,7 @@ export default function AlertsPage() {
                   <option value="precipitation">Precipitation</option>
                   <option value="temperature_max">Max Temperature</option>
                   <option value="wind_speed">Wind Speed</option>
-                </select>  [edited]
+                </select>
               </label>
 
               <label className="block text-xs font-medium text-zinc-500">
@@ -777,3 +777,5 @@ export default function AlertsPage() {
     </main>
   );
 }
+
+// update log: auto edit 01

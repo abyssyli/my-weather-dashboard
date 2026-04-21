@@ -8,4 +8,4 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-// optimize code detail
+# minor content update
