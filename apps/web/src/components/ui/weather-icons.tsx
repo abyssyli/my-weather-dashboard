@@ -124,7 +124,7 @@ function normalize(code: number) {
   if (code >= 95 && code <= 99) return "thunder";
   return "wind";
 }
-  [edited]
+
 export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps) {
   if (weatherCode == null) return <IconCloud className={className} />;
   const kind = normalize(weatherCode);
@@ -142,3 +142,6 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
+
+
+// task4 project adjust

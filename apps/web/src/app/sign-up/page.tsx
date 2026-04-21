@@ -28,7 +28,7 @@ export default function SignUpPage() {
     const supabase = getSupabaseBrowserClient();
 
     if (mode === "sign-up") {
-      const result = await supabase.auth.signUp({
+      const result = await supabase.auth.signUp({  [edited]
         email,
         password,
       });
@@ -136,6 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-
-
-# minor content update

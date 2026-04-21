@@ -1,3 +1,5 @@
+
+/* minor adjust */
 import type { ReactNode } from "react";
 
 export type IconProps = {
@@ -120,5 +122,3 @@ export function IconSparkles(props: IconProps) {
     </BaseIcon>
   );
 }
-
-// update log: auto edit 01

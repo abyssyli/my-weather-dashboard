@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import Link from "next/link";
@@ -130,5 +132,3 @@ export function Header() {
     </header>
   );
 }
-
-// update log: auto edit 01

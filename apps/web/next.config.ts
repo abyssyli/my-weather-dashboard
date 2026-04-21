@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next";  [edited]
 
 const nextConfig: NextConfig = {
   typescript: {
@@ -6,4 +6,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;  [edited]
+export default nextConfig;

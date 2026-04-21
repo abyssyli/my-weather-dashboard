@@ -1,5 +1,3 @@
-
-/* daily modify record */
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";
@@ -22,7 +20,7 @@ export function formatDateTimeISO(dateIso: string) {
   return date.toLocaleString();
 }
 
-export function cToF(c: number) {
+export function cToF(c: number) {  [edited]
   return (c * 9) / 5 + 32;
 }
 

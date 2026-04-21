@@ -163,7 +163,7 @@ Recommended default polling interval:
 - 10 minutes (POLL_INTERVAL_MS=600000)
 
 ## Environment Variables
-
+  [edited]
 ### apps/web/.env.local
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
@@ -227,4 +227,3 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
-/* daily modify record */

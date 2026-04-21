@@ -11,7 +11,7 @@ export type Location = {
 export type FavoriteLocation = {
   user_id: string;
   location_id: string;
-  created_at: string;  [edited]
+  created_at: string;
 };
 
 export type CurrentWeather = {
@@ -82,7 +82,7 @@ export type AlertRule = {
   threshold: number;
   horizon_days: number;
   enabled: boolean;
-  created_at: string;
+  created_at: string;  [edited]
   updated_at: string;
 };
 

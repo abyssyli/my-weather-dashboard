@@ -92,7 +92,7 @@ export default function SettingsPage() {
         supabase
           .from("favorite_locations")
           .select(
-            "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"
+            "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"  [edited]
           )
           .eq("user_id", user.id),
       ]);
@@ -353,5 +353,3 @@ export default function SettingsPage() {
     </main>
   );
 }
-
-// task4 project adjust

@@ -20,9 +20,12 @@ export type CurrentWeatherRow = {
   apparent_temperature_c: number | null;
   relative_humidity: number | null;
   wind_speed_kmh: number | null;
-  precipitation: number | null;  [edited]
+  precipitation: number | null;
   weather_code: number | null;
   is_day: boolean | null;
   observed_at: string | null;
   updated_at: string;
 };
+
+
+/* daily modify record */

@@ -47,7 +47,7 @@ export default function SignInPage() {
       email,
       password,
     });
-    if (result.error) {  [edited]
+    if (result.error) {
       setError(result.error.message);
       setSubmitting(false);
       return;
@@ -136,3 +136,6 @@ export default function SignInPage() {
     </main>
   );
 }
+
+
+# minor content update

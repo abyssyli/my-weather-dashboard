@@ -124,7 +124,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     uv_index_max: daily.uv_index_max?.[i] ?? null,
     updated_at: nowIso,
   }));
-
+  [edited]
   const hourlyForecasts = hourly.time.slice(0, 24).map((time, i) => ({
     forecast_time: time,
     temperature_c: hourly.temperature_2m?.[i] ?? null,
@@ -292,5 +292,3 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
-
-// task4 project adjust

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
-type CreateLocationInput = {
+type CreateLocationInput = {  [edited]
   name: string;
   country?: string | null;
   latitude: number;
@@ -61,7 +61,7 @@ export async function POST(request: Request) {
     .maybeSingle();
 
   if (upsertResult.error) {
-    return NextResponse.json(  [edited]
+    return NextResponse.json(
       { error: upsertResult.error.message },
       { status: 500 }
     );

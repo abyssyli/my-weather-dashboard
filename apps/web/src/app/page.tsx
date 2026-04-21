@@ -1,5 +1,5 @@
 
-// update log: auto edit 01
+/* daily modify record */
 import { redirect } from "next/navigation";
 
 export default function Home() {

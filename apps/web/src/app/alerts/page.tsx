@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -779,3 +777,5 @@ export default function AlertsPage() {
     </main>
   );
 }
+
+# minor content update
