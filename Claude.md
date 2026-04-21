@@ -216,7 +216,7 @@ When working on this repo:
 2. keep frontend and worker independent
 3. prefer small, reviewable changes
 4. if adding a new weather field:
-   - update schema  [edited]
+   - update schema
    - update worker normalization
    - update frontend types and UI
 5. when debugging missing live updates, check:
@@ -227,3 +227,4 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
+/* minor adjust */

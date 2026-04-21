@@ -558,7 +558,7 @@ function HourlyTrend({
   const plotWidth = width - left - right;
   const plotHeight = height - top - bottom;
 
-  const points = items  [edited]
+  const points = items
     .map((i, idx) => {
       const raw = i.temperature_c;
       if (raw == null || !Number.isFinite(raw)) return null;
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+/* minor adjust */

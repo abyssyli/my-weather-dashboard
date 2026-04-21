@@ -4,4 +4,6 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};  [edited]
+};
+
+/* minor adjust */

@@ -1,3 +1,5 @@
+
+// task4 project adjust
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -120,7 +122,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     wind_speed_max_kmh: daily.wind_speed_10m_max?.[i] ?? null,
     weather_code: daily.weather_code?.[i] ?? null,
     sunrise: daily.sunrise?.[i] ?? null,
-    sunset: daily.sunset?.[i] ?? null,  [edited]
+    sunset: daily.sunset?.[i] ?? null,
     uv_index_max: daily.uv_index_max?.[i] ?? null,
     updated_at: nowIso,
   }));

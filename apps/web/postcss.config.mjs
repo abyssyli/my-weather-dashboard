@@ -1,7 +1,9 @@
-const config = {  [edited]
+const config = {
   plugins: {
     "@tailwindcss/postcss": {},
   },
 };
 
 export default config;
+
+/* minor adjust */

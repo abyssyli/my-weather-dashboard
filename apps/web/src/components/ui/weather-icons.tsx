@@ -13,7 +13,7 @@ function Svg({
   className?: string;
   children: ReactNode;
 }) {
-  return (
+  return (  [edited]
     <svg
       viewBox="0 0 24 24"
       aria-hidden="true"
@@ -142,6 +142,3 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
-
-
-# minor content update

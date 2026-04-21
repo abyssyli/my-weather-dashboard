@@ -1,5 +1,5 @@
 {
-  "name": "weather-pulse",  [edited]
+  "name": "weather-pulse",
   "private": true,
   "workspaces": [
     "apps/web",
@@ -12,3 +12,4 @@
     "start:worker": "npm run start --workspace worker"
   }
 }
+  [edited]

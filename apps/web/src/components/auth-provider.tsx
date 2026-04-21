@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import {
@@ -38,7 +40,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setSession(null);
         setLoading(false);
       });
-  [edited]
+
     const { data: subscription } = supabase.auth.onAuthStateChange(
       (_event, newSession) => {
         setSession(newSession);
@@ -68,3 +70,4 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
+

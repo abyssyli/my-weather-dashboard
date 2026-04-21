@@ -51,7 +51,7 @@ export type DailyForecast = {
   temp_min_c: number | null;
   precipitation_sum_mm: number | null;
   precipitation_probability_max: number | null;
-  wind_speed_max_kmh: number | null;
+  wind_speed_max_kmh: number | null;  [edited]
   weather_code: number | null;
   sunrise: string | null;
   sunset: string | null;
@@ -102,5 +102,3 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
-
-/* daily modify record */

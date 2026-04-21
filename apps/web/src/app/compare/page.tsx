@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";  [edited]
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import type { LocationRow } from "@/lib/types/db";
@@ -9,6 +9,14 @@ import { IconCompare } from "@/components/ui/icons";
 
 type TemperatureUnit = "c" | "f";
 
+type DailyForecastRow = {
+  location_id: string;
+  forecast_date: string;
+  temp_max_c: number | null;
+  temp_min_c: number | null;
+  precipitation_probability_max: number | null;
+  wind_speed_max_kmh: number | null;
+};
 
 function MultiCityTempChart({
   dates,
@@ -520,5 +528,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-// update log: auto edit 01

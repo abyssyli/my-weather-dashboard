@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next";  [edited]
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/auth-provider";
@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",  [edited]
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 

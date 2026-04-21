@@ -1,5 +1,5 @@
 
-// optimize code detail
+// update log: auto edit 01
 import type { ReactNode } from "react";
 
 export type IconProps = {

@@ -53,7 +53,7 @@ export default function SignInPage() {
       return;
     }
 
-    router.replace("/dashboard");  [edited]
+    router.replace("/dashboard");
     router.refresh();
     setSubmitting(false);
   }
@@ -136,3 +136,6 @@ export default function SignInPage() {
     </main>
   );
 }
+
+
+# minor content update

@@ -1,3 +1,5 @@
+
+/* minor adjust */
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -17,7 +19,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const input = body as Partial<CreateLocationInput>;  [edited]
+  const input = body as Partial<CreateLocationInput>;
   const name = typeof input.name === "string" ? input.name.trim() : "";
   const country =
     input.country == null

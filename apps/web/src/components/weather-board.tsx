@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -80,7 +78,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
       if (!active) return;
 
       if (result.error) {
-        setError(result.error.message);
+        setError(result.error.message);  [edited]
         setLoading(false);
         return;
       }
