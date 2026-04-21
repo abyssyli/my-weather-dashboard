@@ -19,7 +19,7 @@ body {
     ui-sans-serif,
     system-ui,
     -apple-system,
-    BlinkMacSystemFont,
+    BlinkMacSystemFont,  [edited]
     "SF Pro Display",
     "SF Pro Text",
     "Segoe UI",
@@ -29,5 +29,3 @@ body {
     "Apple Color Emoji",
     "Segoe UI Emoji";
 }
-
-/* daily modify record */

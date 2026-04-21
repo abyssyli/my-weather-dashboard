@@ -29,6 +29,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],  [edited]
+  ],
   "exclude": ["node_modules"]
 }
+
+/* minor adjust */

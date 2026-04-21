@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useState } from "react";
@@ -49,7 +47,7 @@ export default function SignInPage() {
       email,
       password,
     });
-    if (result.error) {
+    if (result.error) {  [edited]
       setError(result.error.message);
       setSubmitting(false);
       return;
@@ -138,4 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-

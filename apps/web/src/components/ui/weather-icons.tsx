@@ -70,7 +70,7 @@ function IconRain({ className }: { className?: string }) {
       <path d="M16 17l-1 2" />
     </Svg>
   );
-}  [edited]
+}
 
 function IconSnow({ className }: { className?: string }) {
   return (
@@ -124,7 +124,7 @@ function normalize(code: number) {
   if (code >= 95 && code <= 99) return "thunder";
   return "wind";
 }
-
+  [edited]
 export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps) {
   if (weatherCode == null) return <IconCloud className={className} />;
   const kind = normalize(weatherCode);

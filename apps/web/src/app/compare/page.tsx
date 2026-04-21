@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -201,7 +199,7 @@ function GlassCard({
 }) {
   return (
     <section className="rounded-2xl border border-white/60 bg-white/70 p-5 shadow-sm ring-1 ring-black/5 backdrop-blur-xl dark:border-zinc-800/70 dark:bg-black/40 dark:ring-white/10">
-      <header>
+      <header>  [edited]
         <div className="flex items-start gap-2">
           {icon ? (
             <span className="mt-0.5 text-zinc-500 dark:text-zinc-400">{icon}</span>

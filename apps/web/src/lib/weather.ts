@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 export function describeWeatherCode(code: number | null | undefined) {
   if (code == null) return "Unknown";
 
@@ -25,7 +23,7 @@ export function describeWeatherCode(code: number | null | undefined) {
     75: "Heavy Snow",
     77: "Snow Grains",
     80: "Light Rain Showers",
-    81: "Rain Showers",
+    81: "Rain Showers",  [edited]
     82: "Violent Rain Showers",
     85: "Light Snow Showers",
     86: "Snow Showers",
@@ -43,4 +41,3 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
-

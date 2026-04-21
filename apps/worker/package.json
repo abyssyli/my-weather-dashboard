@@ -5,12 +5,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js"
-  },
+  },  [edited]
   "dependencies": {
     "@supabase/supabase-js": "^2.57.0",
     "dotenv": "^16.6.1"
   }
 }
-
-
-/* daily modify record */

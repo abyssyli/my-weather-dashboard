@@ -11,7 +11,7 @@ export type Location = {
 export type FavoriteLocation = {
   user_id: string;
   location_id: string;
-  created_at: string;
+  created_at: string;  [edited]
 };
 
 export type CurrentWeather = {
@@ -102,5 +102,3 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
-
-// update log: auto edit 01

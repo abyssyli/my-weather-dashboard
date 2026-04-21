@@ -59,9 +59,9 @@ export async function POST(request: Request) {
     .select("id,name,country,latitude,longitude,timezone,created_at")
     .limit(1)
     .maybeSingle();
-  [edited]
+
   if (upsertResult.error) {
-    return NextResponse.json(
+    return NextResponse.json(  [edited]
       { error: upsertResult.error.message },
       { status: 500 }
     );

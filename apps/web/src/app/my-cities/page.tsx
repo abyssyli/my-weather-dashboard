@@ -1,3 +1,5 @@
+
+// task4 project adjust
 "use client";
 
 import { CityManager } from "@/components/city-manager";
@@ -17,7 +19,7 @@ export default function MyCitiesPage() {
             ? "Manage favorites and add new cities via search."
             : "Sign in to save favorites and unlock Pro features."}
         </p>
-  [edited]
+
         <div className="mt-6 max-w-xl">
           <CityManager />
         </div>

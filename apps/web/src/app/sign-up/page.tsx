@@ -1,5 +1,3 @@
-
-// optimize code detail
 "use client";
 
 import { useEffect, useState } from "react";
@@ -139,3 +137,5 @@ export default function SignUpPage() {
   );
 }
 
+
+# minor content update

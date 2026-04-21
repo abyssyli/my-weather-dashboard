@@ -44,7 +44,7 @@ function NavLink({
 }
 
 export function Header() {
-  const router = useRouter();  [edited]
+  const router = useRouter();
   const { user, loading } = useAuth();
 
   async function handleSignOut() {
@@ -130,3 +130,5 @@ export function Header() {
     </header>
   );
 }
+
+// update log: auto edit 01
