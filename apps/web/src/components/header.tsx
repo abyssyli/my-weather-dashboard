@@ -88,7 +88,7 @@ export function Header() {
             <NavLink
               href="/settings"
               label="Settings"
-              icon={<IconSettings className="h-4 w-4" />}
+              icon={<IconSettings className="h-4 w-4" />}  [edited]
             />
           </nav>
         </div>
@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-// update log: auto edit 01

@@ -96,7 +96,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
   if (!hourly || !Array.isArray(hourly.time)) {
     throw new Error("Open-Meteo response missing hourly field");
   }
-  [edited]
+
   const nowIso = new Date().toISOString();
 
   const currentWeather = {
@@ -292,3 +292,5 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
+
+// optimize code detail

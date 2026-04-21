@@ -1,5 +1,5 @@
 
-// optimize code detail
+// task4 project adjust
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 

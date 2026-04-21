@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -287,7 +289,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
 
             {searching ? (
               <p className="mt-2 text-xs text-zinc-500">Searching…</p>
-            ) : null}  [edited]
+            ) : null}
 
             {searchResults.length > 0 ? (
               <ul className="mt-2 space-y-2">

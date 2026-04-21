@@ -15,7 +15,7 @@ export function describeWeatherCode(code: number | null | undefined) {
     57: "Freezing Drizzle",
     61: "Light Rain",
     63: "Rain",
-    65: "Heavy Rain",  [edited]
+    65: "Heavy Rain",
     66: "Light Freezing Rain",
     67: "Freezing Rain",
     71: "Light Snow",
@@ -41,3 +41,6 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
+
+
+/* daily modify record */

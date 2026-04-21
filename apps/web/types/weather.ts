@@ -33,7 +33,7 @@ export type TimezoneDisplay = "location" | "utc";
 export type TimeFormat = "12h" | "24h";
 
 export type UserPreferences = {
-  user_id: string;
+  user_id: string;  [edited]
   temperature_unit: TemperatureUnit;
   wind_speed_unit: WindSpeedUnit;
   default_location_id: string | null;
@@ -102,5 +102,3 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
-
-// task4 project adjust

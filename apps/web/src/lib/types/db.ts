@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 export type LocationRow = {
   id: string;
   name: string;
@@ -27,5 +25,4 @@ export type CurrentWeatherRow = {
   is_day: boolean | null;
   observed_at: string | null;
   updated_at: string;
-};
-
+};  [edited]

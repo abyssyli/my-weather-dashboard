@@ -193,7 +193,7 @@ function GlassCard({
   children,
 }: {
   icon?: React.ReactNode;
-  title: string;  [edited]
+  title: string;
   subtitle?: string;
   children: React.ReactNode;
 }) {
@@ -321,7 +321,7 @@ export default function ComparePage() {
   }, [forecasts]);
 
   const byCityAndDate = useMemo(() => {
-    const map = new Map<string, DailyForecastRow>();
+    const map = new Map<string, DailyForecastRow>();  [edited]
     for (const r of forecasts) {
       map.set(`${r.location_id}:${r.forecast_date}`, r);
     }

@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";  [edited]
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   typescript: {
@@ -7,3 +7,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+/* minor adjust */

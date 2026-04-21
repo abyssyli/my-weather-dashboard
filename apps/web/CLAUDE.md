@@ -1,3 +1,3 @@
-@AGENTS.md
 
-# minor content update
+/* minor adjust */
+@AGENTS.md

@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -52,7 +54,7 @@ export async function POST(request: Request) {
 
   const upsertResult = await supabase
     .from("locations")
-    .upsert(  [edited]
+    .upsert(
       { name, country, latitude, longitude, timezone },
       { onConflict: "name,country,latitude,longitude" }
     )

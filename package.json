@@ -5,13 +5,10 @@
     "apps/web",
     "apps/worker"
   ],
-  "scripts": {
+  "scripts": {  [edited]
     "dev:web": "npm run dev --workspace web",
     "dev:worker": "npm run dev --workspace worker",
     "lint:web": "npm run lint --workspace web",
     "start:worker": "npm run start --workspace worker"
   }
 }
-
-
-// optimize code detail

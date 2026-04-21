@@ -80,7 +80,7 @@ export function IconThermometer(props: IconProps) {
     </BaseIcon>
   );
 }
-  [edited]
+
 export function IconCalendar(props: IconProps) {
   return (
     <BaseIcon {...props}>
@@ -120,3 +120,5 @@ export function IconSparkles(props: IconProps) {
     </BaseIcon>
   );
 }
+
+/* daily modify record */
