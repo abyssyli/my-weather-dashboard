@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server:  [edited]
 
 ```bash
 npm run dev
@@ -25,7 +25,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 Run the SQL files in order:
 
 1. `sql/001_schema.sql`
-2. `sql/002_rls.sql`  [edited]
+2. `sql/002_rls.sql`
 3. `sql/003_seed_locations.sql`
 
 In the Supabase Dashboard:

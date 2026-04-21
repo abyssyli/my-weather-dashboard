@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -374,7 +376,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
                     </button>
                   </li>
                 ))}
-              </ul>  [edited]
+              </ul>
             )}
           </div>
         </>

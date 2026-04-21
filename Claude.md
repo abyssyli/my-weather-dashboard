@@ -220,11 +220,10 @@ When working on this repo:
    - update worker normalization
    - update frontend types and UI
 5. when debugging missing live updates, check:
-   - worker logs
+   - worker logs  [edited]
    - current_weather writes
    - Realtime enabled on the table
    - frontend subscription code
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
-// optimize code detail

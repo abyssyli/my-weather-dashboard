@@ -1,5 +1,5 @@
 
-// optimize code detail
+// task4 project adjust
 export type LocationRow = {
   id: string;
   name: string;

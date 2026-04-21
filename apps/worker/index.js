@@ -251,7 +251,7 @@ async function pollOnce() {
   );
 
   try {
-    await finalizeSyncRun(runId, {  [edited]
+    await finalizeSyncRun(runId, {
       finished_at: new Date().toISOString(),
       status,
       locations_total: locationsTotal,
@@ -292,3 +292,5 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
+
+# minor content update

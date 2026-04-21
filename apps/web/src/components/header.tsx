@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import Link from "next/link";
@@ -19,7 +21,7 @@ function NavLink({
   icon,
 }: {
   href: string;
-  label: string;  [edited]
+  label: string;
   icon: ReactNode;
 }) {
   const pathname = usePathname();

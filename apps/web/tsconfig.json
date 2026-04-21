@@ -14,7 +14,7 @@
     "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
-      {  [edited]
+      {
         "name": "next"
       }
     ],
@@ -26,7 +26,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
+    ".next/types/**/*.ts",  [edited]
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],

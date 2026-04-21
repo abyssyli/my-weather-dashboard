@@ -1,5 +1,5 @@
 
-// update log: auto edit 01
+# minor content update
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {

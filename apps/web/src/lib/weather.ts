@@ -1,3 +1,5 @@
+
+# minor content update
 export function describeWeatherCode(code: number | null | undefined) {
   if (code == null) return "Unknown";
 
@@ -13,7 +15,7 @@ export function describeWeatherCode(code: number | null | undefined) {
     55: "Heavy Drizzle",
     56: "Light Freezing Drizzle",
     57: "Freezing Drizzle",
-    61: "Light Rain",  [edited]
+    61: "Light Rain",
     63: "Rain",
     65: "Heavy Rain",
     66: "Light Freezing Rain",
@@ -41,3 +43,4 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
+

@@ -34,7 +34,7 @@ type UserPreferencesRow = {
   default_location_id: string | null;
   timezone_display: "location" | "utc";
   time_format: "12h" | "24h";
-  alerts_enabled: boolean;  [edited]
+  alerts_enabled: boolean;
   created_at: string;
   updated_at: string;
 };
@@ -514,7 +514,7 @@ function CityPicker({
             onClick={() => onSetDefaultLocation(selectedLocationId)}
             className="rounded-full px-2 py-1 text-xs font-medium text-zinc-600 hover:bg-black/[0.04] disabled:opacity-50 dark:text-zinc-400 dark:hover:bg-white/[0.06]"
           >
-            Set default
+            Set default  [edited]
           </button>
         </div>
       ) : null}

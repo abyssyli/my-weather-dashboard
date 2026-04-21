@@ -133,6 +133,9 @@ export default function SignUpPage() {
           </p>
         ) : null}
       </form>
-    </main>  [edited]
+    </main>
   );
 }
+
+
+/* minor adjust */

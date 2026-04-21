@@ -1,3 +1,5 @@
+
+/* minor adjust */
 export type Location = {
   id: string;
   name: string;
@@ -25,7 +27,7 @@ export type CurrentWeather = {
   is_day: boolean | null;
   observed_at: string | null;
   updated_at: string;
-};  [edited]
+};
 
 export type TemperatureUnit = "c" | "f";
 export type WindSpeedUnit = "kmh" | "mph";

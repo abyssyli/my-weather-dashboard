@@ -40,7 +40,7 @@ export function IconMapPin(props: IconProps) {
       <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z" />
       <path d="M12 10.5a2.5 2.5 0 1 0 0-.01Z" />
     </BaseIcon>
-  );  [edited]
+  );
 }
 
 export function IconCompare(props: IconProps) {
@@ -117,6 +117,6 @@ export function IconSparkles(props: IconProps) {
       <path d="M12 2l1.2 3.8L17 7l-3.8 1.2L12 12l-1.2-3.8L7 7l3.8-1.2L12 2Z" />
       <path d="M19 12l.8 2.4L22 15l-2.2.6L19 18l-.8-2.4L16 15l2.2-.6L19 12Z" />
       <path d="M4.5 13l.7 2.1L7 15.5l-1.8.5L4.5 18l-.7-2-1.8-.5 1.8-.4.7-2.1Z" />
-    </BaseIcon>
+    </BaseIcon>  [edited]
   );
 }

@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import {
@@ -54,7 +56,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const value = useMemo<AuthContextValue>(
     () => ({
       session,
-      user: session?.user ?? null,  [edited]
+      user: session?.user ?? null,
       loading,
     }),
     [session, loading]
@@ -68,3 +70,4 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
+
