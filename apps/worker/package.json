@@ -1,6 +1,6 @@
 {
   "name": "worker",
-  "version": "0.1.0",  [edited]
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node index.js",
@@ -11,3 +11,6 @@
     "dotenv": "^16.6.1"
   }
 }
+
+
+/* minor adjust */

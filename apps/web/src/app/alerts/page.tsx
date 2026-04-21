@@ -56,7 +56,7 @@ function GlassCard({
         {subtitle ? (
           <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
             {subtitle}
-          </p>
+          </p>  [edited]
         ) : null}
       </header>
       <div className="mt-4">{children}</div>
@@ -777,5 +777,3 @@ export default function AlertsPage() {
     </main>
   );
 }
-
-/* minor adjust */

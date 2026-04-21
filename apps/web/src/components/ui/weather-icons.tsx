@@ -117,7 +117,7 @@ function normalize(code: number) {
   if (code >= 1 && code <= 3) return "cloud";
   if (code === 45 || code === 48) return "fog";
   if (code >= 51 && code <= 57) return "rain";
-  if (code >= 61 && code <= 67) return "rain";
+  if (code >= 61 && code <= 67) return "rain";  [edited]
   if (code >= 71 && code <= 77) return "snow";
   if (code >= 80 && code <= 82) return "rain";
   if (code === 85 || code === 86) return "snow";
@@ -142,6 +142,3 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
-
-
-/* daily modify record */

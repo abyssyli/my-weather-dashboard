@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/auth-provider";
-import { Header } from "@/components/header";  [edited]
+import { Header } from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,3 +38,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+// task4 project adjust

@@ -6,7 +6,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 
 export default function SignInPage() {
-  const router = useRouter();
+  const router = useRouter();  [edited]
   const { user, loading } = useAuth();
   const [mode, setMode] = useState<"sign-in" | "sign-up">("sign-in");
   const [email, setEmail] = useState("");
@@ -136,6 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-
-
-// task4 project adjust

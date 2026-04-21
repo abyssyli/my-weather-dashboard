@@ -1,5 +1,3 @@
-
-// optimize code detail
 import { NextResponse } from "next/server";
 
 type GeocodingResult = {
@@ -36,7 +34,7 @@ export async function GET(request: Request) {
       { error: `Geocoding request failed: ${response.status}` },
       { status: 502 }
     );
-  }
+  }  [edited]
 
   const json = (await response.json()) as { results?: GeocodingResult[] };
   const results = (json.results ?? []).map((r) => ({
@@ -50,4 +48,3 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
-

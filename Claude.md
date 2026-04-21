@@ -1,3 +1,5 @@
+
+/* minor adjust */
 # Weather Pulse
 
 ## Project Overview
@@ -219,7 +221,7 @@ When working on this repo:
    - update schema
    - update worker normalization
    - update frontend types and UI
-5. when debugging missing live updates, check:  [edited]
+5. when debugging missing live updates, check:
    - worker logs
    - current_weather writes
    - Realtime enabled on the table

@@ -119,7 +119,7 @@ export function Header() {
               </Link>
               <Link
                 href="/sign-up"
-                className="rounded-full bg-zinc-900 px-3 py-1.5 text-sm font-medium text-white shadow-sm ring-1 ring-black/10 hover:bg-zinc-800 dark:bg-white dark:text-black dark:ring-white/20 dark:hover:bg-zinc-100"
+                className="rounded-full bg-zinc-900 px-3 py-1.5 text-sm font-medium text-white shadow-sm ring-1 ring-black/10 hover:bg-zinc-800 dark:bg-white dark:text-black dark:ring-white/20 dark:hover:bg-zinc-100"  [edited]
               >
                 Sign up
               </Link>
@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-// optimize code detail
