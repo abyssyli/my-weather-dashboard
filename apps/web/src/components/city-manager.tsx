@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -291,7 +289,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
               <p className="mt-2 text-xs text-zinc-500">Searching…</p>
             ) : null}
 
-            {searchResults.length > 0 ? (
+            {searchResults.length > 0 ? (  [edited]
               <ul className="mt-2 space-y-2">
                 {searchResults.slice(0, 5).map((r) => (
                   <li

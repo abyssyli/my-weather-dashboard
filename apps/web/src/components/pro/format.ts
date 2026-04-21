@@ -11,7 +11,7 @@ export function formatDateISO(dateIso: string) {
     weekday: "short",
     month: "short",
     day: "numeric",
-  });  [edited]
+  });
 }
 
 export function formatDateTimeISO(dateIso: string) {
@@ -27,3 +27,5 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
+
+/* minor adjust */

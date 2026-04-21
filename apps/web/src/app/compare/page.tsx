@@ -529,4 +529,4 @@ export default function ComparePage() {
   );
 }
 
-/* daily modify record */
+# minor content update

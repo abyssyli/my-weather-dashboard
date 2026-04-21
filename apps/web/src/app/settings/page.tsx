@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -94,7 +96,7 @@ export default function SettingsPage() {
           .select(
             "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"
           )
-          .eq("user_id", user.id),  [edited]
+          .eq("user_id", user.id),
       ]);
 
       if (!active) return;

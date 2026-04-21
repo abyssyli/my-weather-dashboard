@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import { useEffect, useState } from "react";
@@ -137,5 +139,3 @@ export default function SignUpPage() {
   );
 }
 
-
-// optimize code detail

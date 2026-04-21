@@ -1,3 +1,5 @@
+
+// task4 project adjust
 "use client";
 
 import {
@@ -69,5 +71,3 @@ export function useAuth() {
   return value;
 }
 
-
-/* daily modify record */

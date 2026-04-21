@@ -39,4 +39,4 @@ export default function RootLayout({
   );
 }
 
-// optimize code detail
+# minor content update

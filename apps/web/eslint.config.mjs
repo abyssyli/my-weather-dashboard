@@ -1,3 +1,5 @@
+
+// task4 project adjust
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
@@ -11,7 +13,7 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
-    "next-env.d.ts",  [edited]
+    "next-env.d.ts",
   ]),
 ]);
 

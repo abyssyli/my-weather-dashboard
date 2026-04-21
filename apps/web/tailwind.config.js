@@ -1,9 +1,7 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
+  theme: {  [edited]
     extend: {},
   },
   plugins: [],
 };
-
-/* daily modify record */

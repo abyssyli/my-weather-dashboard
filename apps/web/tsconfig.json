@@ -10,7 +10,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "isolatedModules": true,  [edited]
+    "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
@@ -32,3 +32,5 @@
   ],
   "exclude": ["node_modules"]
 }
+
+// optimize code detail

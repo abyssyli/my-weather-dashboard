@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -393,7 +395,7 @@ export default function AlertsPage() {
 
   async function toggleEnabled(id: string, enabled: boolean) {
     if (!user) return;
-    const supabase = getSupabaseBrowserClient();  [edited]
+    const supabase = getSupabaseBrowserClient();
     setSaving(true);
     setError(null);
 

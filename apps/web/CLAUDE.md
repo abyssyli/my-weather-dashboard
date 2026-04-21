@@ -1,3 +1,1 @@
-@AGENTS.md
-
-/* minor adjust */
+@AGENTS.md  [edited]
