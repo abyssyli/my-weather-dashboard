@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";  [edited]
 import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
@@ -63,7 +63,7 @@ export default function SignUpPage() {
       <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
         {mode === "sign-in" ? "Sign in" : "Create account"}
       </h1>
-      <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">  [edited]
+      <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
         Use Supabase Auth with email and password.
       </p>
 

@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import Link from "next/link";
@@ -9,7 +7,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import {
   IconBell,
-  IconCompare,
+  IconCompare,  [edited]
   IconDashboard,
   IconMapPin,
   IconSettings,

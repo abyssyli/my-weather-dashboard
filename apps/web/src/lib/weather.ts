@@ -3,7 +3,7 @@ export function describeWeatherCode(code: number | null | undefined) {
 
   const mapping: Record<number, string> = {
     0: "Clear",
-    1: "Mostly Clear",
+    1: "Mostly Clear",  [edited]
     2: "Partly Cloudy",
     3: "Overcast",
     45: "Fog",
@@ -41,6 +41,3 @@ export function formatUpdatedAt(iso: string | null | undefined) {
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }
-
-
-// optimize code detail

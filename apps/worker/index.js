@@ -241,7 +241,7 @@ async function pollOnce() {
       if (typeof err?.status === "number") sourceHttpStatus = err.status;
       console.error(`[fail] ${loc.name} (${loc.id})`, err?.message ?? err);
     }
-  }  [edited]
+  }
 
   const status = failed === 0 ? "success" : ok > 0 ? "partial" : "failed";
 
@@ -292,3 +292,5 @@ function shutdown(signal) {
 
 process.on("SIGINT", () => shutdown("SIGINT"));
 process.on("SIGTERM", () => shutdown("SIGTERM"));
+
+// optimize code detail

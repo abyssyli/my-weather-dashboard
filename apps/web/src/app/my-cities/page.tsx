@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { CityManager } from "@/components/city-manager";
@@ -27,3 +25,5 @@ export default function MyCitiesPage() {
     </main>
   );
 }
+
+// optimize code detail

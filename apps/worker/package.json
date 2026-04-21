@@ -1,3 +1,5 @@
+
+/* daily modify record */
 {
   "name": "worker",
   "version": "0.1.0",
@@ -5,9 +7,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js"
-  },  [edited]
+  },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.0",
     "dotenv": "^16.6.1"
   }
 }
+

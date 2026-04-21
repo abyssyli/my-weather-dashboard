@@ -9,7 +9,7 @@ import { IconCompare } from "@/components/ui/icons";
 
 type TemperatureUnit = "c" | "f";
 
-type DailyForecastRow = {  [edited]
+type DailyForecastRow = {
   location_id: string;
   forecast_date: string;
   temp_max_c: number | null;
@@ -287,7 +287,7 @@ export default function ComparePage() {
     let active = true;
 
     async function loadForecasts() {
-      setError(null);
+      setError(null);  [edited]
       const result = await supabase
         .from("daily_forecasts")
         .select(

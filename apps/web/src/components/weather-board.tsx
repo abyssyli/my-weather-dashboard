@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -106,7 +104,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     async function initialFetch() {
       setError(null);
       const result = await supabase
-        .from("current_weather")
+        .from("current_weather")  [edited]
         .select(
           "location_id,temperature_c,apparent_temperature_c,relative_humidity,wind_speed_kmh,precipitation,weather_code,is_day,observed_at,updated_at"
         )

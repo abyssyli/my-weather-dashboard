@@ -315,7 +315,7 @@ export default function AlertsPage() {
         "id,user_id,location_id,rule_type,comparator,threshold,horizon_days,enabled,created_at,updated_at"
       )
       .maybeSingle();
-  [edited]
+
     if (result.error) {
       setError(result.error.message);
       setSaving(false);
@@ -777,3 +777,5 @@ export default function AlertsPage() {
     </main>
   );
 }
+
+// optimize code detail

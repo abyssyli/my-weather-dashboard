@@ -923,7 +923,7 @@ export function ProDashboard({ user }: { user: User | null }) {
 
     const result = await supabase
       .from("user_preferences")
-      .upsert(
+      .upsert(  [edited]
         {
           user_id: user.id,
           temperature_unit: temperatureUnit,
@@ -1559,5 +1559,3 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
-
-/* daily modify record */

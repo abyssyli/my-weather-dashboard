@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useState } from "react";
@@ -14,7 +16,7 @@ export default function SignInPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [message, setMessage] = useState<string | null>(null);
-  [edited]
+
   useEffect(() => {
     if (!loading && user) router.replace("/dashboard");
   }, [loading, user, router]);
@@ -136,3 +138,4 @@ export default function SignInPage() {
     </main>
   );
 }
+
