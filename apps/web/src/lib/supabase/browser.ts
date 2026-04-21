@@ -1,5 +1,5 @@
 
-# minor content update
+// task4 project adjust
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 let browserClient: SupabaseClient | null = null;

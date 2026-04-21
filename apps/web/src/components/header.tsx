@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { usePathname, useRouter } from "next/navigation";  [edited]
+import { usePathname, useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 import { useAuth } from "@/components/auth-provider";
 import {
@@ -86,7 +86,7 @@ export function Header() {
               icon={<IconBell className="h-4 w-4" />}
             />
             <NavLink
-              href="/settings"
+              href="/settings"  [edited]
               label="Settings"
               icon={<IconSettings className="h-4 w-4" />}
             />

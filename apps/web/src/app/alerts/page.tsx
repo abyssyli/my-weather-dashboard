@@ -105,7 +105,7 @@ export default function AlertsPage() {
     comparator: Comparator;
     threshold: string;
     horizon_days: string;
-  } | null>(null);  [edited]
+  } | null>(null);
 
   const locationById = useMemo(() => {
     const map = new Map<string, LocationRow>();
@@ -438,7 +438,7 @@ export default function AlertsPage() {
   if (authLoading) {
     return (
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
-        <GlassCard icon={<IconBell className="h-5 w-5" />} title="Alerts" subtitle="Loading…">
+        <GlassCard icon={<IconBell className="h-5 w-5" />} title="Alerts" subtitle="Loading…">  [edited]
           <p className="text-sm text-zinc-600 dark:text-zinc-400">Loading…</p>
         </GlassCard>
       </main>

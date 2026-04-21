@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -147,7 +145,7 @@ export default function SettingsPage() {
 
     const result = await supabase
       .from("user_preferences")
-      .upsert(
+      .upsert(  [edited]
         {
           user_id: user.id,
           temperature_unit: preferences.temperature_unit,

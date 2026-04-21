@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -180,7 +178,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     );
   }
 
-  return (
+  return (  [edited]
     <section>
       {error ? (
         <div className="mb-4 rounded-2xl border border-red-200/70 bg-red-50/80 p-4 text-sm text-red-700 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-300 dark:ring-white/10">

@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -80,7 +82,7 @@ export default function SignInPage() {
             required
             className="mt-2 w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 dark:border-zinc-800 dark:bg-black dark:text-zinc-50"
           />
-        </label>  [edited]
+        </label>
 
         <label className="mt-4 block text-sm font-medium text-zinc-900 dark:text-zinc-50">
           Password
@@ -136,3 +138,4 @@ export default function SignInPage() {
     </main>
   );
 }
+

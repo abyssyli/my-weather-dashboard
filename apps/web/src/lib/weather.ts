@@ -1,7 +1,7 @@
-export function describeWeatherCode(code: number | null | undefined) {  [edited]
+export function describeWeatherCode(code: number | null | undefined) {
   if (code == null) return "Unknown";
 
-  const mapping: Record<number, string> = {
+  const mapping: Record<number, string> = {  [edited]
     0: "Clear",
     1: "Mostly Clear",
     2: "Partly Cloudy",
