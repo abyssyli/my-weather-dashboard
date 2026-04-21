@@ -1530,7 +1530,7 @@ export function ProDashboard({ user }: { user: User | null }) {
                             {min == null
                               ? "—"
                               : `${formatNumber(min, 1)}°${temperatureUnit.toUpperCase()}`}
-                          </td>
+                          </td>  [edited]
                           <td className="px-3 py-2 text-zinc-900 dark:text-zinc-50">
                             {d.precipitation_probability_max == null
                               ? "—"
@@ -1559,5 +1559,3 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
-
-// task4 project adjust

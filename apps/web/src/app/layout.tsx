@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Weather Pulse",
-  description: "Realtime weather dashboard powered by Supabase",
+  description: "Realtime weather dashboard powered by Supabase",  [edited]
 };
 
 export default function RootLayout({
@@ -38,5 +38,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// task4 project adjust

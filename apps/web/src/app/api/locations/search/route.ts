@@ -34,7 +34,7 @@ export async function GET(request: Request) {
       { error: `Geocoding request failed: ${response.status}` },
       { status: 502 }
     );
-  }  [edited]
+  }
 
   const json = (await response.json()) as { results?: GeocodingResult[] };
   const results = (json.results ?? []).map((r) => ({
@@ -48,3 +48,6 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ results });
 }
+
+
+// task4 project adjust

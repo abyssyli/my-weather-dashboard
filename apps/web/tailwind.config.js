@@ -1,7 +1,9 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {  [edited]
+  theme: {
     extend: {},
   },
   plugins: [],
 };
+
+// optimize code detail

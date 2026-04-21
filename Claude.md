@@ -1,5 +1,3 @@
-
-/* minor adjust */
 # Weather Pulse
 
 ## Project Overview
@@ -23,7 +21,7 @@ Build a weather dashboard where:
 - logged-out users see a default public city list
 - current weather updates automatically when the worker writes new data
 - the frontend receives updates through Supabase Realtime
-- the worker polls weather data on a schedule and upserts it into Supabase
+- the worker polls weather data on a schedule and upserts it into Supabase  [edited]
 
 ## Monorepo Structure
 /

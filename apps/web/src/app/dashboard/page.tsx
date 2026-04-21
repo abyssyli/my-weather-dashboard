@@ -1,5 +1,5 @@
 
-/* daily modify record */
+/* minor adjust */
 "use client";
 
 import { useAuth } from "@/components/auth-provider";

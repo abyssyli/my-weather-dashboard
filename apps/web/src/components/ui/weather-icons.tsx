@@ -36,7 +36,7 @@ function IconSun({ className }: { className?: string }) {
       <path d="M12 2v2" />
       <path d="M12 20v2" />
       <path d="M4 12H2" />
-      <path d="M22 12h-2" />
+      <path d="M22 12h-2" />  [edited]
       <path d="m5 5 1.4 1.4" />
       <path d="m17.6 17.6 1.4 1.4" />
       <path d="m19 5-1.4 1.4" />
@@ -117,7 +117,7 @@ function normalize(code: number) {
   if (code >= 1 && code <= 3) return "cloud";
   if (code === 45 || code === 48) return "fog";
   if (code >= 51 && code <= 57) return "rain";
-  if (code >= 61 && code <= 67) return "rain";  [edited]
+  if (code >= 61 && code <= 67) return "rain";
   if (code >= 71 && code <= 77) return "snow";
   if (code >= 80 && code <= 82) return "rain";
   if (code === 85 || code === 86) return "snow";

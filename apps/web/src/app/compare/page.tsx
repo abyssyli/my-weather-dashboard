@@ -27,7 +27,7 @@ function MultiCityTempChart({
   dates: string[];
   locations: LocationRow[];
   byCityAndDate: Map<string, DailyForecastRow>;
-  temperatureUnit: TemperatureUnit;  [edited]
+  temperatureUnit: TemperatureUnit;
 }) {
   const palette = ["#0f172a", "#2563eb", "#16a34a", "#a855f7"];
   const series = locations.map((l) => {
@@ -528,3 +528,5 @@ export default function ComparePage() {
     </main>
   );
 }
+
+/* minor adjust */

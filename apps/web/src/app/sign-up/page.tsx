@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useState } from "react";
@@ -137,5 +139,3 @@ export default function SignUpPage() {
   );
 }
 
-
-/* daily modify record */

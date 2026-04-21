@@ -89,7 +89,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
 
     void loadLocations();
 
-    return () => {  [edited]
+    return () => {
       active = false;
     };
   }, [authLoading, user, favoriteLocationIds]);
@@ -258,3 +258,5 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     </section>
   );
 }
+
+// optimize code detail
