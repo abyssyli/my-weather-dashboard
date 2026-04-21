@@ -17,4 +17,4 @@ const eslintConfig = defineConfig([
 
 export default eslintConfig;
 
-/* daily modify record */
+# minor content update

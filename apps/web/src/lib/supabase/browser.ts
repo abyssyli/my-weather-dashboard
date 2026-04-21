@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 let browserClient: SupabaseClient | null = null;
@@ -13,7 +15,8 @@ export function getSupabaseBrowserClient() {
       "Missing NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY in apps/web/.env.local"
     );
   }
-  [edited]
+
   browserClient = createClient(supabaseUrl, supabaseAnonKey);
   return browserClient;
 }
+

@@ -1,7 +1,7 @@
 export function formatNumber(value: number | null | undefined, digits = 0) {
   if (value == null) return "—";
   if (!Number.isFinite(value)) return "—";
-  return value.toFixed(digits);  [edited]
+  return value.toFixed(digits);
 }
 
 export function formatDateISO(dateIso: string) {
@@ -27,3 +27,5 @@ export function cToF(c: number) {
 export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
+
+# minor content update

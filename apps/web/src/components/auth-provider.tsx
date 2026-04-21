@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import {
@@ -6,7 +8,7 @@ import {
   useEffect,
   useMemo,
   useState,
-} from "react";  [edited]
+} from "react";
 import type { Session, User } from "@supabase/supabase-js";
 import { getSupabaseBrowserClient } from "@/lib/supabase/browser";
 
@@ -68,3 +70,4 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
+

@@ -1,5 +1,3 @@
-
-// optimize code detail
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {
@@ -145,3 +143,5 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   return <IconWind className={className} />;
 }
 
+
+/* minor adjust */

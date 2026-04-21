@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -11,7 +9,7 @@ import { IconCompare } from "@/components/ui/icons";
 
 type TemperatureUnit = "c" | "f";
 
-type DailyForecastRow = {
+type DailyForecastRow = {  [edited]
   location_id: string;
   forecast_date: string;
   temp_max_c: number | null;

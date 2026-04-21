@@ -1560,4 +1560,4 @@ export function ProDashboard({ user }: { user: User | null }) {
   );
 }
 
-// update log: auto edit 01
+/* daily modify record */

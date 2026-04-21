@@ -79,7 +79,7 @@ export type AlertRule = {
   location_id: string | null;
   rule_type: AlertRuleType;
   comparator: AlertComparator;
-  threshold: number;  [edited]
+  threshold: number;
   horizon_days: number;
   enabled: boolean;
   created_at: string;
@@ -102,3 +102,5 @@ export type SyncRun = {
   error_message: string | null;
   created_at: string;
 };
+
+// task4 project adjust
