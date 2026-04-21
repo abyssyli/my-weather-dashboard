@@ -20,7 +20,7 @@ function NavLink({
 }: {
   href: string;
   label: string;
-  icon: ReactNode;  [edited]
+  icon: ReactNode;
 }) {
   const pathname = usePathname();
   const active = pathname === href;
@@ -130,3 +130,5 @@ export function Header() {
     </header>
   );
 }
+
+/* daily modify record */

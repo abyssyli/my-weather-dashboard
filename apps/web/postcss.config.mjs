@@ -1,5 +1,5 @@
-const config = {  [edited]
-  plugins: {
+const config = {
+  plugins: {  [edited]
     "@tailwindcss/postcss": {},
   },
 };

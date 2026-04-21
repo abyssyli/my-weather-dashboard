@@ -215,7 +215,7 @@ export default function AlertsPage() {
       ]);
 
       if (!active) return;
-
+  [edited]
       if (rulesResult.error) {
         setError(rulesResult.error.message);
         setLoading(false);
@@ -326,7 +326,7 @@ export default function AlertsPage() {
     setSaving(false);
   }
 
-  function startEdit(r: AlertRuleRow) {  [edited]
+  function startEdit(r: AlertRuleRow) {
     setEditingId(r.id);
     setEditDraft({
       location_id: r.location_id ?? "",

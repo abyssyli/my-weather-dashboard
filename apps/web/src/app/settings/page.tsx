@@ -123,7 +123,7 @@ export default function SettingsPage() {
           time_format: "24h",
           alerts_enabled: true,
           created_at: new Date().toISOString(),
-          updated_at: new Date().toISOString(),  [edited]
+          updated_at: new Date().toISOString(),
         });
       }
 
@@ -353,3 +353,5 @@ export default function SettingsPage() {
     </main>
   );
 }
+
+// optimize code detail

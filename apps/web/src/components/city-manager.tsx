@@ -1,3 +1,5 @@
+
+// optimize code detail
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -79,7 +81,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
       if (!active) return;
 
       if (locationsResult.error) {
-        setError(locationsResult.error.message);  [edited]
+        setError(locationsResult.error.message);
         setLoading(false);
         return;
       }

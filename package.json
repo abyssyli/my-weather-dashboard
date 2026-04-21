@@ -1,5 +1,3 @@
-
-// update log: auto edit 01
 {
   "name": "weather-pulse",
   "private": true,
@@ -13,5 +11,4 @@
     "lint:web": "npm run lint --workspace web",
     "start:worker": "npm run start --workspace worker"
   }
-}
-
+}  [edited]

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{  [edited]
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -38,3 +38,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+/* minor adjust */

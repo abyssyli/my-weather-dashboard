@@ -1,5 +1,5 @@
 
-// optimize code detail
+# minor content update
 export type LocationRow = {
   id: string;
   name: string;

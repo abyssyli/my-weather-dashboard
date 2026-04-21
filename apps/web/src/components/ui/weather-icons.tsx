@@ -102,7 +102,7 @@ function IconFog({ className }: { className?: string }) {
   );
 }
 
-function IconWind({ className }: { className?: string }) {  [edited]
+function IconWind({ className }: { className?: string }) {
   return (
     <Svg className={className}>
       <path d="M3 10h10a2 2 0 1 0-2-2" />
@@ -142,3 +142,6 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
+
+
+/* daily modify record */

@@ -28,7 +28,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     supabase.auth
       .getSession()
-      .then(({ data }) => {
+      .then(({ data }) => {  [edited]
         if (!active) return;
         setSession(data.session ?? null);
         setLoading(false);
@@ -65,6 +65,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
 export function useAuth() {
   const value = useContext(AuthContext);
-  if (!value) throw new Error("useAuth must be used within <AuthProvider />");  [edited]
+  if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }

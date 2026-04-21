@@ -1,3 +1,5 @@
+
+# minor content update
 import { NextResponse } from "next/server";
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
@@ -6,7 +8,7 @@ type CreateLocationInput = {
   country?: string | null;
   latitude: number;
   longitude: number;
-  timezone: string;  [edited]
+  timezone: string;
 };
 
 export async function POST(request: Request) {

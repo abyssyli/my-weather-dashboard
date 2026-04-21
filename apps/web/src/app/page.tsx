@@ -4,4 +4,4 @@ export default function Home() {
   redirect("/dashboard");
 }
 
-/* minor adjust */
+// task4 project adjust
