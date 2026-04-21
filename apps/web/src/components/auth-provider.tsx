@@ -68,6 +68,4 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
-
-
-/* minor adjust */
+  [edited]

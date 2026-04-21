@@ -5,7 +5,7 @@
   --foreground: #111827;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {  [edited]
   :root {
     --background: #0b0c0f;
     --foreground: #f9fafb;
@@ -29,5 +29,3 @@ body {
     "Apple Color Emoji",
     "Segoe UI Emoji";
 }
-
-/* minor adjust */

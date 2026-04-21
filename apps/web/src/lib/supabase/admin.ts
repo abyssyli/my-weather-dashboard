@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
-  const supabaseUrl =  [edited]
+  const supabaseUrl =
     process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
@@ -15,3 +15,6 @@ export function getSupabaseAdminClient() {
     auth: { persistSession: false, autoRefreshToken: false },
   });
 }
+
+
+// optimize code detail

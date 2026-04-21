@@ -1,3 +1,5 @@
+
+// task4 project adjust
 "use client";
 
 import { useEffect, useState } from "react";
@@ -132,7 +134,8 @@ export default function SignUpPage() {
             {message}
           </p>
         ) : null}
-      </form>  [edited]
+      </form>
     </main>
   );
 }
+

@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -9,7 +11,7 @@ export default function SignInPage() {
   const router = useRouter();
   const { user, loading } = useAuth();
   const [mode, setMode] = useState<"sign-in" | "sign-up">("sign-in");
-  const [email, setEmail] = useState("");  [edited]
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -136,3 +138,4 @@ export default function SignInPage() {
     </main>
   );
 }
+

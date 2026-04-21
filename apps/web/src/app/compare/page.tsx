@@ -1,5 +1,3 @@
-
-// task4 project adjust
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -264,7 +262,7 @@ export default function ComparePage() {
         .map((r) => r.locations)
         .filter(Boolean) as unknown as LocationRow[];
       rows.sort((a, b) => a.name.localeCompare(b.name));
-      setLocations(rows);
+      setLocations(rows);  [edited]
       setLoading(false);
 
       setSelectedIds((prev) => {

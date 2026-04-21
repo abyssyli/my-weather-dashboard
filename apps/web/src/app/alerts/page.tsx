@@ -298,7 +298,7 @@ export default function AlertsPage() {
       setSaving(false);
       return;
     }
-  [edited]
+
     const supabase = getSupabaseBrowserClient();
     const result = await supabase
       .from("alert_rules")
@@ -461,7 +461,7 @@ export default function AlertsPage() {
     );
   }
 
-  return (
+  return (  [edited]
     <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[420px_1fr]">
         <GlassCard

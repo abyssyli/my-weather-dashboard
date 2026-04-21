@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import Link from "next/link";
@@ -132,3 +130,5 @@ export function Header() {
     </header>
   );
 }
+
+/* daily modify record */

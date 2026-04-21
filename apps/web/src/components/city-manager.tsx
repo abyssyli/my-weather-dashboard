@@ -304,7 +304,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
                         {[
                           r.admin1,
                           r.country,
-                          `${r.latitude.toFixed(4)}, ${r.longitude.toFixed(4)}`,  [edited]
+                          `${r.latitude.toFixed(4)}, ${r.longitude.toFixed(4)}`,
                         ]
                           .filter(Boolean)
                           .join(" · ")}
@@ -386,3 +386,5 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
+
+/* minor adjust */

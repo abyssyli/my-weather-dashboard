@@ -1,3 +1,5 @@
+
+/* minor adjust */
 {
   "name": "worker",
   "version": "0.1.0",
@@ -8,6 +10,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.0",
-    "dotenv": "^16.6.1"  [edited]
+    "dotenv": "^16.6.1"
   }
 }
+

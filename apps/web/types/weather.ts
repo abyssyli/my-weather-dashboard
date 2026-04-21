@@ -1,5 +1,5 @@
 
-// update log: auto edit 01
+# minor content update
 export type Location = {
   id: string;
   name: string;

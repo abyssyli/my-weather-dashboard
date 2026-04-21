@@ -25,7 +25,7 @@ export function describeWeatherCode(code: number | null | undefined) {
     80: "Light Rain Showers",
     81: "Rain Showers",
     82: "Violent Rain Showers",
-    85: "Light Snow Showers",  [edited]
+    85: "Light Snow Showers",
     86: "Snow Showers",
     95: "Thunderstorm",
     96: "Thunderstorm w/ Hail",
@@ -37,7 +37,7 @@ export function describeWeatherCode(code: number | null | undefined) {
 
 export function formatUpdatedAt(iso: string | null | undefined) {
   if (!iso) return "—";
-  const date = new Date(iso);
+  const date = new Date(iso);  [edited]
   if (Number.isNaN(date.getTime())) return "—";
   return date.toLocaleString();
 }

@@ -122,7 +122,7 @@ Use the classroom-style pattern:
 
 ## Frontend Requirements
 ### Public behavior
-- if the user is not logged in, show a default list of cities
+- if the user is not logged in, show a default list of cities  [edited]
 - show current temperature, feels like, humidity, wind speed, weather state, and last updated time
 
 ### Authenticated behavior
@@ -227,4 +227,3 @@ When working on this repo:
 6. when debugging auth issues, check RLS policies first
 7. use upsert for weather snapshots keyed by location_id
 8. keep the UI simple, clean, and responsive
-// update log: auto edit 01

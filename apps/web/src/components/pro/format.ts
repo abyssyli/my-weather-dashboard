@@ -28,4 +28,4 @@ export function kmhToMph(kmh: number) {
   return kmh / 1.60934;
 }
 
-# minor content update
+/* daily modify record */
