@@ -135,7 +135,4 @@ export default function SignUpPage() {
       </form>
     </main>
   );
-}
-
-
-// update log: auto edit 01
+}  [edited]

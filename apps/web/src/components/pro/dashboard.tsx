@@ -720,7 +720,7 @@ export function ProDashboard({ user }: { user: User | null }) {
 
     async function loadRules() {
       setAlertsLoading(true);
-      setAlertsError(null);  [edited]
+      setAlertsError(null);
 
       const result = await supabase
         .from("alert_rules")
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+/* daily modify record */

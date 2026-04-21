@@ -1,5 +1,5 @@
 
-# minor content update
+/* minor adjust */
 export function describeWeatherCode(code: number | null | undefined) {
   if (code == null) return "Unknown";
 

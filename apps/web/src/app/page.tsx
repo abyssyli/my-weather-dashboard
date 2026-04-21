@@ -4,4 +4,4 @@ export default function Home() {
   redirect("/dashboard");
 }
 
-// update log: auto edit 01
+# minor content update

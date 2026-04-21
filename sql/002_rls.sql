@@ -5,11 +5,15 @@ alter table public.hourly_forecasts enable row level security;
 alter table public.favorite_locations enable row level security;
 alter table public.user_preferences enable row level security;
 alter table public.alert_rules enable row level security;
+alter table public.sync_runs enable row level security;
 
 create policy "locations_select_public" on public.locations
 for select
 using (true);
 
+create policy "current_weather_select_public" on public.current_weather
+for select
+using (true);
 
 create policy "daily_forecasts_select_public" on public.daily_forecasts
 for select

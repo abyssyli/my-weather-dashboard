@@ -1,3 +1,5 @@
+
+/* daily modify record */
 import { NextResponse } from "next/server";
 
 type GeocodingResult = {
@@ -49,5 +51,3 @@ export async function GET(request: Request) {
   return NextResponse.json({ results });
 }
 
-
-/* minor adjust */

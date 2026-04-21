@@ -19,4 +19,4 @@ export function getSupabaseBrowserClient() {
 }
 
 
-// task4 project adjust
+# minor content update

@@ -1,3 +1,5 @@
+
+# minor content update
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {
@@ -23,7 +25,7 @@ function Svg({
       strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
-    >  [edited]
+    >
       {children}
     </svg>
   );
@@ -142,3 +144,4 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
+

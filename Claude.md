@@ -1,5 +1,5 @@
 
-// task4 project adjust
+# minor content update
 # Weather Pulse
 
 ## Project Overview

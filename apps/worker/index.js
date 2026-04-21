@@ -1,5 +1,3 @@
-
-/* minor adjust */
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 
@@ -83,7 +81,7 @@ async function fetchWeatherBundle({ latitude, longitude, timezone }) {
     );
     err.status = response.status;
     throw err;
-  }
+  }  [edited]
 
   const json = await response.json();
   const current = json.current;

@@ -1,3 +1,5 @@
+
+/* daily modify record */
 export type Location = {
   id: string;
   name: string;
@@ -98,7 +100,7 @@ export type SyncRun = {
   locations_failed: number;
   poll_interval_ms: number | null;
   open_meteo_base_url: string | null;
-  source_http_status: number | null;  [edited]
+  source_http_status: number | null;
   error_message: string | null;
   created_at: string;
 };

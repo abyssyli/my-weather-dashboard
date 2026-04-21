@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -132,7 +134,7 @@ export default function AlertsPage() {
       if (c === "gt") return a > b;
       if (c === "gte") return a >= b;
       if (c === "lt") return a < b;
-      return a <= b;  [edited]
+      return a <= b;
     };
 
     const metricValue = (r: AlertRuleRow, d: DailyForecastRow) => {

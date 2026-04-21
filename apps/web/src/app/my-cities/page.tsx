@@ -1,5 +1,3 @@
-
-// optimize code detail
 "use client";
 
 import { CityManager } from "@/components/city-manager";
@@ -27,3 +25,5 @@ export default function MyCitiesPage() {
     </main>
   );
 }
+
+// task4 project adjust

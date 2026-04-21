@@ -1,3 +1,5 @@
+
+# minor content update
 import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
@@ -16,5 +18,3 @@ export function getSupabaseAdminClient() {
   });
 }
 
-
-// optimize code detail

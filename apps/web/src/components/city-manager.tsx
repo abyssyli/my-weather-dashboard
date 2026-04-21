@@ -178,7 +178,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
 
     const next = Array.from(new Set([...favoriteLocationIds, selectedLocationId]));
     setFavoriteLocationIds(next);
-    setSelectedLocationId("");  [edited]
+    setSelectedLocationId("");
     setSaving(false);
     onFavoriteLocationIdsChangeRef.current?.(next);
   }
@@ -214,7 +214,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
         json?.error ??
         (rawText && rawText.length <= 200 ? rawText : null) ??
         `Add city failed (${response.status})`;
-      setError(serverMessage);
+      setError(serverMessage);  [edited]
       setSaving(false);
       return;
     }
