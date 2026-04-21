@@ -82,7 +82,7 @@ export default function SignInPage() {
           />
         </label>
 
-        <label className="mt-4 block text-sm font-medium text-zinc-900 dark:text-zinc-50">  [edited]
+        <label className="mt-4 block text-sm font-medium text-zinc-900 dark:text-zinc-50">
           Password
           <input
             type="password"
@@ -136,3 +136,6 @@ export default function SignInPage() {
     </main>
   );
 }
+
+
+/* daily modify record */

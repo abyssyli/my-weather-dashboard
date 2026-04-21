@@ -1,5 +1,5 @@
 
-/* daily modify record */
+// task4 project adjust
 export type Location = {
   id: string;
   name: string;

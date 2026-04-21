@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -232,7 +230,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
   }
 
   async function removeFavorite(locationId: string) {
-    if (!user) return;
+    if (!user) return;  [edited]
     const supabase = getSupabaseBrowserClient();
     setSaving(true);
     setError(null);

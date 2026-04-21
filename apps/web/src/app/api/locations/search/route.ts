@@ -14,7 +14,7 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   const q = (url.searchParams.get("q") ?? "").trim();
 
-  if (q.length < 2) {  [edited]
+  if (q.length < 2) {
     return NextResponse.json({ results: [] });
   }
 
@@ -38,7 +38,7 @@ export async function GET(request: Request) {
 
   const json = (await response.json()) as { results?: GeocodingResult[] };
   const results = (json.results ?? []).map((r) => ({
-    name: r.name,
+    name: r.name,  [edited]
     country: r.country ?? null,
     admin1: r.admin1 ?? null,
     latitude: r.latitude,

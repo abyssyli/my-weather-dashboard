@@ -1,4 +1,6 @@
-const config = {  [edited]
+
+# minor content update
+const config = {
   plugins: {
     "@tailwindcss/postcss": {},
   },

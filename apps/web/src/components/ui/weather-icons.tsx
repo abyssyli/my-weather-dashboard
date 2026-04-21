@@ -1,3 +1,5 @@
+
+# minor content update
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {
@@ -122,7 +124,7 @@ function normalize(code: number) {
   if (code >= 80 && code <= 82) return "rain";
   if (code === 85 || code === 86) return "snow";
   if (code >= 95 && code <= 99) return "thunder";
-  return "wind";  [edited]
+  return "wind";
 }
 
 export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps) {
@@ -142,3 +144,4 @@ export function WeatherIcon({ weatherCode, isDay, className }: WeatherIconProps)
   if (kind === "thunder") return <IconThunder className={className} />;
   return <IconWind className={className} />;
 }
+
