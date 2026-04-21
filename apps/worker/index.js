@@ -1,5 +1,5 @@
 
-// task4 project adjust
+// optimize code detail
 const dotenv = require("dotenv");
 const { createClient } = require("@supabase/supabase-js");
 

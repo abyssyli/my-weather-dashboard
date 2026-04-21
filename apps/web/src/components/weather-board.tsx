@@ -1,5 +1,3 @@
-
-/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -103,7 +101,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
     const supabase = getSupabaseBrowserClient();
     let active = true;
 
-    async function initialFetch() {
+    async function initialFetch() {  [edited]
       setError(null);
       const result = await supabase
         .from("current_weather")

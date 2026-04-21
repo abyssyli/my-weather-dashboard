@@ -42,7 +42,7 @@ function NavLink({
     </Link>
   );
 }
-
+  [edited]
 export function Header() {
   const router = useRouter();
   const { user, loading } = useAuth();
@@ -130,5 +130,3 @@ export function Header() {
     </header>
   );
 }
-
-/* daily modify record */

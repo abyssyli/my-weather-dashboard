@@ -1,7 +1,9 @@
 const config = {
-  plugins: {  [edited]
+  plugins: {
     "@tailwindcss/postcss": {},
   },
 };
 
 export default config;
+
+# minor content update

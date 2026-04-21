@@ -215,7 +215,7 @@ export default function AlertsPage() {
       ]);
 
       if (!active) return;
-  [edited]
+
       if (rulesResult.error) {
         setError(rulesResult.error.message);
         setLoading(false);
@@ -393,7 +393,7 @@ export default function AlertsPage() {
 
   async function toggleEnabled(id: string, enabled: boolean) {
     if (!user) return;
-    const supabase = getSupabaseBrowserClient();
+    const supabase = getSupabaseBrowserClient();  [edited]
     setSaving(true);
     setError(null);
 

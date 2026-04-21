@@ -94,7 +94,7 @@ export default function SettingsPage() {
           .select(
             "location_id, locations (id,name,country,latitude,longitude,timezone,created_at)"
           )
-          .eq("user_id", user.id),
+          .eq("user_id", user.id),  [edited]
       ]);
 
       if (!active) return;
@@ -353,5 +353,3 @@ export default function SettingsPage() {
     </main>
   );
 }
-
-// optimize code detail

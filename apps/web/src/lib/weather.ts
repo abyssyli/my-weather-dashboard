@@ -2,7 +2,7 @@ export function describeWeatherCode(code: number | null | undefined) {
   if (code == null) return "Unknown";
 
   const mapping: Record<number, string> = {
-    0: "Clear",  [edited]
+    0: "Clear",
     1: "Mostly Clear",
     2: "Partly Cloudy",
     3: "Overcast",
@@ -10,7 +10,7 @@ export function describeWeatherCode(code: number | null | undefined) {
     48: "Rime Fog",
     51: "Light Drizzle",
     53: "Drizzle",
-    55: "Heavy Drizzle",
+    55: "Heavy Drizzle",  [edited]
     56: "Light Freezing Drizzle",
     57: "Freezing Drizzle",
     61: "Light Rain",

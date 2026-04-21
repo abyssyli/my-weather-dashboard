@@ -1,5 +1,3 @@
-
-# minor content update
 export type LocationRow = {
   id: string;
   name: string;
@@ -29,3 +27,5 @@ export type CurrentWeatherRow = {
   updated_at: string;
 };
 
+
+# minor content update

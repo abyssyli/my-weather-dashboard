@@ -11,4 +11,7 @@
     "lint:web": "npm run lint --workspace web",
     "start:worker": "npm run start --workspace worker"
   }
-}  [edited]
+}
+
+
+// update log: auto edit 01
