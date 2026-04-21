@@ -1,5 +1,3 @@
-
-/* daily modify record */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -680,7 +678,7 @@ export default function AlertsPage() {
                                 disabled={saving}
                                 className="rounded-full bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white shadow-sm ring-1 ring-black/10 hover:bg-zinc-800 disabled:opacity-50 dark:bg-white dark:text-black dark:ring-white/20 dark:hover:bg-zinc-100"
                               >
-                                {saving ? "Saving…" : "Save"}
+                                {saving ? "Saving…" : "Save"}  [edited]
                               </button>
                             </div>
                           </div>

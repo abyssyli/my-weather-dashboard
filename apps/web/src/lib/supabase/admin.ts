@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 import { createClient } from "@supabase/supabase-js";
 
 export function getSupabaseAdminClient() {
@@ -11,7 +13,8 @@ export function getSupabaseAdminClient() {
     );
   }
 
-  return createClient(supabaseUrl, serviceRoleKey, {  [edited]
+  return createClient(supabaseUrl, serviceRoleKey, {
     auth: { persistSession: false, autoRefreshToken: false },
   });
 }
+

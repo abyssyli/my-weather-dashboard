@@ -1,5 +1,5 @@
 
-/* daily modify record */
+/* minor adjust */
 import type { ReactNode } from "react";
 
 export type WeatherIconProps = {

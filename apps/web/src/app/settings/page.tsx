@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -274,7 +272,7 @@ export default function SettingsPage() {
                 </select>
               </label>
 
-              <label className="block text-xs font-medium text-zinc-500">
+              <label className="block text-xs font-medium text-zinc-500">  [edited]
                 Timezone display
                 <select
                   value={preferences.timezone_display}

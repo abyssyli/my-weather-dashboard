@@ -1,4 +1,4 @@
-"use client";
+"use client";  [edited]
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -136,6 +136,3 @@ export default function SignUpPage() {
     </main>
   );
 }
-
-
-/* daily modify record */

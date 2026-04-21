@@ -1,6 +1,4 @@
-
-// optimize code detail
-const config = {
+const config = {  [edited]
   plugins: {
     "@tailwindcss/postcss": {},
   },

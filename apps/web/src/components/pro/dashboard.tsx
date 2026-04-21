@@ -1291,7 +1291,7 @@ export function ProDashboard({ user }: { user: User | null }) {
           <GlassCard
             icon={<IconThermometer className="h-4 w-4" />}
             title="Now"
-            subtitle="Current snapshot (Realtime via current_weather)"  [edited]
+            subtitle="Current snapshot (Realtime via current_weather)"
           >
             {error ? (
               <div className="mb-4 rounded-xl border border-red-200/70 bg-red-50/80 p-3 text-sm text-red-700 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-300 dark:ring-white/10">
@@ -1559,3 +1559,5 @@ export function ProDashboard({ user }: { user: User | null }) {
     </div>
   );
 }
+
+// task4 project adjust

@@ -68,7 +68,7 @@ export function IconSettings(props: IconProps) {
     <BaseIcon {...props}>
       <path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" />
       <path d="M19.4 12a7.8 7.8 0 0 0-.1-1l2-1.6-2-3.4-2.4 1a8.5 8.5 0 0 0-1.7-1l-.4-2.6H9.2L8.8 6a8.5 8.5 0 0 0-1.7 1l-2.4-1-2 3.4 2 1.6a7.8 7.8 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a8.5 8.5 0 0 0 1.7 1l.4 2.6h5.6l.4-2.6a8.5 8.5 0 0 0 1.7-1l2.4 1 2-3.4-2-1.6c.1-.3.1-.6.1-1Z" />
-    </BaseIcon>
+    </BaseIcon>  [edited]
   );
 }
 
@@ -120,5 +120,3 @@ export function IconSparkles(props: IconProps) {
     </BaseIcon>
   );
 }
-
-/* minor adjust */

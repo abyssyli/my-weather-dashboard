@@ -1,3 +1,5 @@
+
+// update log: auto edit 01
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -386,5 +388,3 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
-
-/* minor adjust */
