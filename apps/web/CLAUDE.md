@@ -1,3 +1,3 @@
 
-# minor content update
+// optimize code detail
 @AGENTS.md

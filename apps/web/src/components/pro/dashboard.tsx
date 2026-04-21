@@ -1,3 +1,5 @@
+
+/* minor adjust */
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -164,7 +166,7 @@ function normalizeWeatherKind(code: number | null | undefined) {
   if (code >= 61 && code <= 67) return "rain";
   if (code >= 71 && code <= 77) return "snow";
   if (code >= 80 && code <= 82) return "rain";
-  if (code === 85 || code === 86) return "snow";  [edited]
+  if (code === 85 || code === 86) return "snow";
   if (code >= 95 && code <= 99) return "thunder";
   return "other";
 }

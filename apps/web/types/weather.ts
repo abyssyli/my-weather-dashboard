@@ -1,5 +1,3 @@
-
-/* daily modify record */
 export type Location = {
   id: string;
   name: string;
@@ -29,7 +27,7 @@ export type CurrentWeather = {
   updated_at: string;
 };
 
-export type TemperatureUnit = "c" | "f";
+export type TemperatureUnit = "c" | "f";  [edited]
 export type WindSpeedUnit = "kmh" | "mph";
 export type TimezoneDisplay = "location" | "utc";
 export type TimeFormat = "12h" | "24h";

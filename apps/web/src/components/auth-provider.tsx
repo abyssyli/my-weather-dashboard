@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import {
@@ -14,7 +16,7 @@ type AuthContextValue = {
   session: Session | null;
   user: User | null;
   loading: boolean;
-};  [edited]
+};
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
@@ -68,3 +70,4 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
+

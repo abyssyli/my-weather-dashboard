@@ -89,7 +89,7 @@ export function Header() {
               href="/settings"
               label="Settings"
               icon={<IconSettings className="h-4 w-4" />}
-            />  [edited]
+            />
           </nav>
         </div>
 
@@ -102,7 +102,7 @@ export function Header() {
                 {user.email}
               </span>
               <button
-                type="button"
+                type="button"  [edited]
                 onClick={handleSignOut}
                 className="rounded-full border border-zinc-200/80 bg-white/60 px-3 py-1.5 text-sm font-medium text-zinc-900 shadow-sm ring-1 ring-black/5 hover:bg-white/90 dark:border-zinc-800/80 dark:bg-black/40 dark:text-zinc-50 dark:ring-white/10 dark:hover:bg-black/60"
               >

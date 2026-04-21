@@ -1,5 +1,3 @@
-
-# minor content update
 "use client";
 
 import { useEffect, useState } from "react";
@@ -92,7 +90,7 @@ export default function SignInPage() {
             onChange={(e) => setPassword(e.target.value)}
             required
             minLength={6}
-            className="mt-2 w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 dark:border-zinc-800 dark:bg-black dark:text-zinc-50"
+            className="mt-2 w-full rounded-md border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 dark:border-zinc-800 dark:bg-black dark:text-zinc-50"  [edited]
           />
         </label>
 
@@ -138,4 +136,3 @@ export default function SignInPage() {
     </main>
   );
 }
-

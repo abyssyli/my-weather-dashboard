@@ -179,7 +179,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     const next = Array.from(new Set([...favoriteLocationIds, selectedLocationId]));
     setFavoriteLocationIds(next);
     setSelectedLocationId("");
-    setSaving(false);
+    setSaving(false);  [edited]
     onFavoriteLocationIdsChangeRef.current?.(next);
   }
 
@@ -386,5 +386,3 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
-
-/* daily modify record */

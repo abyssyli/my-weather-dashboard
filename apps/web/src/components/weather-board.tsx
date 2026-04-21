@@ -1,3 +1,5 @@
+
+# minor content update
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -143,7 +145,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
               const { [locationId]: _omit, ...rest } = prev;
               return rest;
             });
-            return;  [edited]
+            return;
           }
 
           setWeatherByLocationId((prev) => ({
