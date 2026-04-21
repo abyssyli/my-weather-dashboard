@@ -295,7 +295,7 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
                   <li
                     key={`${r.name}-${r.latitude}-${r.longitude}`}
                     className="flex items-center justify-between rounded-xl border border-zinc-200/80 bg-white/60 px-3 py-2 shadow-sm ring-1 ring-black/5 backdrop-blur dark:border-zinc-800/80 dark:bg-black/30 dark:ring-white/10"
-                  >
+                  >  [edited]
                     <div className="min-w-0">
                       <p className="truncate text-sm font-medium text-zinc-900 dark:text-zinc-50">
                         {r.name}
@@ -386,5 +386,3 @@ export function CityManager({ onFavoriteLocationIdsChange }: Props) {
     </section>
   );
 }
-
-# minor content update

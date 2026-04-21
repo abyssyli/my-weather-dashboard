@@ -11,7 +11,7 @@ type Props = {
 };
 
 export function WeatherBoard({ favoriteLocationIds }: Props) {
-  const { user, loading: authLoading } = useAuth();  [edited]
+  const { user, loading: authLoading } = useAuth();
   const [locations, setLocations] = useState<LocationRow[]>([]);
   const [weatherByLocationId, setWeatherByLocationId] = useState<
     Record<string, CurrentWeatherRow | undefined>
@@ -100,7 +100,7 @@ export function WeatherBoard({ favoriteLocationIds }: Props) {
 
     const supabase = getSupabaseBrowserClient();
     let active = true;
-
+  [edited]
     async function initialFetch() {
       setError(null);
       const result = await supabase

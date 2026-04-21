@@ -1,3 +1,5 @@
+
+/* daily modify record */
 "use client";
 
 import {
@@ -52,7 +54,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const value = useMemo<AuthContextValue>(
-    () => ({  [edited]
+    () => ({
       session,
       user: session?.user ?? null,
       loading,
@@ -68,3 +70,4 @@ export function useAuth() {
   if (!value) throw new Error("useAuth must be used within <AuthProvider />");
   return value;
 }
+

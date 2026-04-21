@@ -1,5 +1,5 @@
 
-// task4 project adjust
+// optimize code detail
 "use client";
 
 import { CityManager } from "@/components/city-manager";

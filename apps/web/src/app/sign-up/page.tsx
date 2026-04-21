@@ -120,14 +120,14 @@ export default function SignUpPage() {
               ? "Need an account? Sign up"
               : "Already have an account? Sign in"}
           </button>
-        </div>
+        </div>  [edited]
 
         {error ? (
           <p className="mt-4 text-sm text-red-600 dark:text-red-400">
             {error}
           </p>
         ) : null}
-        {message ? (  [edited]
+        {message ? (
           <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
             {message}
           </p>

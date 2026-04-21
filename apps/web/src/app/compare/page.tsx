@@ -264,7 +264,7 @@ export default function ComparePage() {
       rows.sort((a, b) => a.name.localeCompare(b.name));
       setLocations(rows);
       setLoading(false);
-
+  [edited]
       setSelectedIds((prev) => {
         const valid = prev.filter((id) => rows.some((l) => l.id === id));
         if (valid.length > 0) return valid;
@@ -528,5 +528,3 @@ export default function ComparePage() {
     </main>
   );
 }
-
-# minor content update

@@ -1,3 +1,5 @@
+
+/* daily modify record */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -7,5 +9,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
-// update log: auto edit 01

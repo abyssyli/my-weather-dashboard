@@ -28,4 +28,4 @@ export type CurrentWeatherRow = {
 };
 
 
-// optimize code detail
+# minor content update

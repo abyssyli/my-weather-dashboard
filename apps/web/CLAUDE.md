@@ -1,3 +1,3 @@
-@AGENTS.md
 
-// optimize code detail
+/* daily modify record */
+@AGENTS.md

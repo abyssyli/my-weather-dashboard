@@ -1,5 +1,5 @@
 
-/* minor adjust */
+# minor content update
 # Weather Pulse
 
 ## Project Overview

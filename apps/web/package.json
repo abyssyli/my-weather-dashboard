@@ -1,12 +1,10 @@
-
-// task4 project adjust
 {
   "name": "web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build --webpack",
+    "build": "next build --webpack",  [edited]
     "start": "next start",
     "lint": "eslint"
   },
